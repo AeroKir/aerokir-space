@@ -1,10 +1,9 @@
+import { defaultLocale, locales } from './i18n/index';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // https://nuxt.com/modules
-  modules: [
-    '@nuxthub/core',
-    '@nuxt/eslint'
-  ],
+  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxtjs/i18n'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
@@ -13,8 +12,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       // Can be overridden by NUXT_PUBLIC_HELLO_TEXT environment variable
-      helloText: 'AeroKir space'
-    }
+      helloText: 'AeroKir space',
+    },
   },
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
   future: { compatibilityVersion: 4 },
@@ -28,8 +27,18 @@ export default defineNuxtConfig({
     config: {
       stylistic: {
         quotes: 'single',
-        commaDangle: 'never'
-      }
-    }
-  }
-})
+        commaDangle: 'never',
+      },
+    },
+  },
+
+  i18n: {
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: false,
+    defaultLocale,
+    lazy: true,
+    locales,
+    vueI18n: './i18n/i18n.config.ts',
+    customRoutes: 'config',
+  },
+});
