@@ -3,7 +3,7 @@ import { defaultLocale, locales } from './i18n/index';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // https://nuxt.com/modules
-  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxtjs/i18n'],
+  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxtjs/i18n', '@nuxtjs/tailwindcss'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
