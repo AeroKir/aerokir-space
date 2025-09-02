@@ -8,7 +8,7 @@ const { t } = useI18n();
 <template>
   <div class="h-screen bg-primaryDark">
     <h1
-      class="centered text-accentColor"
+      class="centered text-accentColor font-heading font-bold font-size-[200px]"
     >
       {{ runtimeConfig.public.helloText }}
     </h1>
@@ -24,7 +24,7 @@ const { t } = useI18n();
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 h1 {
   font-size: 32px;
