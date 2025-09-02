@@ -1,3 +1,9 @@
 {
-    "helloText": "Hello, world!"
+    "navMenu": {
+        "about": "About Me",
+        "experience": "Experience",
+        "projects": "Projects",
+        "education": "Education",
+        "contact": "Contact"
+    }
 }
