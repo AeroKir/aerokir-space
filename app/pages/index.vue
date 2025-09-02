@@ -16,7 +16,6 @@ const { t } = useI18n();
     >
       refresh
     </NuxtLink>
-    <p>{{ t('helloText') }}</p>
   </div>
 </template>
 
