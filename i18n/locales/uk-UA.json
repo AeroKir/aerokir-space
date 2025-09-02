@@ -1,3 +1,9 @@
 {
-    "helloText": "Привіт, світ!"
+    "navMenu": {
+        "about": "Про мене",
+        "experience": "Досвід",
+        "projects": "Проєкти",
+        "education": "Освіта",
+        "contact": "Контакт"
+    }
 }
