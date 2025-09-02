@@ -6,16 +6,12 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="centered">
-    <h1 :style="{ color }">
+  <div class="h-screen bg-primaryDark">
+    <h1
+      class="centered text-accentColor"
+    >
       {{ runtimeConfig.public.helloText }}
     </h1>
-    <NuxtLink
-      to="/"
-      external
-    >
-      refresh
-    </NuxtLink>
   </div>
 </template>
 
