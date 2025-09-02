@@ -3,7 +3,7 @@ import { defaultLocale, locales } from './i18n/index';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // https://nuxt.com/modules
-  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxtjs/i18n', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxt/fonts'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
@@ -32,6 +32,13 @@ export default defineNuxtConfig({
     },
   },
 
+  fonts: {
+    families: [
+      { name: 'Play', provider: 'google', preload: true },
+      { name: 'Inter', provider: 'google', preload: true },
+    ],
+  },
+
   i18n: {
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
@@ -40,5 +47,10 @@ export default defineNuxtConfig({
     locales,
     vueI18n: './i18n/i18n.config.ts',
     customRoutes: 'config',
+  },
+
+  tailwindcss: {
+    exposeConfig: true,
+    viewer: false,
   },
 });

@@ -10,6 +10,10 @@ export default {
   theme: {
     extend: {
       colors: Colors,
+      fontFamily: {
+        heading: ['Play', 'sans-serif'], // H1, H2, etc.
+        body: ['Inter', 'sans-serif'], // Paragraphs, default text
+      },
     },
   },
   plugins: [],
