@@ -1,9 +1,29 @@
+import svgLoader from 'vite-svg-loader';
 import { defaultLocale, locales } from './i18n/index';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // https://nuxt.com/modules
-  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxt/fonts'],
+  modules: [
+    '@nuxthub/core',
+    '@nuxt/eslint',
+    '@nuxtjs/i18n',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/fonts',
+    [
+      '@nuxtjs/color-mode',
+      {
+        preference: 'system', // default theme (system | light | dark)
+        fallback: 'light', // fallback theme if not available
+        hid: 'nuxt-color-mode-script',
+        globalName: '__NUXT_COLOR_MODE__',
+        componentName: 'ColorScheme',
+        classPrefix: '',
+        classSuffix: '',
+        storageKey: 'nuxt-color-mode', // key in localStorage
+      },
+    ],
+  ],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
@@ -21,6 +41,10 @@ export default defineNuxtConfig({
 
   // https://hub.nuxt.com/docs/getting-started/installation#options
   hub: {},
+
+  vite: {
+    plugins: [svgLoader()],
+  },
 
   // Development config
   eslint: {
