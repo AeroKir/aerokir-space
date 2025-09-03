@@ -6,9 +6,10 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="h-screen bg-primaryDark">
+  <div class="h-screen bg-sepia dark:bg-primaryDark text-primaryDark dark:text-white">
+    <ThemeSwitcher />
     <h1
-      class="centered text-accentColor font-heading font-bold font-size-[200px]"
+      class="centered text-primaryDark dark:text-accentColor font-heading font-bold font-size-[200px]"
     >
       {{ runtimeConfig.public.helloText }}
     </h1>
@@ -26,7 +27,7 @@ const { t } = useI18n();
 <style scoped>
 .centered {
   position: absolute;
-  width: 100%;
+  width: 50%;
   text-align: center;
   top: 50%;
   left: 50%;
