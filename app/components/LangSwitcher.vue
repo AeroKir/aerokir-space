@@ -4,7 +4,7 @@
     <button
       class="transition-colors text-base font-heading"
       :class="locale === 'en'
-        ? 'text-primaryDark dark:text-primaryLight'
+        ? 'text-primaryDark dark:text-primaryLight cursor-default'
         : 'text-primaryDarkAlpha50 dark:text-primaryLightAlpha50 hover:text-primaryDarkAlpha25 dark:hover:text-primaryLightAlpha25'"
       @click="setLocale('en')"
     >
@@ -17,7 +17,7 @@
     <button
       class="transition-colors text-base font-heading"
       :class="locale === 'ua'
-        ? 'text-primaryDark dark:text-primaryLight'
+        ? 'text-primaryDark dark:text-primaryLight cursor-default'
         : 'text-primaryDarkAlpha50 dark:text-primaryLightAlpha50 hover:text-primaryDarkAlpha25 dark:hover:text-primaryLightAlpha25'"
       @click="setLocale('ua')"
     >
