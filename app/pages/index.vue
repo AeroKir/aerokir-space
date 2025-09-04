@@ -9,6 +9,10 @@ const { t } = useI18n();
   <div class="h-screen bg-sepia dark:bg-primaryDark text-primaryDark dark:text-white">
     <ThemeSwitcher />
     <LangSwitcher />
+    <NuxtLink
+      to="https://aerokir.github.io/portfolio/"
+      external
+    >Prev portfolio</NuxtLink>
     <h1
       class="centered text-primaryDark dark:text-accentColor font-heading font-bold font-size-[200px]"
     >
