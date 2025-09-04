@@ -8,6 +8,11 @@ const { t } = useI18n();
 <template>
   <div class="h-screen bg-sepia dark:bg-primaryDark text-primaryDark dark:text-white">
     <ThemeSwitcher />
+    <LangSwitcher />
+    <!-- <NuxtLink
+      to="https://aerokir.github.io/portfolio/"
+      external
+    >Prev portfolio</NuxtLink> -->
     <h1
       class="centered text-primaryDark dark:text-accentColor font-heading font-bold font-size-[200px]"
     >
@@ -17,9 +22,8 @@ const { t } = useI18n();
       class="centered"
       style="top: 65%; transform: translate(-50%, -50%)"
     >
-      Frontend Developer with over 6 years of experience creating web applications and websites of different complexities. Skilled in building cross-browser, responsive, and accessible interfaces using modern JavaScript frameworks.
-
-      Familiar with UI/UX best practices, performance optimization, and maintaining clean, scalable code. Comfortable working independently or as part of a distributed team, with a practical approach to solving problems. Looking for a long-term, full-time remote role to contribute to meaningful projects and continue growing professionally.
+      {{ t('introduce.para1') }}
+      {{ t('introduce.para2') }}
     </div>
   </div>
 </template>
