@@ -4,7 +4,7 @@
       v-for="link in menuLinks"
       :key="link.path"
       :to="localePath(link.path)"
-      class="relative pl-6 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition"
+      class="relative pl-6 text-primaryDark dark:text-gray-300 hover:text-black dark:hover:text-white transition"
       :class="{ 'font-semibold text-black dark:text-white active-link': isActive(link.path) }"
     >
       {{ t(link.label) }}
