@@ -26,7 +26,9 @@ const menuLinks = [
   { path: '/contact', label: 'navMenu.contact' },
 ];
 
-const isActive = (path: string) => route.path === path;
+const isActive = (path: string) => {
+  return route.path === localePath(path);
+};
 </script>
 
 <style scoped>
