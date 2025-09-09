@@ -23,7 +23,6 @@ const { t } = useI18n();
     <PerspectiveGrid
       position="top"
       :height="490"
-      color="rgba(34, 38, 75, 0.25)"
     />
     <h1
       class="centered text-primaryDark dark:text-accentColor font-heading font-bold text-[200px]"
@@ -42,7 +41,6 @@ const { t } = useI18n();
       position="bottom"
       :height="200"
       customClass="bg-sepia dark:bg-primaryDark"
-      color="rgba(34, 38, 75, 0.25)"
     />
   </div>
 </template>
