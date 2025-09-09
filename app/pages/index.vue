@@ -29,19 +29,19 @@ const { t } = useI18n();
     >
       {{ runtimeConfig.public.helloText }}
     </h1>
-    <p class="h-[500px] bg-sepia dark:bg-primaryDark text-primaryDark dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt obcaecati minus magnam autem fugit natus rem ut rerum quasi repellendus distinctio voluptatum dolores quisquam dignissimos, praesentium veritatis, mollitia beatae! Saepe.</p>
-    <div
-      class="centered"
-      style="top: 65%; transform: translate(-50%, -50%)"
+    <!-- <p class="h-[500px] bg-sepia dark:bg-primaryDark text-primaryDark dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt obcaecati minus magnam autem fugit natus rem ut rerum quasi repellendus distinctio voluptatum dolores quisquam dignissimos, praesentium veritatis, mollitia beatae! Saepe.</p> -->
+    <p
+      class="w-1/2 m-auto text-center"
     >
       {{ t('introduce.para1') }}
       {{ t('introduce.para2') }}
-    </div>
-    <PerspectiveGrid
+    </p>
+    <!-- <PerspectiveGrid
       position="bottom"
       :height="200"
       customClass="bg-sepia dark:bg-primaryDark"
-    />
+    /> -->
+    <AppFooter />
   </div>
 </template>
 
