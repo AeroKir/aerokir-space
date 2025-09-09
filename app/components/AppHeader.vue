@@ -1,7 +1,10 @@
 <template>
-  <header class="flex justify-end items-center gap-4 p-4">
-    <ThemeSwitcher />
-    <LangSwitcher />
+  <header class="flex justify-end items-start gap-4 px-20 pt-20 pb-12">
+    <AppMenu />
+    <div class="flex items-center">
+      <ThemeSwitcher />
+      <LangSwitcher />
+    </div>
   </header>
 </template>
 
