@@ -9,7 +9,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="h-screen w-screen bg-sepia dark:bg-primaryDark text-primaryDark dark:text-white relative">
+  <div class="h-screen w-screen bg-sepia dark:bg-primaryDark text-primaryDark dark:text-white relative overflow-x-hidden">
     <AppHeader />
     <!-- <NuxtLink
       to="https://aerokir.github.io/portfolio/"
@@ -20,18 +20,30 @@ const { t } = useI18n();
       <div class="perspective-grid" />
     </div> -->
     <!-- <PerspectiveGrid /> -->
+    <PerspectiveGrid
+      position="top"
+      :height="490"
+      color="rgba(34, 38, 75, 0.25)"
+    />
     <h1
-      class="centered text-primaryDark dark:text-accentColor font-heading font-bold font-size-[200px]"
+      class="centered text-primaryDark dark:text-accentColor font-heading font-bold text-[200px]"
     >
       {{ runtimeConfig.public.helloText }}
     </h1>
-    <!-- <div
+    <p class="h-[500px] bg-sepia dark:bg-primaryDark text-primaryDark dark:text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt obcaecati minus magnam autem fugit natus rem ut rerum quasi repellendus distinctio voluptatum dolores quisquam dignissimos, praesentium veritatis, mollitia beatae! Saepe.</p>
+    <div
       class="centered"
       style="top: 65%; transform: translate(-50%, -50%)"
     >
       {{ t('introduce.para1') }}
       {{ t('introduce.para2') }}
-    </div> -->
+    </div>
+    <PerspectiveGrid
+      position="bottom"
+      :height="200"
+      customClass="bg-sepia dark:bg-primaryDark"
+      color="rgba(34, 38, 75, 0.25)"
+    />
   </div>
 </template>
 
