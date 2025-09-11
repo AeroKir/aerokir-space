@@ -5,9 +5,9 @@
       :key="link.path"
       :to="localePath(link.path)"
       class="relative font-heading text-base transition-all duration-700 ease-in-out
-             text-primaryDarkAlpha50 dark:text-primaryLightAlpha50 hover:text-primaryDark dark:hover:text-white
+           hover:text-primaryDark dark:hover:text-primaryLight
              before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2
-             before:h-[1px] before:w-0 before:opacity-0 before:bg-primaryDark dark:before:bg-white
+             before:h-[1px] before:w-0 before:opacity-0
              before:transition-all before:duration-700 before:ease-in-out"
       :class="linkDynamicClass(i)"
       @mouseenter="hoverIndex = i"
@@ -48,20 +48,20 @@ const activeIndex = computed(() => {
 function linkDynamicClass(i: number) {
   // If hovering a link -> hover wins: it gets full style.
   if (hoverIndex.value === i) {
-    return 'pl-[55px] text-primaryDark dark:text-primaryLight before:w-[45px] before:opacity-100';
+    return 'pl-[55px] text-primaryDark dark:text-primaryLight before:w-[45px] before:opacity-100 before:bg-primaryDark dark:before:bg-primaryLight';
   }
 
   // If someone ELSE is hovered -> don't show active styles on any non-hover link.
   if (hoverIndex.value !== null) {
-    return 'pl-0';
+    return 'pl-0 text-primaryDarkAlpha50 dark:text-primaryLightAlpha50';
   }
 
   // No hover -> show active styles only for activeIndex
   if (activeIndex.value === i) {
-    return 'pl-[55px] text-primaryDark dark:text-white before:w-[45px] before:opacity-100';
+    return 'pl-[55px] text-primaryDark dark:text-primaryLight before:w-[45px] before:opacity-100 before:bg-primaryDark dark:before:bg-primaryLight';
   }
 
   // default
-  return 'pl-0';
+  return 'pl-0 text-primaryDarkAlpha50 dark:text-primaryLightAlpha50';
 }
 </script>
