@@ -1,8 +1,22 @@
 <template>
   <Page>
     <AppHeader />
-    <main class="h-screen w-screen text-primaryDark dark:text-white relative">
-      <h1>Contacts</h1>
+    <main class="h-screen w-screen text-primaryDark dark:text-accentColor relative">
+      <HeadingPage
+        title="Hello"
+        :isDot="true"
+      />
+      <p>Are you interested in me as a person, or do you want to do a project? Let's stay in touch.</p>
+      <ul>
+        <li>Email: <a href="mailto:shev.kv.1982@gmail.com">shev.kv.1982@gmail.com</a></li>
+        <!-- <li>
+          Telegram: <a
+            href="https://t.me/aerokir"
+            target="_blank"
+            rel="noopener"
+          >@aerokir</a>
+        </li> -->
+      </ul>
     </main>
     <AppFooter />
   </Page>
@@ -11,7 +25,3 @@
 <script setup lang="ts">
 
 </script>
-
-<style scoped>
-
-</style>

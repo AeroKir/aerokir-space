@@ -2,7 +2,10 @@
   <Page>
     <AppHeader />
     <main class="h-screen w-screen text-primaryDark dark:text-white relative">
-      <h1>Projects</h1>
+      <HeadingPage
+        title="Projects"
+        :isDot="true"
+      />
     </main>
     <AppFooter />
   </Page>
