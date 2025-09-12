@@ -10,5 +10,22 @@
         "title": "Kirill Shevtsov",
         "para1": "Frontend Developer with over 6 years of experience creating web applications and websites of different complexities. Skilled in building cross-browser, responsive, and accessible interfaces using modern JavaScript frameworks.",
         "para2": "Familiar with UI/UX best practices, performance optimization, and maintaining clean, scalable code. Comfortable working independently or as part of a distributed team, with a practical approach to solving problems. Looking for a long-term, full-time remote role to contribute to meaningful projects and continue growing professionally."
+    },
+    "pages": {
+        "about": {
+            "title": "About Me"
+        },
+        "experience": {
+            "title": "Experience"
+        },
+        "projects": {
+            "title": "Projects"
+        },
+        "education": {
+            "title": "Education"
+        },
+        "contact": {
+            "title": "Contact"
+        }
     }
 }
