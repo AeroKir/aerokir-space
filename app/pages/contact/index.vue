@@ -3,7 +3,7 @@
     <AppHeader />
     <main class="h-screen w-screen text-primaryDark dark:text-accentColor relative">
       <HeadingPage
-        title="Hello"
+        :title="$t('pages.contact.title')"
         :isDot="true"
       />
       <p>Are you interested in me as a person, or do you want to do a project? Let's stay in touch.</p>

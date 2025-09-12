@@ -3,7 +3,7 @@
     <AppHeader />
     <main class="h-screen w-screen text-primaryDark dark:text-white relative">
       <HeadingPage
-        title="Education"
+        :title="$t('pages.education.title')"
         :isDot="true"
       />
     </main>
