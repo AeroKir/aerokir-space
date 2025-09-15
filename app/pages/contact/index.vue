@@ -1,7 +1,10 @@
 <template>
   <Page>
     <AppHeader />
-    <main class="h-screen w-screen text-primaryDark dark:text-accentColor relative">
+    <main class="h-screen w-[652px] ml-[407px] text-primaryDark dark:text-accentColor relative">
+      <IconSmile
+        class="w-[243px] h-[243px] absolute top-8 right-8 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"
+      />
       <HeadingPage
         :title="$t('pages.contact.title')"
         :isDot="true"
@@ -23,5 +26,5 @@
 </template>
 
 <script setup lang="ts">
-
+import IconSmile from '../../assets/icons/smile.svg';
 </script>
