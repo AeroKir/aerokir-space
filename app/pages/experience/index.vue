@@ -6,14 +6,16 @@
         :title="$t('pages.experience.title')"
         :isDot="true"
       />
-      <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur commodi quae sed nobis magnam temporibus quos saepe cumque sapiente provident mollitia aliquid architecto ipsa fuga eos, nostrum facilis cum delectus!</p> -->
+      <IconSunrise
+        class="w-[417px] h-[417px] absolute top-8 right-8 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"
+      />
     </main>
     <AppFooter />
   </Page>
 </template>
 
 <script setup lang="ts">
-
+import IconSunrise from '../../assets/icons/sunrise.svg';
 </script>
 
 <style scoped>
