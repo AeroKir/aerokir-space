@@ -29,7 +29,7 @@ const currentColor = ref(props.colorLight || 'rgba(0,0,0,0.4)');
 function updateColor() {
   currentColor.value
     = colorMode.value === 'dark'
-      ? props.colorDark || 'rgba(255, 255, 255, 0.25)'
+      ? props.colorDark || 'rgba(255, 255, 255, 0.15)'
       : props.colorLight || 'rgba(34, 38, 75, 0.25)';
 }
 
