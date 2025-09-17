@@ -9,7 +9,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="h-screen w-screen bg-sepia dark:bg-primaryDark text-primaryDark dark:text-white relative overflow-x-hidden">
+  <div class="h-screen w-screen bg-sepia dark:bg-primaryDark text-primaryDark dark:text-white relative overflow-x-hidden pt-[312px]">
     <AppHeader />
     <!-- <NuxtLink
       to="https://aerokir.github.io/portfolio/"
