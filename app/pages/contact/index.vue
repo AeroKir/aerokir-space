@@ -1,9 +1,9 @@
 <template>
-  <Page>
+  <Page contentClass="!pt-0">
     <AppHeader />
-    <main class="h-auto w-[652px] ml-[407px] text-primaryDark dark:text-accentColor relative">
+    <main class="h-auto w-[652px] ml-[407px] text-primaryDark dark:text-accentColor relative -bottom-[275px] z-10">
       <IconSmile
-        class="w-[243px] h-[243px] absolute -top-[70px] right-32 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"
+        class="w-[243px] h-[243px] absolute -top-[65px] right-32 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"
       />
       <HeadingPage
         :title="$t('pages.contact.title')"
