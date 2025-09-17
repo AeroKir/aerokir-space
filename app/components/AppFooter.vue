@@ -3,8 +3,8 @@
     class="relative"
     :class="footerClass"
   >
-    <p class="text-center absolute left-1/2 transform -translate-x-1/2 bottom-12 z-10">
-      2025 © Aerokir Space. All rights reserved.
+    <p class="absolute left-1/2 transform -translate-x-1/2 bottom-12 z-10 font-heading text-base text-center text-primaryDark dark:text-primaryLight">
+      &copy; {{ currentYear }} Aerokir Space. All rights reserved.
     </p>
     <PerspectiveGrid
       position="bottom"
@@ -22,4 +22,6 @@ type Props = {
 withDefaults(defineProps<Props>(), {
   footerClass: '',
 });
+
+const currentYear = new Date().getFullYear();
 </script>
