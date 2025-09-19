@@ -41,7 +41,7 @@ export default defineAppConfig({
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/aerokir-space/',
       icon: 'linkedin',
-      display: 'Linkedin',
+      display: 'LinkedIn',
     },
   ],
 });
