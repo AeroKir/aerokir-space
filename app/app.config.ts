@@ -10,6 +10,7 @@ export default defineAppConfig({
   projects: [
     {
       id: 1,
+      slug: 'umlaut-digital',
       name: 'Umlaut Digital',
       description: 'Company website',
       link: 'https://umlaut.digital',
@@ -29,6 +30,7 @@ export default defineAppConfig({
     },
     {
       id: 2,
+      slug: 'ask4games',
       name: 'Ask4games',
       description: 'Info portal',
       link: 'https://ask4games.com/',
@@ -48,6 +50,7 @@ export default defineAppConfig({
     },
     {
       id: 3,
+      slug: 'dopomoga',
       name: 'Dopomoga',
       description: 'Dopomoga website',
       link: 'https://aerokir.github.io/dopomoga/',
@@ -67,6 +70,7 @@ export default defineAppConfig({
     },
     {
       id: 4,
+      slug: 'gif-app',
       name: 'Gif-app',
       description: 'Gif search application',
       link: 'https://aerokir.github.io/gif-app/#/',
@@ -86,6 +90,7 @@ export default defineAppConfig({
     },
     {
       id: 5,
+      slug: 'nextjs-dashboard',
       name: 'Next.js dashboard',
       description: 'Next.js dashboard application',
       link: 'https://nextjs-dashboard-eight-plum-73.vercel.app/',
@@ -105,6 +110,7 @@ export default defineAppConfig({
     },
     {
       id: 6,
+      slug: 'previous-portfolio',
       name: 'Previous portfolio',
       description: 'Previous portfolio website',
       link: 'https://aerokir.github.io/portfolio/',
@@ -124,6 +130,7 @@ export default defineAppConfig({
     },
     {
       id: 7,
+      slug: 'randomuser-test-task',
       name: 'Random user test task',
       description: 'Random user test task description',
       link: 'https://aerokir.github.io/randomuser-test/',
@@ -143,6 +150,7 @@ export default defineAppConfig({
     },
     {
       id: 8,
+      slug: 'email-send-app',
       name: 'Email send app',
       description: 'Email sending application test task',
       link: 'https://aerokir.github.io/sendsay-test-app/',
@@ -162,6 +170,7 @@ export default defineAppConfig({
     },
     {
       id: 9,
+      slug: 'avia-trip-app',
       name: 'Avia trip app',
       description: 'Avia trip application test task',
       link: 'https://aerokir.github.io/avia-trip-app/',
@@ -181,6 +190,7 @@ export default defineAppConfig({
     },
     {
       id: 10,
+      slug: 'karpaty-journey',
       name: 'Karpaty Journey',
       description: 'Karpaty Journey OSM Leaflet maps project',
       link: 'https://karpatyjourney.github.io/',
@@ -200,6 +210,7 @@ export default defineAppConfig({
     },
     {
       id: 11,
+      slug: 'first-web-site',
       name: 'First web site',
       description: 'First web site test task',
       link: 'https://aerokir.github.io/lauda.html',

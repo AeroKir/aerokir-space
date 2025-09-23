@@ -10,17 +10,25 @@
         class="w-[343px] h-[343px] absolute -top-[155px] right-1/2 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"
       />
 
-      <ul class="grid gap-6">
+      <section>
+        <ProjectPreviewCard
+          v-for="project in projects"
+          :key="project.id"
+          :slug="project.slug"
+          :title="project.name"
+          :description="project.description"
+          :yearsOfDevelopment="project.yearsOfDevelopment"
+          :projectType="project.projectType"
+          :link="project.link"
+        />
+      </section>
+
+      <!-- <ul class="grid gap-6">
         <li
           v-for="project in projects"
           :key="project.id"
           class="w-[400px] p-4 border rounded"
         >
-          <!-- <img
-            :src="project.image"
-            alt=""
-            class="w-full h-40 object-cover mb-2"
-          > -->
           <h3 class="text-xl font-heading">
             {{ $t(project.name) }}
           </h3>
@@ -33,11 +41,10 @@
             rel="noopener noreferrer"
             class="text-accentColor underline"
           >
-            <!-- {{ $t('projects.viewMore') }} -->
             Link
           </a>
         </li>
-      </ul>
+      </ul> -->
     </main>
     <AppFooter />
   </Page>
@@ -49,10 +56,13 @@ import IconPyramidVertical from '../../assets/icons/pyramid-vertical.svg';
 const { projects } = useAppConfig() as {
   projects: {
     id: number | string;
+    slug: string;
     name: string;
     description: string;
     link: string;
     image: string;
+    yearsOfDevelopment: string;
+    projectType: string;
     // tags: string[];
   }[];
 };
