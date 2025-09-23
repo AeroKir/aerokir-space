@@ -1,10 +1,11 @@
 <template>
   <Page>
     <AppHeader />
-    <main class="h-full w-screen ml-[283px] text-primaryDark dark:text-white relative">
+    <main class="h-full ml-[283px] mr-10 text-primaryDark dark:text-white relative">
       <HeadingPage
         :title="$t('pages.projects.title')"
         :isDot="true"
+        customClass="ml-[407px] mb-[100px]"
       />
       <IconPyramidVertical
         class="w-[343px] h-[343px] absolute -top-[155px] right-1/2 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"
@@ -20,6 +21,8 @@
           :yearsOfDevelopment="project.yearsOfDevelopment"
           :projectType="project.projectType"
           :link="project.link"
+          :image="project.image"
+          :imageAlt="project.name"
         />
       </section>
 
@@ -61,6 +64,7 @@ const { projects } = useAppConfig() as {
     description: string;
     link: string;
     image: string;
+    imageAlt: string;
     yearsOfDevelopment: string;
     projectType: string;
     // tags: string[];

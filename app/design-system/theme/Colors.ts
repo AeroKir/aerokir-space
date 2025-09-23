@@ -11,6 +11,7 @@ enum Colors {
   sepiaAlpha46 = 'rgba(209, 193, 169, 0.46)',
   sepiaAlpha25 = 'rgba(209, 193, 169, 0.25)',
   accentColor = '#FC9800',
+  coalBlack = '#000000',
 }
 
 export default Colors;

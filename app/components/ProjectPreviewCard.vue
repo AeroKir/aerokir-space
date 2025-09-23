@@ -1,22 +1,31 @@
 <template>
-  <article class="w-[400px] p-4 border rounded">
-    <!-- <img
-        :src="project.image"
-        alt=""
-        class="w-full h-40 object-cover mb-2"
-      > -->
-    <h2 class="text-xl font-heading">
+  <article class="w-[1355px] h-auto relative mb-24">
+    <h2 class="absolute -top-[128px] left-0 text-[128px] font-heading font-bold z-10">
       <!-- {{ props.title }} -->
       <NuxtLink :to="localePath(`/projects/${slug}`)">
         {{ props.title }}
       </NuxtLink>
     </h2>
-    <p class="text-sm">
-      {{ props.description }}
-    </p>
-    <p class="text-sm italic mt-2">
-      {{ props.yearsOfDevelopment }} - {{ props.projectType }}
-    </p>
+    <div class="relative w-[1120px] h-[550px] bg-coalBlack ml-[145px] py-9 px-6 mb-4 flex justify-center items-center">
+      <p class="text-sm absolute top-2 right-2">
+        {{ props.yearsOfDevelopment }} - {{ props.projectType }}
+      </p>
+      <img
+        :src="props.image"
+        alt="props.imageAlt"
+        class="w-[836px] h-auto object-cover mb-2"
+      >
+      <p class="absolute bottom-2 left-2 text-sm">
+        {{ props.description }}
+      </p>
+      <NuxtLink
+        :to="localePath(`/projects/${slug}`)"
+        class="absolute w-[180px] h-[180px] rounded-full bg-primaryLight bottom-2 right-2 text-xl underline"
+      >
+        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primaryDark">More</span>
+      </NuxtLink>
+    </div>
+
     <a
       :href="props.link"
       target="_blank"
@@ -37,6 +46,8 @@ const props = defineProps<{
   yearsOfDevelopment: number | string;
   projectType: string;
   link: string;
+  image: string;
+  imageAlt: string;
 }>();
 
 const localePath = useLocalePath();
