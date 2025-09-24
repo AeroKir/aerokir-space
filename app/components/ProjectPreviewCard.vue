@@ -7,8 +7,8 @@
       </NuxtLink>
     </h2>
     <div class="relative w-[1120px] h-[550px] bg-coalBlack ml-[145px] py-9 px-6 mb-4 flex justify-center items-center">
-      <p class="text-sm absolute top-2 right-2">
-        {{ props.yearsOfDevelopment }} - {{ props.projectType }}
+      <p class="flex items-baseline absolute top-2 right-2 uppercase text-2xl">
+        {{ props.yearsOfDevelopment }} <span class="w-3 h-3 inline-block bg-primaryLight rounded-full ml-[15px] mr-[10px]"></span> {{ props.projectType }}
       </p>
       <img
         :src="props.image"
