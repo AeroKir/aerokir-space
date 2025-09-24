@@ -1,13 +1,14 @@
 <template>
   <article class="w-[1355px] h-auto relative mb-24">
-    <h2 class="absolute -top-[128px] left-0 text-[128px] font-heading font-bold z-10">
+    <h2 class="absolute -top-[128px] left-0 text-[128px] font-heading font-bold text-primaryDark dark:text-primaryLight z-10">
       <!-- {{ props.title }} -->
       <NuxtLink :to="localePath(`/projects/${slug}`)">
         {{ props.title }}
       </NuxtLink>
     </h2>
-    <div class="relative w-[1120px] h-[550px] bg-coalBlack ml-[145px] py-9 px-6 mb-4 flex justify-center items-center">
-      <p class="flex items-baseline absolute top-2 right-2 uppercase text-2xl">
+
+    <div class="relative w-[1120px] h-[550px] bg-sepiaDarken dark:bg-primaryDarken ml-[145px] py-9 px-6 mb-4 flex justify-center items-center">
+      <p class="flex items-center absolute top-2 right-2 uppercase text-2xl font-body">
         {{ props.yearsOfDevelopment }} <span class="w-3 h-3 inline-block bg-primaryLight rounded-full ml-[15px] mr-[10px]"></span> {{ props.projectType }}
       </p>
       <img
