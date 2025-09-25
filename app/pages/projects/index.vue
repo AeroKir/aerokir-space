@@ -23,6 +23,7 @@
           :link="project.link"
           :image="project.image"
           :imageAlt="project.name"
+          :previewVideo="project.previewVideo"
         />
       </section>
 
@@ -67,6 +68,7 @@ const { projects } = useAppConfig() as {
     imageAlt: string;
     yearsOfDevelopment: string;
     projectType: string;
+    previewVideo?: string;
     // tags: string[];
   }[];
 };
