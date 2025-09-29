@@ -78,7 +78,7 @@
            transition-colors duration-300 ease-in-out
            group-hover:text-accentColor dark:group-hover:text-primaryDark"
       >
-        More
+        {{ t('buttons.more') }}
       </span>
     </NuxtLink>
 

@@ -28,6 +28,9 @@
             "title": "Привіт"
         }
     },
+    "buttons": {
+        "more": "Більше"
+    },
     "projects": {
         "umlaut": {
             "name": "Umlaut Digital",
@@ -44,7 +47,7 @@
             "imagePreviewAlt": "Ask4Games Project Screenshot"
         },
         "dopomoga": {
-            "name": "Dopomoga",
+            "name": "Допомога",
             "excerpt": "Платформа для надання допомоги та підтримки людям, які потребують допомоги",
             "description": "A platform to provide assistance and support to those in need.",
             "projectType": "Web Application",

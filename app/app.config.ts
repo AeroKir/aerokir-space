@@ -56,9 +56,9 @@ export default defineAppConfig({
     {
       id: 3,
       slug: 'dopomoga',
-      name: 'Dopomoga',
-      excerpt: 'Dopomoga website',
-      description: 'Dopomoga website',
+      name: 'projects.dopomoga.name',
+      excerpt: 'projects.dopomoga.excerpt',
+      description: 'projects.dopomoga.description',
       link: 'https://aerokir.github.io/dopomoga/',
       linkGitHub: 'https://github.com/AeroKir/ask4games',
       image: '/projects/dopomoga/dopomoga-main.jpg',

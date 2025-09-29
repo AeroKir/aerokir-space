@@ -28,6 +28,9 @@
             "title": "Hello"
         }
     },
+    "buttons": {
+        "more": "More",
+    },
     "projects": {
         "umlaut": {
             "name": "Umlaut Digital",
