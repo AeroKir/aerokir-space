@@ -27,5 +27,87 @@
         "contact": {
             "title": "Привіт"
         }
+    },
+    "projects": {
+        "umlaut": {
+            "name": "Umlaut Digital",
+            "excerpt": "Комплексна платформа цифрового маркетингу",
+            "description": "Комплексна платформа цифрового маркетингу, яка пропонує набір інструментів для SEO, контент-маркетингу та управління соціальними мережами, щоб допомогти компаніям покращити свою онлайн-присутність та стимулювати зростання.",
+            "projectType": "Вебсайт",
+            "imagePreviewAlt": "Umlaut Digital Project Screenshot"
+        },
+        "ask4games": {
+            "name": "Ask4Games",
+            "excerpt": "Платформа для геймерів, щоб спілкуватися, ділитися порадами та знаходити нових друзів",
+            "description": "Платформа для геймерів, щоб спілкуватися, ділитися порадами та знаходити нових друзів.",
+            "projectType": "Вебзастосунок",
+            "imagePreviewAlt": "Ask4Games Project Screenshot"
+        },
+        "dopomoga": {
+            "name": "Dopomoga",
+            "excerpt": "Платформа для надання допомоги та підтримки людям, які потребують допомоги",
+            "description": "A platform to provide assistance and support to those in need.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Dopomoga Project Screenshot"
+        },
+        "gifApp": {
+            "name": "GIF App",
+            "excerpt": "Вебзастосунок для пошуку та обміну GIF",
+            "description": "A web application for searching and sharing GIFs.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "GIF App Project Screenshot"
+        },
+        "dashboardNextJs": {
+            "name": "Dashboard Next.js",
+            "excerpt": "Сучасний дашборд-застосунок, створений за допомогою Next.js",
+            "description": "A modern dashboard application built with Next.js.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Dashboard Next.js Project Screenshot"
+        },
+        "prevPortfolio": {
+            "name": "Previous Portfolio",
+            "excerpt": "Показ моїх попередніх робіт та проєктів",
+            "description": "A showcase of my earlier work and projects.",
+            "projectType": "Website",
+            "imagePreviewAlt": "Previous Portfolio Project Screenshot"
+        },
+        "dashboardRandomUser": {
+            "name": "Dashboard Random User",
+            "excerpt": "Дашборд-застосунок для відображення випадкових даних користувачів",
+            "description": "A dashboard application for displaying random user data.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Dashboard Random User Project Screenshot"
+        },
+        "emailSendForm": {
+            "name": "Email Send Form",
+            "excerpt": "Форма для відправки електронних листів",
+            "description": "A form for sending emails.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Email Send Form Project Screenshot"
+        },
+        "aviaTicketsApp": {
+            "name": "Avia Tickets App",
+            "excerpt": "Вебзастосунок для пошуку та бронювання авіаквитків",
+            "description": "A web application for searching and booking airline tickets.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Avia Tickets App Project Screenshot"
+        },
+        "karpatyJourney": {
+            "name": "Karpaty Journey",
+            "excerpt": "Тревел-блог, що демонструє красу Карпатських гір",
+            "description": "A travel blog showcasing the beauty of the Carpathian Mountains.",
+            "projectType": "Website",
+            "imagePreviewAlt": "Karpaty Journey Project Screenshot"
+        },
+        "firstWebSite": {
+            "name": "Перший веб-сайт",
+            "excerpt": "Мій перший вебсайт, створений як особистий проєкт. Зараз виглядає наївно, але я люблю цю роботу.",
+            "excerpt1": "Мій перший вебсайт — маленький особистий проєкт. Зараз він виглядає трохи наївно, але в ньому є іскра, яка започаткувала мою подорож у веб-розробку.",
+            "excerpt2": "Це був мій перший вебсайт. Простий і трохи грубий, але він позначає початок всього, що я створив з тих пір.",
+            "excerpt3": "Мій перший у житті вебсайт. Наївний за стилем, але сповнений пристрасті, яка штовхала мене вперед.",
+            "description": "Мій перший вебсайт, створений як особистий проєкт.",
+            "projectType": "Вебсайт",
+            "imagePreviewAlt": "First Website Project Screenshot"
+        }
     }
 }

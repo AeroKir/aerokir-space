@@ -17,7 +17,7 @@
           :key="project.id"
           :slug="project.slug"
           :title="project.name"
-          :description="project.description"
+          :excerpt="project.excerpt"
           :yearsOfDevelopment="project.yearsOfDevelopment"
           :projectType="project.projectType"
           :link="project.link"
@@ -62,7 +62,8 @@ const { projects } = useAppConfig() as {
     id: number | string;
     slug: string;
     name: string;
-    description: string;
+    excerpt: string;
+    // description: string;
     link: string;
     image: string;
     imageAlt: string;

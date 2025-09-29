@@ -27,5 +27,87 @@
         "contact": {
             "title": "Hello"
         }
+    },
+    "projects": {
+        "umlaut": {
+            "name": "Umlaut Digital",
+            "excerpt": "Comprehensive digital marketing platform",
+            "description": "A comprehensive digital marketing platform that offers a suite of tools for SEO, content marketing, and social media management to help businesses enhance their online presence and drive growth.",
+            "projectType": "Website",
+            "imagePreviewAlt": "Umlaut Digital Project Screenshot"
+        },
+        "ask4games": {
+            "name": "Ask4Games",
+            "excerpt": "A platform for gamers to connect, share tips, and find new friends",
+            "description": "A platform for gamers to connect, share tips, and find new friends.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Ask4Games Project Screenshot"
+        },
+        "dopomoga": {
+            "name": "Dopomoga",
+            "excerpt": "A platform to provide assistance and support to those in need.",
+            "description": "A platform to provide assistance and support to those in need.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Dopomoga Project Screenshot"
+        },
+        "gifApp": {
+            "name": "GIF App",
+            "excerpt": "A web application for searching and sharing GIFs.",
+            "description": "A web application for searching and sharing GIFs.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "GIF App Project Screenshot"
+        },
+        "dashboardNextJs": {
+            "name": "Dashboard Next.js",
+            "excerpt": "A modern dashboard application built with Next.js.",
+            "description": "A modern dashboard application built with Next.js.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Dashboard Next.js Project Screenshot"
+        },
+        "prevPortfolio": {
+            "name": "Previous Portfolio",
+            "excerpt": "A showcase of my earlier work and projects.",
+            "description": "A showcase of my earlier work and projects.",
+            "projectType": "Website",
+            "imagePreviewAlt": "Previous Portfolio Project Screenshot"
+        },
+        "dashboardRandomUser": {
+            "name": "Dashboard Random User",
+            "excerpt": "A dashboard application for displaying random user data.",
+            "description": "A dashboard application for displaying random user data.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Dashboard Random User Project Screenshot"
+        },
+        "emailSendForm": {
+            "name": "Email Send Form",
+            "excerpt": "A form for sending emails.",
+            "description": "A form for sending emails.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Email Send Form Project Screenshot"
+        },
+        "aviaTicketsApp": {
+            "name": "Avia Tickets App",
+            "excerpt": "A web application for searching and booking airline tickets.",
+            "description": "A web application for searching and booking airline tickets.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Avia Tickets App Project Screenshot"
+        },
+        "karpatyJourney": {
+            "name": "Karpaty Journey",
+            "excerpt": "A travel blog showcasing the beauty of the Carpathian Mountains.",
+            "description": "A travel blog showcasing the beauty of the Carpathian Mountains.",
+            "projectType": "Website",
+            "imagePreviewAlt": "Karpaty Journey Project Screenshot"
+        },
+        "firstWebSite": {
+            "name": "First Website",
+            "excerpt": "My first website, created as a personal project. It may look naive now, but I still love this work.",
+            "excerpt1": "My very first website — a small personal project. It feels a bit naive today, but it carries the spark that started my journey into web development.",
+            "excerpt2": "This was my very first website. Simple and a little rough around the edges, but it marks the beginning of everything I’ve built since.",
+            "excerpt3": "My first-ever website. Naive in style, but full of the passion that pushed me forward.",
+            "description": "My very first website created as a personal project.",
+            "projectType": "Website",
+            "imagePreviewAlt": "First Website Project Screenshot"
+        }
     }
 }

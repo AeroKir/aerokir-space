@@ -3,12 +3,12 @@
     <h2 class="absolute -top-[128px] left-0 text-[128px] font-heading font-bold text-primaryDark dark:text-primaryLight z-40">
       <!-- {{ props.title }} -->
       <NuxtLink :to="localePath(`/projects/${slug}`)">
-        {{ props.title }}
+        {{ t(props.title) }}
       </NuxtLink>
     </h2>
 
     <p class="flex items-center absolute top-[7%] right-0 uppercase text-2xl font-body z-40">
-      {{ props.yearsOfDevelopment }} <span class="w-3 h-3 inline-block bg-primaryDark dark:bg-primaryLight rounded-full ml-[15px] mr-[10px]" /> {{ props.projectType }}
+      {{ props.yearsOfDevelopment }} <span class="w-3 h-3 inline-block bg-primaryDark dark:bg-primaryLight rounded-full ml-[15px] mr-[10px]" /> {{ t(props.projectType) }}
     </p>
     <div class="relative w-[1120px] h-[550px] bg-sepiaDarken dark:bg-primaryDarken ml-[145px] py-9 px-6 mb-4 flex justify-center items-center">
       <!-- <img
@@ -41,7 +41,7 @@
       </div>
 
       <p class="absolute left-[60px] bottom-[60px] max-w-[569px] text-2xl font-body text-[#1D1A31] dark:text-primaryLight z-40">
-        {{ props.description }}
+        {{ t(props.excerpt) }}
       </p>
     </div>
 
@@ -99,7 +99,8 @@ import IconArrowTopRight from '../assets/icons/arrow-top-right.svg';
 const props = defineProps<{
   slug: string;
   title: string;
-  description: string;
+  excerpt: string;
+  // description: string;
   yearsOfDevelopment: number | string;
   projectType: string;
   link: string;
@@ -109,6 +110,7 @@ const props = defineProps<{
 }>();
 
 const localePath = useLocalePath();
+const { t } = useI18n();
 </script>
 
 <style scoped>
