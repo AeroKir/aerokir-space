@@ -1,7 +1,7 @@
 <template>
   <Page>
     <AppHeader />
-    <main class="h-full ml-[283px] mr-[265px] -top-10 text-primaryDark dark:text-white relative z-50">
+    <main class="h-full ml-[283px] mr-[265px] -top-10 text-primaryDark dark:text-primaryLight relative z-50">
       <div class="relative max-w-[1040px] h-auto left-1/2 -translate-x-1/2 pb-[70px]">
         <HeadingPage
           :title="$t('pages.projects.title')"
