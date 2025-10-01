@@ -33,9 +33,9 @@
     },
     "projects": {
         "umlaut": {
-            "name": "Umlaut Digital",
-            "excerpt": "Comprehensive digital marketing platform",
-            "description": "A comprehensive digital marketing platform that offers a suite of tools for SEO, content marketing, and social media management to help businesses enhance their online presence and drive growth.",
+            "name": "Umlaut.Digital",
+            "excerpt": "Dynamic. Minimal. Live. Umlaut.Digital® on the web.",
+            "description": "Together with the design team, we built a modern digital showcase for Umlaut Digital. While the designers focused on UI/UX, I handled the full technical delivery: building the frontend architecture, implementing pixel-perfect layouts, adding smooth animations, and optimizing performance. The result is a fast, stable, and production-ready website that helps the agency present itself to clients at the highest level.",
             "projectType": "Website",
             "imagePreviewAlt": "Umlaut Digital Project Screenshot"
         },

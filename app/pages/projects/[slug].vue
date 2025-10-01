@@ -18,10 +18,10 @@
           :key="project.slug"
         >
           <h1 class="text-4xl font-heading mb-4">
-            {{ project.name }}
+            {{ t(project.name) }}
           </h1>
           <p class="text-lg text-primaryDark dark:text-primaryLight mb-6">
-            {{ project.description }}
+            {{ t(project.description) }}
           </p>
 
           <img
@@ -63,6 +63,7 @@
 <script setup lang="ts">
 const route = useRoute();
 const localePath = useLocalePath();
+const { t } = useI18n();
 const { projects } = useAppConfig();
 
 const project = computed(() =>

@@ -26,7 +26,7 @@
           :image="project.image"
           :imageAlt="project.name"
           :previewVideo="project.previewVideo"
-          class="project-card transition-all duration-500 opacity-40 blur-[2px] scale-95"
+          class="project-card transition-all duration-500 opacity-40 blur-[2px] scale-95 last:mb-0"
         />
       </section>
     </main>
