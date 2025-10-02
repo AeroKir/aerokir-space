@@ -41,36 +41,36 @@
         },
         "ask4games": {
             "name": "Ask4Games",
-            "excerpt": "A platform for gamers to connect, share tips, and find new friends",
-            "description": "A platform for gamers to connect, share tips, and find new friends.",
-            "projectType": "Web Application",
+            "excerpt": "Ask4Games — your gateway to the world of gaming and esports.",
+            "description": "Ask4Games is a vibrant digital hub for gamers of all kinds — from console and mobile players to esports fans. The portal brings together news, reviews, and community-driven content in a dynamic, engaging format. My role was the full technical implementation: building a scalable frontend, optimizing performance, and ensuring a smooth, interactive experience for every visitor.",
+            "projectType": "Web Portal",
             "imagePreviewAlt": "Ask4Games Project Screenshot"
         },
         "dopomoga": {
             "name": "Dopomoga",
-            "excerpt": "A platform to provide assistance and support to those in need.",
-            "description": "A platform to provide assistance and support to those in need.",
-            "projectType": "Web Application",
+            "excerpt": "An information portal for internally displaced persons in Ukraine, providing quick access to vital resources and support.",
+            "description": "This project was built to support internally displaced persons in Ukraine. The portal brings together key information, contacts, and resources in one accessible place. Its goal is to simplify the adaptation process and ensure quick, clear access to assistance. With a structured approach and user-friendly interface, the website serves as an effective support tool for people facing challenging circumstances.",
+            "projectType": "Web Portal",
             "imagePreviewAlt": "Dopomoga Project Screenshot"
         },
         "gifApp": {
             "name": "GIF App",
-            "excerpt": "A web application for searching and sharing GIFs.",
-            "description": "A web application for searching and sharing GIFs.",
-            "projectType": "Web Application",
+            "excerpt": "A PWA app for searching and sharing GIF animations.",
+            "description": "A progressive web app (PWA) designed for fast search and easy sharing of GIF animations. Developed as a test assignment for a company, with a focus on performance, user-friendly interface, and modern frontend technologies.",
+            "projectType": "Web App (PWA)",
             "imagePreviewAlt": "GIF App Project Screenshot"
         },
         "dashboardNextJs": {
-            "name": "Dashboard Next.js",
-            "excerpt": "A modern dashboard application built with Next.js.",
+            "name": "CRM Dashboard",
+            "excerpt": "A modern CRM dashboard application built with Next.js, featuring a clean interface, smooth interactions, and scalable architecture.",
             "description": "A modern dashboard application built with Next.js.",
             "projectType": "Web Application",
             "imagePreviewAlt": "Dashboard Next.js Project Screenshot"
         },
         "prevPortfolio": {
-            "name": "Previous Portfolio",
-            "excerpt": "A showcase of my earlier work and projects.",
-            "description": "A showcase of my earlier work and projects.",
+            "name": "First Portfolio",
+            "excerpt": "Previous portfolio website — My very first portfolio, where I experimented with structure, style, and technology. Simple, but meaningful as the starting point of my professional journey.",
+            "description": "This was my very first portfolio website, built entirely from scratch. While it looks modest compared to my current work, it represents the foundation of my growth as a developer. Here I learned how to structure layouts, experiment with styling, and bring ideas to life on the web. It’s a project I look back on with warmth, as it marks the true beginning of my professional journey.",
             "projectType": "Website",
             "imagePreviewAlt": "Previous Portfolio Project Screenshot"
         },
@@ -85,21 +85,21 @@
             "name": "Email Send Form",
             "excerpt": "A form for sending emails.",
             "description": "A form for sending emails.",
-            "projectType": "Web Application",
+            "projectType": "Web App (SPA)",
             "imagePreviewAlt": "Email Send Form Project Screenshot"
         },
         "aviaTicketsApp": {
             "name": "Avia Tickets App",
             "excerpt": "A web application for searching and booking airline tickets.",
             "description": "A web application for searching and booking airline tickets.",
-            "projectType": "Web Application",
+            "projectType": "Web App (SPA)",
             "imagePreviewAlt": "Avia Tickets App Project Screenshot"
         },
         "karpatyJourney": {
             "name": "Karpaty Journey",
             "excerpt": "A travel blog showcasing the beauty of the Carpathian Mountains.",
             "description": "A travel blog showcasing the beauty of the Carpathian Mountains.",
-            "projectType": "Website",
+            "projectType": "Web App (SPA)",
             "imagePreviewAlt": "Karpaty Journey Project Screenshot"
         },
         "firstWebSite": {
