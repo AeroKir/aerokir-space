@@ -57,6 +57,7 @@
         </article>
       </transition>
     </main>
+    <AppFooter />
   </Page>
 </template>
 
