@@ -21,15 +21,15 @@
           v-if="project"
           :key="project.slug"
         >
-          <h1 class="text-[128px] font-heading font-bold text-primaryDark dark:text-primaryLight">
+          <h1 class="text-[128px] font-heading font-bold text-primaryDark dark:text-accentColor">
             {{ t(project.name) }}
           </h1>
-          <div class="flex gap-4 justify-between mt-6 border-t border-b border-primaryDark dark:border-primaryLight py-4 mb-6">
-            <p class="">
-              <strong>Type:</strong> {{ t(project.projectType) }}
+          <div class="flex gap-4 justify-between mt-6 border-t border-b border-primaryDarkAlpha25 dark:border-primaryLightAlpha25 py-4 mb-6">
+            <p class="uppercase font-body font-bold text-primaryDark dark:text-primaryLight">
+              {{ t(project.projectType) }}
             </p>
-            <p class="">
-              <strong>Years:</strong> {{ project.yearsOfDevelopment }}
+            <p class="uppercase font-body font-bold text-primaryDark dark:text-primaryLight">
+              {{ project.yearsOfDevelopment }}
             </p>
             <a
               v-if="project.linkGitHub"
@@ -44,17 +44,41 @@
               class="text-accentColor underline"
             >Visit site</a>
           </div>
-          <p class="text-lg text-primaryDark dark:text-primaryLight mb-6">
+          <p class="font-body text-lg text-primaryDark dark:text-primaryLight mb-6">
             {{ t(project.description) }}
           </p>
-          <p class="mb-4">
-            <strong>Techstack:</strong> {{ project.technologies.join(', ') }}
+          <p class="flex flex-wrap items-center gap-2 mb-4 font-body text-primaryDark dark:text-primaryLight">
+            <!-- <strong>Techstack:</strong> {{ project.technologies.join(' | ') }} -->
+            <strong class="dark:text-accentColor">Techstack:</strong>
+            <template
+              v-for="(tech, index) in project.technologies"
+              :key="tech"
+            >
+              <span>{{ tech }}</span>
+              <span
+                v-if="index < project.technologies.length - 1"
+                class="text-primaryDarkAlpha25 dark:text-primaryLightAlpha25"
+              >
+                |
+              </span>
+            </template>
           </p>
           <img
             :src="project.image"
             :alt="project.name"
             class="w-full rounded-lg shadow mb-8"
           >
+
+          <ProjectGallery
+            title="Project Screenshots"
+            :screenshots="[
+              { src: '/projects/umlaut/umlaut-main-page.jpg', device: 'Desktop' },
+              { src: '/projects/umlaut/umlaut-main-page.jpg', device: 'Tablet' },
+              { src: '/projects/umlaut/umlaut-main-page.jpg', device: 'Mobile' },
+              { src: '/projects/umlaut/umlaut-main-page.jpg', device: 'Laptop' },
+              { src: '/projects/umlaut/umlaut-main-page.jpg', device: 'Laptop' },
+            ]"
+          />
           <div
             class="mb-4"
           >
