@@ -37,12 +37,21 @@
               target="_blank"
               class="text-accentColor underline"
             >View on GitHub</a>
-            <a
+            <!-- <a
               v-if="project.link"
               :href="project.link"
               target="_blank"
-              class="text-accentColor underline"
-            >Visit site</a>
+              class="text-primaryDark dark:text-primaryLight underline"
+            >Visit site</a> -->
+
+            <div v-if="project.link" class="relative">
+              <a
+                :href="project.link"
+                target="_blank"
+                class="inline-flex items-center text-primaryDark dark:text-primaryLight"
+              >Visit site
+              <ArrowRight class="inline-block w-4 h-4 ml-1 text-primaryDark dark:text-primaryLight" /> <div class="w-8 h-8 rounded-full bg-accentColor"></div></a>
+            </div>
           </div>
           <p class="font-body text-lg text-primaryDark dark:text-primaryLight mb-6">
             {{ t(project.description) }}
@@ -102,6 +111,7 @@
 </template>
 
 <script setup lang="ts">
+import ArrowRight from '../../assets/icons/arrow-right-long-line.svg';
 const route = useRoute();
 const localePath = useLocalePath();
 const { t } = useI18n();
@@ -119,11 +129,11 @@ const formattedScreenshots = computed(() =>
       index === 0
         ? 'desktop'
         : index === 1
-        ? 'laptop'
-        : index === 2
-        ? 'tablet'
-        : 'mobile',
-  }))
+          ? 'laptop'
+          : index === 2
+            ? 'tablet'
+            : 'mobile',
+  })),
 );
 </script>
 
