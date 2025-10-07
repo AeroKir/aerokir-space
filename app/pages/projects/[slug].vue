@@ -110,6 +110,21 @@ const { projects } = useAppConfig();
 const project = computed(() =>
   projects.find((p) => p.slug === route.params.slug),
 );
+
+const formattedScreenshots = computed(() =>
+  (project.value?.screenshots || []).map((src, index) => ({
+    src,
+    alt: `${project.value?.name} screenshot ${index + 1}`,
+    device:
+      index === 0
+        ? 'desktop'
+        : index === 1
+        ? 'laptop'
+        : index === 2
+        ? 'tablet'
+        : 'mobile',
+  }))
+);
 </script>
 
 <style scoped>

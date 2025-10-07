@@ -1,46 +1,31 @@
 <template>
-  <section class="w-full max-w-6xl mx-auto px-4">
-    <div class="grid grid-rows-2 gap-4 h-[600px]">
-      <!-- Row 1: Desktop + Laptop -->
-      <div class="grid grid-cols-2 gap-4">
-        <div class="relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800">
-          <img
-            src="/projects/umlaut/umlaut-main-page.jpg"
-            alt="Desktop view"
-            class="w-full h-full object-contain"
-          />
-        </div>
-        <div class="relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800">
-          <img
-            src="/projects/umlaut/umlaut-main-page.jpg"
-            alt="Laptop view"
-            class="w-full h-full object-contain"
-          />
-        </div>
+  <section class="w-full mx-auto">
+    <div class="grid gap-3 auto-rows-[300px]">
+      <!-- Перше зображення — завжди широке -->
+      <div class="col-span-full relative overflow-hidden rounded-xl group bg-neutral-100 dark:bg-neutral-800 h-[400px]">
+        <img
+          :src="screenshots[0].src"
+          :alt="screenshots[0].device || 'Main Screenshot'"
+          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+        >
       </div>
 
-      <!-- Row 2: Tablet + Mobile -->
-      <div class="grid grid-cols-3 gap-4">
-        <div class="relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800 col-span-1">
+      <!-- Решта зображень -->
+      <div
+        v-if="screenshots.length > 1"
+        class="grid gap-3"
+        :class="gridClass"
+      >
+        <div
+          v-for="(shot, index) in screenshots.slice(1)"
+          :key="index"
+          class="relative overflow-hidden rounded-xl group bg-neutral-100 dark:bg-neutral-800"
+        >
           <img
-            src="/projects/umlaut/umlaut-main-page.jpg"
-            alt="Tablet view"
-            class="w-full h-full object-contain"
-          />
-        </div>
-        <div class="relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800">
-          <img
-            src="/projects/umlaut/umlaut-main-page.jpg"
-            alt="Mobile view 1"
-            class="w-full h-full object-contain"
-          />
-        </div>
-        <div class="relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800">
-          <img
-            src="/projects/umlaut/umlaut-main-page.jpg"
-            alt="Mobile view 2"
-            class="w-full h-full object-contain"
-          />
+            :src="shot.src"
+            :alt="shot.device || `Screenshot ${index + 2}`"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          >
         </div>
       </div>
     </div>
@@ -48,16 +33,26 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
+
+interface Screenshot {
+  src: string;
+  device?: string;
+}
+
 const props = defineProps<{
-  title?: string;
-  screenshots: {
-    src: string;
-    alt?: string;
-    device?: string;
-  }[];
+  screenshots: Screenshot[];
 }>();
 
-// Split screenshots logically
-const firstRow = props.screenshots.slice(0, 2); // desktop + laptop
-const secondRow = props.screenshots.slice(2, 5); // tablet + 2 mobiles
+// Автоматична розкладка для другого ряду
+const gridClass = computed(() => {
+  const count = props.screenshots.length - 1;
+
+  if (count === 1) return 'grid-cols-1 h-[300px]';
+  if (count === 2) return 'grid-cols-2 h-[300px]';
+  if (count === 3) return 'grid-cols-3 h-[300px]';
+  if (count === 4) return 'grid-cols-4 h-[300px]';
+  if (count >= 5) return 'grid-cols-5 h-[300px]';
+  return 'grid-cols-2 h-[300px]';
+});
 </script>
