@@ -35,7 +35,7 @@
               v-if="project.linkGitHub"
               :href="project.linkGitHub"
               target="_blank"
-              class="group flex items-center uppercase font-body font-bold text-primaryDark dark:text-primaryLight transition-colors duration-300 hover:text-primaryDarkAlpha70 dark:hover:text-primaryLightAlpha70 group-cursor-pointer"
+              class="group flex items-center uppercase font-body font-bold text-primaryDark dark:text-primaryLight transition-colors duration-300 hover:text-primaryDarkAlpha70 dark:hover:text-primaryLightAlpha70 cursor-pointer"
             >
               {{ t('pages.projects.projectSlug.github') }}
               <GithubIcon class="relative w-9 h-9 text-primaryDark dark:text-accentColor ml-1 transition-transform duration-500 group-hover:scale-110" />
@@ -44,7 +44,7 @@
               v-if="project.link"
               :href="project.link"
               target="_blank"
-              class="group flex items-center uppercase font-body font-bold text-primaryDark dark:text-primaryLight transition-colors duration-300 hover:text-primaryDarkAlpha70 dark:hover:text-primaryLightAlpha70 group-cursor-pointer"
+              class="group flex items-center uppercase font-body font-bold text-primaryDark dark:text-primaryLight transition-colors duration-300 hover:text-primaryDarkAlpha70 dark:hover:text-primaryLightAlpha70 cursor-pointer"
             >
               {{ t('pages.projects.projectSlug.website') }}
               <ArrowRight class="relative z-10 -right-4 w-10 h-auto text-primaryDark dark:text-primaryLight transition-all duration-500 ease-out group-hover:translate-x-2" />
