@@ -19,7 +19,12 @@
             "title": "Experience"
         },
         "projects": {
-            "title": "Projects"
+            "title": "Projects",
+            "projectSlug": {
+                "github": "Source on GitHub",
+                "website": "Visit site",
+                "techstack": "Techstack"
+            }
         },
         "education": {
             "title": "Education"

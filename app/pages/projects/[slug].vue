@@ -5,7 +5,7 @@
       position="top"
       :height="490"
     /> -->
-    <main class="max-w-3xl mx-auto px-6">
+    <main class="max-w-4xl mx-auto px-6">
       <NuxtLink
         :to="localePath('/projects')"
         class="text-accentColor underline mb-6 inline-block"
@@ -24,7 +24,7 @@
           <h1 class="text-[128px] font-heading font-bold text-primaryDark dark:text-accentColor">
             {{ t(project.name) }}
           </h1>
-          <div class="flex gap-4 justify-between mt-6 border-t border-b border-primaryDarkAlpha25 dark:border-primaryLightAlpha25 py-4 mb-6">
+          <div class="flex items-center gap-4 justify-between mt-6 border-t border-b border-primaryDarkAlpha25 dark:border-primaryLightAlpha25 py-4 mb-6">
             <p class="uppercase font-body font-bold text-primaryDark dark:text-primaryLight">
               {{ t(project.projectType) }}
             </p>
@@ -35,30 +35,27 @@
               v-if="project.linkGitHub"
               :href="project.linkGitHub"
               target="_blank"
-              class="text-accentColor underline"
-            >View on GitHub</a>
-            <!-- <a
+              class="group flex items-center uppercase font-body font-bold text-primaryDark dark:text-primaryLight transition-colors duration-300 hover:text-primaryDarkAlpha70 dark:hover:text-primaryLightAlpha70 group-cursor-pointer"
+            >
+              {{ t('pages.projects.projectSlug.github') }}
+              <GithubIcon class="relative w-9 h-9 text-primaryDark dark:text-accentColor ml-1 transition-transform duration-500 group-hover:scale-110" />
+            </a>
+            <a
               v-if="project.link"
               :href="project.link"
               target="_blank"
-              class="text-primaryDark dark:text-primaryLight underline"
-            >Visit site</a> -->
-
-            <div v-if="project.link" class="relative">
-              <a
-                :href="project.link"
-                target="_blank"
-                class="inline-flex items-center text-primaryDark dark:text-primaryLight"
-              >Visit site
-              <ArrowRight class="inline-block w-4 h-4 ml-1 text-primaryDark dark:text-primaryLight" /> <div class="w-8 h-8 rounded-full bg-accentColor"></div></a>
-            </div>
+              class="group flex items-center uppercase font-body font-bold text-primaryDark dark:text-primaryLight transition-colors duration-300 hover:text-primaryDarkAlpha70 dark:hover:text-primaryLightAlpha70 group-cursor-pointer"
+            >
+              {{ t('pages.projects.projectSlug.website') }}
+              <ArrowRight class="relative z-10 -right-4 w-10 h-auto text-primaryDark dark:text-primaryLight transition-all duration-500 ease-out group-hover:translate-x-2" />
+              <div class="w-8 h-8 rounded-full bg-accentColor transition-transform duration-500 group-hover:scale-110" />
+            </a>
           </div>
           <p class="font-body text-lg text-primaryDark dark:text-primaryLight mb-6">
             {{ t(project.description) }}
           </p>
           <p class="flex flex-wrap items-center gap-2 mb-4 font-body text-primaryDark dark:text-primaryLight">
-            <!-- <strong>Techstack:</strong> {{ project.technologies.join(' | ') }} -->
-            <strong class="dark:text-accentColor">Techstack:</strong>
+            <strong class="dark:text-accentColor">{{ t('pages.projects.projectSlug.techstack') }}:</strong>
             <template
               v-for="(tech, index) in project.technologies"
               :key="tech"
@@ -111,7 +108,9 @@
 </template>
 
 <script setup lang="ts">
-import ArrowRight from '../../assets/icons/arrow-right-long-line.svg';
+import GithubIcon from '~/assets/icons/github.svg';
+import ArrowRight from '~/assets/icons/arrow-right.svg';
+
 const route = useRoute();
 const localePath = useLocalePath();
 const { t } = useI18n();

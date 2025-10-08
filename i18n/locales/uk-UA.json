@@ -19,7 +19,12 @@
             "title": "Досвід"
         },
         "projects": {
-            "title": "Проєкти"
+            "title": "Проєкти",
+            "projectSlug": {
+                "github": "Джерело на GitHub",
+                "website": "Відвідати сайт",
+                "techstack": "Технології"
+            }
         },
         "education": {
             "title": "Освіта"

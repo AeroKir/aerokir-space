@@ -89,7 +89,7 @@ export default defineAppConfig({
       solvedTasks: [],
       yearsOfDevelopment: '2024',
       projectType: 'projects.gifApp.projectType',
-      tags: ['Vue', 'Nuxt', 'TailwindCSS'],
+      tags: ['Vue 3', 'Pinia', 'Vuetify', 'Vite', 'PWA', 'GIPHY API'],
       screenshots: [
         '/projects/ask4games-1.png',
         '/projects/ask4games-2.png',
