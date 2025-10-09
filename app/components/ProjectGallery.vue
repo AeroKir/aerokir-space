@@ -1,16 +1,15 @@
 <template>
   <section class="w-full mx-auto">
-    <div class="grid gap-3 auto-rows-[300px]">
-      <!-- Перше зображення — завжди широке -->
-      <div class="col-span-full relative overflow-hidden rounded-xl group bg-neutral-100 dark:bg-neutral-800 h-[400px]">
+    <div class="grid gap-3 auto-rows-[400px]">
+      <!-- Main image -->
+      <div class="col-span-full relative overflow-hidden group bg-sepiaDarken dark:bg-primaryDarken h-[400px]">
         <img
           :src="screenshots[0].src"
           :alt="screenshots[0].device || 'Main Screenshot'"
-          class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          class="w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         >
       </div>
-
-      <!-- Решта зображень -->
+      <!-- Other images -->
       <div
         v-if="screenshots.length > 1"
         class="grid gap-3"
@@ -19,12 +18,12 @@
         <div
           v-for="(shot, index) in screenshots.slice(1)"
           :key="index"
-          class="relative overflow-hidden rounded-xl group bg-neutral-100 dark:bg-neutral-800"
+          class="relative overflow-hidden group bg-sepiaDarken dark:bg-primaryDarken"
         >
           <img
             :src="shot.src"
             :alt="shot.device || `Screenshot ${index + 2}`"
-            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            class="w-auto h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 mx-auto"
           >
         </div>
       </div>
@@ -44,7 +43,6 @@ const props = defineProps<{
   screenshots: Screenshot[];
 }>();
 
-// Автоматична розкладка для другого ряду
 const gridClass = computed(() => {
   const count = props.screenshots.length - 1;
 

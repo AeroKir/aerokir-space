@@ -69,22 +69,29 @@
               </span>
             </template>
           </p>
-          <img
+          <!-- <img
             :src="project.image"
             :alt="project.name"
             class="w-full rounded-lg shadow mb-8"
-          >
+          > -->
 
-          <ProjectGallery
+          <div v-if="project.screenshots.length > 0">
+            <ProjectGallery
+              title="Project Screenshots"
+              :screenshots="formattedScreenshots"
+            />
+          </div>
+
+          <!-- <ProjectGallery
             title="Project Screenshots"
             :screenshots="[
               { src: '/projects/umlaut/umlaut-main-page.jpg', device: 'Desktop' },
-              { src: '/projects/umlaut/umlaut-main-page.jpg', device: 'Tablet' },
-              { src: '/projects/umlaut/umlaut-main-page.jpg', device: 'Mobile' },
+              { src: '/projects/umlaut/umlaut-tablet.jpg', device: 'Tablet' },
+              { src: '/projects/umlaut/umlaut-mobile.jpg', device: 'Mobile' },
               { src: '/projects/umlaut/umlaut-main-page.jpg', device: 'Laptop' },
               { src: '/projects/umlaut/umlaut-main-page.jpg', device: 'Laptop' },
             ]"
-          />
+          /> -->
           <div
             class="mb-4"
           >
