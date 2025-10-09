@@ -1,6 +1,7 @@
 <template>
   <h1
     class="flex flex-wrap items-baseline font-heading font-bold text-[200px] text-primaryDark dark:text-accentColor m-0 p-0 relative z-10"
+    :class="customClass"
   >
     <span class="inline-flex items-baseline">
       {{ title }}
@@ -16,5 +17,6 @@
 defineProps<{
   title: string;
   isDot?: boolean;
+  customClass?: string;
 }>();
 </script>

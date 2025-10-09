@@ -19,13 +19,103 @@
             "title": "Experience"
         },
         "projects": {
-            "title": "Projects"
+            "title": "Projects",
+            "projectSlug": {
+                "github": "Source on GitHub",
+                "website": "Visit site",
+                "techstack": "Techstack"
+            }
         },
         "education": {
             "title": "Education"
         },
         "contact": {
             "title": "Hello"
+        }
+    },
+    "buttons": {
+        "more": "More"
+    },
+    "projects": {
+        "umlaut": {
+            "name": "Umlaut.Digital",
+            "excerpt": "Dynamic. Minimal. Live. Umlaut.Digital® on the web.",
+            "description": "Together with the design team, we built a modern digital showcase for Umlaut Digital. While the designers focused on UI/UX, I handled the full technical delivery: building the frontend architecture, implementing pixel-perfect layouts, adding smooth animations, and optimizing performance. The result is a fast, stable, and production-ready website that helps the agency present itself to clients at the highest level.",
+            "projectType": "Website",
+            "imagePreviewAlt": "Umlaut Digital Project Screenshot"
+        },
+        "ask4games": {
+            "name": "Ask4Games",
+            "excerpt": "Ask4Games — your gateway to the world of gaming and esports.",
+            "description": "Ask4Games is a vibrant digital hub for gamers of all kinds — from console and mobile players to esports fans. The portal brings together news, reviews, and community-driven content in a dynamic, engaging format. My role was the full technical implementation: building a scalable frontend, optimizing performance, and ensuring a smooth, interactive experience for every visitor.",
+            "projectType": "Web Portal",
+            "imagePreviewAlt": "Ask4Games Project Screenshot"
+        },
+        "dopomoga": {
+            "name": "Dopomoga",
+            "excerpt": "An information portal for internally displaced persons in Ukraine, providing quick access to vital resources and support.",
+            "description": "This project was built to support internally displaced persons in Ukraine. The portal brings together key information, contacts, and resources in one accessible place. Its goal is to simplify the adaptation process and ensure quick, clear access to assistance. With a structured approach and user-friendly interface, the website serves as an effective support tool for people facing challenging circumstances.",
+            "projectType": "Web Portal",
+            "imagePreviewAlt": "Dopomoga Project Screenshot"
+        },
+        "gifApp": {
+            "name": "GIF App",
+            "excerpt": "A PWA app for searching and sharing GIF animations.",
+            "description": "A progressive web app (PWA) designed for fast search and easy sharing of GIF animations. Developed as a test assignment for a company, with a focus on performance, user-friendly interface, and modern frontend technologies.",
+            "projectType": "Web App (PWA)",
+            "imagePreviewAlt": "GIF App Project Screenshot"
+        },
+        "dashboardNextJs": {
+            "name": "CRM Dashboard",
+            "excerpt": "A modern CRM dashboard application built with Next.js, featuring a clean interface, smooth interactions, and scalable architecture.",
+            "description": "A modern dashboard application built with Next.js.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Dashboard Next.js Project Screenshot"
+        },
+        "prevPortfolio": {
+            "name": "First Portfolio",
+            "excerpt": "Previous portfolio website — My very first portfolio, where I experimented with structure, style, and technology. Simple, but meaningful as the starting point of my professional journey.",
+            "description": "This was my very first portfolio website, built entirely from scratch. While it looks modest compared to my current work, it represents the foundation of my growth as a developer. Here I learned how to structure layouts, experiment with styling, and bring ideas to life on the web. It’s a project I look back on with warmth, as it marks the true beginning of my professional journey.",
+            "projectType": "Website",
+            "imagePreviewAlt": "Previous Portfolio Project Screenshot"
+        },
+        "dashboardRandomUser": {
+            "name": "Dashboard Random User",
+            "excerpt": "A dashboard application for displaying random user data.",
+            "description": "A dashboard application for displaying random user data.",
+            "projectType": "Web Application",
+            "imagePreviewAlt": "Dashboard Random User Project Screenshot"
+        },
+        "emailSendForm": {
+            "name": "Email Send Form",
+            "excerpt": "A form for sending emails.",
+            "description": "A form for sending emails.",
+            "projectType": "Web App (SPA)",
+            "imagePreviewAlt": "Email Send Form Project Screenshot"
+        },
+        "aviaTicketsApp": {
+            "name": "Avia Tickets App",
+            "excerpt": "A web application for searching and booking airline tickets.",
+            "description": "A web application for searching and booking airline tickets.",
+            "projectType": "Web App (SPA)",
+            "imagePreviewAlt": "Avia Tickets App Project Screenshot"
+        },
+        "karpatyJourney": {
+            "name": "Karpaty Journey",
+            "excerpt": "A travel blog showcasing the beauty of the Carpathian Mountains.",
+            "description": "A travel blog showcasing the beauty of the Carpathian Mountains.",
+            "projectType": "Web App (SPA)",
+            "imagePreviewAlt": "Karpaty Journey Project Screenshot"
+        },
+        "firstWebSite": {
+            "name": "First Website",
+            "excerpt": "My first website, created as a personal project. It may look naive now, but I still love this work.",
+            "excerpt1": "My very first website — a small personal project. It feels a bit naive today, but it carries the spark that started my journey into web development.",
+            "excerpt2": "This was my very first website. Simple and a little rough around the edges, but it marks the beginning of everything I’ve built since.",
+            "excerpt3": "My first-ever website. Naive in style, but full of the passion that pushed me forward.",
+            "description": "My very first website created as a personal project.",
+            "projectType": "Website",
+            "imagePreviewAlt": "First Website Project Screenshot"
         }
     }
 }

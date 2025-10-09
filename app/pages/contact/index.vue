@@ -27,7 +27,7 @@
             :href="social.href"
             target="_blank"
             rel="noopener noreferrer"
-            class="hover:underline text-primaryDark dark:text-primaryLight"
+            class="hover:underline text-primaryDark dark:text-primaryLight transition-colors duration-100"
           >
             {{ social.display }}
           </a>
