@@ -5,7 +5,7 @@
       position="top"
       :height="490"
     /> -->
-    <main class="max-w-4xl mx-auto px-6">
+    <main class="max-w-4xl mx-auto px-6 relative z-50 -mt-10">
       <NuxtLink
         :to="localePath('/projects')"
         class="text-accentColor underline mb-6 inline-block"
