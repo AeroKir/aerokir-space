@@ -40,7 +40,7 @@
         />
       </div>
 
-      <p class="absolute left-[60px] bottom-[60px] max-w-[569px] text-2xl font-body text-[#1D1A31] dark:text-primaryLight z-40">
+      <p class="absolute left-[60px] bottom-[60px] max-w-[569px] text-2xl font-body text-primaryDark dark:text-primaryLight z-40 [text-shadow:0_1px_2px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">
         {{ t(props.excerpt) }}
       </p>
     </div>
