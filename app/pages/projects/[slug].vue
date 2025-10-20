@@ -21,7 +21,7 @@
           v-if="project"
           :key="project.slug"
         >
-          <h1 class="text-[128px] font-heading font-bold text-primaryDark dark:text-accentColor">
+          <h1 class="text-[128px]/[128px] font-heading font-bold text-primaryDark dark:text-accentColor">
             {{ t(project.name) }}
           </h1>
           <div class="flex items-center gap-4 justify-between mt-6 border-t border-b border-primaryDarkAlpha25 dark:border-primaryLightAlpha25 py-4 mb-6">
