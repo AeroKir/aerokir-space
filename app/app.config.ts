@@ -103,7 +103,7 @@ export default defineAppConfig({
     },
     {
       id: 5,
-      slug: 'nextjs-dashboard',
+      slug: 'dashboard-crm',
       name: 'projects.dashboardNextJs.name',
       excerpt: 'projects.dashboardNextJs.excerpt',
       description: 'projects.dashboardNextJs.description',
@@ -126,7 +126,7 @@ export default defineAppConfig({
     },
     {
       id: 6,
-      slug: 'previous-portfolio',
+      slug: 'first-portfolio',
       name: 'projects.prevPortfolio.name',
       excerpt: 'projects.prevPortfolio.excerpt',
       description: 'projects.prevPortfolio.description',
@@ -151,10 +151,10 @@ export default defineAppConfig({
     },
     {
       id: 7,
-      slug: 'randomuser-test-task',
-      name: 'Random user test task',
-      excerpt: 'Random user test task description',
-      description: 'Random user test task description',
+      slug: 'user-crm',
+      name: 'projects.dashboardRandomUser.name',
+      excerpt: 'projects.dashboardRandomUser.excerpt',
+      description: 'projects.dashboardRandomUser.description',
       link: 'https://aerokir.github.io/randomuser-test/',
       linkGitHub: 'https://github.com/AeroKir/randomuser-test',
       image: '/projects/random-user/random-user.jpg',
@@ -163,7 +163,7 @@ export default defineAppConfig({
       technologies: ['React', 'Redux', 'React router', 'JavaScript', 'CSS', 'Ant Design', 'GitHub pages'],
       solvedTasks: [],
       yearsOfDevelopment: '2020',
-      projectType: 'Website',
+      projectType: 'projects.dashboardRandomUser.projectType',
       tags: ['React', 'Redux', 'React router', 'JavaScript', 'CSS', 'Ant Design', 'GitHub pages'],
       screenshots: [
         '/projects/random-user/random-user.jpg',
@@ -199,7 +199,7 @@ export default defineAppConfig({
     },
     {
       id: 9,
-      slug: 'avia-tickets-app',
+      slug: 'flight-filter-app',
       name: 'projects.aviaTicketsApp.name',
       excerpt: 'projects.aviaTicketsApp.excerpt',
       description: 'projects.aviaTicketsApp.description',

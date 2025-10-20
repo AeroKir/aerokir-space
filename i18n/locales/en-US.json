@@ -80,30 +80,30 @@
             "imagePreviewAlt": "Previous Portfolio Project Screenshot"
         },
         "dashboardRandomUser": {
-            "name": "Dashboard Random User",
-            "excerpt": "A dashboard application for displaying random user data.",
-            "description": "A dashboard application for displaying random user data.",
+            "name": "Users' CRM",
+            "excerpt": "A dashboard application for displaying user data.",
+            "description": "A dashboard application for displaying user data.",
             "projectType": "Web Application",
             "imagePreviewAlt": "Dashboard Random User Project Screenshot"
         },
         "emailSendForm": {
             "name": "Email Send Form",
-            "excerpt": "A form for sending emails.",
+            "excerpt": "Email form with attachments. Fast, simple, user-friendly.",
             "description": "A form for sending emails.",
             "projectType": "Web App (SPA)",
             "imagePreviewAlt": "Email Send Form Project Screenshot"
         },
         "aviaTicketsApp": {
-            "name": "Avia Tickets App",
-            "excerpt": "A web application for searching and booking airline tickets.",
+            "name": "Flight Filter App",
+            "excerpt": "An application for searching for airline tickets with a filter by the number of stops.",
             "description": "A web application for searching and booking airline tickets.",
             "projectType": "Web App (SPA)",
             "imagePreviewAlt": "Avia Tickets App Project Screenshot"
         },
         "karpatyJourney": {
             "name": "Karpaty Journey",
-            "excerpt": "A travel blog showcasing the beauty of the Carpathian Mountains.",
-            "description": "A travel blog showcasing the beauty of the Carpathian Mountains.",
+            "excerpt": "Several mountain routes through the Ukrainian Carpathians on a map with photos and descriptions.",
+            "description": "Several mountain routes through the Ukrainian Carpathians on a map with photos and descriptions.",
             "projectType": "Web App (SPA)",
             "imagePreviewAlt": "Karpaty Journey Project Screenshot"
         },
