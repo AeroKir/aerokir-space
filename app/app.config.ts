@@ -92,7 +92,7 @@ export default defineAppConfig({
       solvedTasks: [],
       yearsOfDevelopment: '2024',
       projectType: 'projects.gifApp.projectType',
-      tags: ['Vue 3', 'Pinia', 'Vuetify', 'Vite', 'PWA', 'GIPHY API'],
+      tags: ['Vue 3', 'Pinia', 'Vuetify', 'Vite', 'PWA', 'GIPHY API', 'GitHub pages'],
       screenshots: [
         '/projects/gif-app/gif-app.jpg',
         '/projects/gif-app/gif-app-tablet.jpg',
@@ -112,7 +112,7 @@ export default defineAppConfig({
       image: '/projects/nextjs/next-js-dashboard.jpg',
       imageAlt: 'Next.js dashboard project screenshot',
       previewVideo: '/projects/nextjs/crm-next-video.mp4',
-      technologies: ['Next.js', 'TailwindCSS', 'React', 'Pinia', 'Vitest', 'Vite'],
+      technologies: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Vercel'],
       solvedTasks: [],
       yearsOfDevelopment: '2024',
       projectType: 'projects.dashboardNextJs.projectType',
