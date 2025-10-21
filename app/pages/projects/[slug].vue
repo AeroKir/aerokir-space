@@ -5,7 +5,7 @@
       position="top"
       :height="490"
     /> -->
-    <main class="max-w-4xl mx-auto px-6">
+    <main class="max-w-4xl mx-auto px-6 relative z-50 -mt-10">
       <NuxtLink
         :to="localePath('/projects')"
         class="text-accentColor underline mb-6 inline-block"
@@ -21,7 +21,7 @@
           v-if="project"
           :key="project.slug"
         >
-          <h1 class="text-[128px] font-heading font-bold text-primaryDark dark:text-accentColor">
+          <h1 class="text-[128px]/[128px] font-heading font-bold text-primaryDark dark:text-accentColor">
             {{ t(project.name) }}
           </h1>
           <div class="flex items-center gap-4 justify-between mt-6 border-t border-b border-primaryDarkAlpha25 dark:border-primaryLightAlpha25 py-4 mb-6">

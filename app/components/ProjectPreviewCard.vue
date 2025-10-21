@@ -1,23 +1,16 @@
 <template>
-  <article class="w-[1355px] h-auto relative mb-24">
-    <h2 class="absolute -top-[128px] left-0 text-[128px] font-heading font-bold text-primaryDark dark:text-primaryLight z-40">
-      <!-- {{ props.title }} -->
+  <article class="w-screen w-screen 2xl:w-[1355px] h-auto relative mb-24">
+    <h2 class="absolute 2xl:-top-[110px] left-0 text-4xl 2xl:text-[128px]/[128px] font-heading font-bold text-primaryDark dark:text-primaryLight z-40">
       <NuxtLink :to="localePath(`/projects/${slug}`)">
         {{ t(props.title) }}
       </NuxtLink>
     </h2>
 
-    <p class="flex items-center absolute top-[7%] right-0 uppercase text-2xl font-body z-40">
-      {{ props.yearsOfDevelopment }} <span class="w-3 h-3 inline-block bg-primaryDark dark:bg-primaryLight rounded-full ml-[15px] mr-[10px]" /> {{ t(props.projectType) }}
+    <p class="flex items-center absolute top-[7%] right-0 uppercase text-sm 2xl:text-2xl font-body z-40 [text-shadow:0_1px_2px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">
+      {{ props.yearsOfDevelopment }} <span class="w-3 h-3 inline-block bg-primaryDark dark:bg-primaryLight rounded-full ml-[15px] mr-[10px] shadow-[0_1px_2px_#9DA3A4] dark:shadow-[0_2px_3px_#000000]" /> {{ t(props.projectType) }}
     </p>
-    <div class="relative w-[1120px] h-[550px] bg-sepiaDarken dark:bg-primaryDarken ml-[145px] py-9 px-6 mb-4 flex justify-center items-center">
-      <!-- <img
-        :src="props.image"
-        alt="props.imageAlt"
-        class="w-[836px] h-auto object-cover mb-2"
-      > -->
-
-      <div class="relative group w-[836px] h-auto">
+    <div class="relative w-screen 2xl:w-[1120px] 2xl:h-[550px] bg-sepiaDarken dark:bg-primaryDarken md:ml-[145px] py-9 px-6 mb-10 last:mb-0 flex justify-center items-center">
+      <div class="relative group w-screen 2xl:w-[836px] h-auto">
         <video
           :src="props.previewVideo"
           class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"
@@ -40,24 +33,14 @@
         />
       </div>
 
-      <p class="absolute left-[60px] bottom-[60px] max-w-[569px] text-2xl font-body text-[#1D1A31] dark:text-primaryLight z-40">
+      <p class="absolute left-[60px] bottom-[60px] max-w-[569px] text-sm 2xl:text-2xl font-body text-primaryDark dark:text-primaryLight z-40 [text-shadow:0_1px_2px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">
         {{ t(props.excerpt) }}
       </p>
     </div>
 
-    <!-- <NuxtLink
-      :to="localePath(`/projects/${slug}`)"
-      class="absolute w-[180px] h-[180px] rounded-full bg-primaryDark dark:bg-primaryLight bottom-[30px] right-[1%] text-xl z-40"
-    >
-      <IconArrowTopRight
-        class="absolute w-[90px] h-auto right-1/2 top-1/2 translate-x-1/2 -translate-y-1/2 text-accentColor dark:text-primaryDark z-50"
-      />
-      <span class="absolute bottom-[20%] right-[20%] text-primaryLight dark:text-accentColor text-xl font-body uppercase">More</span>
-    </NuxtLink> -->
-
     <NuxtLink
       :to="localePath(`/projects/${slug}`)"
-      class="group absolute w-[180px] h-[180px] rounded-full bg-primaryDark dark:bg-primaryLight
+      class="group absolute w-12 h-12 md:w-[180px] md:h-[180px] rounded-full bg-primaryDark dark:bg-primaryLight
          bottom-[30px] right-[1%] text-xl z-40
          transition-colors duration-300 ease-in-out"
     >
@@ -81,15 +64,6 @@
         {{ t('buttons.more') }}
       </span>
     </NuxtLink>
-
-    <!-- <a
-      :href="props.link"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-accentColor underline"
-    >
-      Link
-    </a> -->
   </article>
 </template>
 

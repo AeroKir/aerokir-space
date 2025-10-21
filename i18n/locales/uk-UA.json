@@ -34,7 +34,8 @@
         }
     },
     "buttons": {
-        "more": "Більше"
+        "more": "Більше",
+        "toggleMenu": "Перемкнути меню"
     },
     "projects": {
         "umlaut": {
@@ -59,7 +60,7 @@
             "imagePreviewAlt": "Dopomoga Project Screenshot"
         },
         "gifApp": {
-            "name": "GIF App",
+            "name": "GIF додаток",
             "excerpt": "PWA-додаток для пошуку та обміну GIF-анімаціями.",
             "description": "Веб-додаток (PWA), створений для швидкого пошуку та зручного обміну GIF-анімаціями. Реалізовано як тестове завдання для компанії, з акцентом на продуктивність, зручний інтерфейс та сучасні технології фронтенду.",
             "projectType": "Веб-додаток (PWA)",
@@ -80,30 +81,30 @@
             "imagePreviewAlt": "Previous Portfolio Project Screenshot"
         },
         "dashboardRandomUser": {
-            "name": "Dashboard Random User",
-            "excerpt": "Дашборд-застосунок для відображення випадкових даних користувачів",
-            "description": "A dashboard application for displaying random user data.",
-            "projectType": "Web Application",
+            "name": "CRM користувачів",
+            "excerpt": "Дашборд-застосунок для відображення даних користувачів.",
+            "description": "Дашборд-застосунок для відображення даних користувачів.",
+            "projectType": "Веб-додаток",
             "imagePreviewAlt": "Dashboard Random User Project Screenshot"
         },
         "emailSendForm": {
-            "name": "Email Send Form",
-            "excerpt": "Форма для відправки електронних листів",
-            "description": "A form for sending emails.",
+            "name": "Надіслати e-mail",
+            "excerpt": "Форма для надсилання e-mail із вкладеннями. Швидко, просто, зручно.",
+            "description": "Форма для надсилання електронних листів.",
             "projectType": "Веб-додаток (SPA)",
             "imagePreviewAlt": "Email Send Form Project Screenshot"
         },
         "aviaTicketsApp": {
-            "name": "Avia Tickets App",
-            "excerpt": "Вебзастосунок для пошуку та бронювання авіаквитків",
-            "description": "A web application for searching and booking airline tickets.",
+            "name": "Фільтр авіа рейсів",
+            "excerpt": "Додаток для пошуку авіаквитків з фільтром за кількістю пересадок.",
+            "description": "Застосунок для пошуку авіаквитків із фільтром пересадок.",
             "projectType": "Веб-додаток (SPA)",
             "imagePreviewAlt": "Avia Tickets App Project Screenshot"
         },
         "karpatyJourney": {
-            "name": "Karpaty Journey",
-            "excerpt": "Тревел-блог, що демонструє красу Карпатських гір",
-            "description": "A travel blog showcasing the beauty of the Carpathian Mountains.",
+            "name": "Подорож Карпатами",
+            "excerpt": "Декілька гірських маршрутів Українськими Карпатами на мапі із фотографіями та описами.",
+            "description": "Декілька гірських маршрутів Українськими Карпатами на мапі із фотографіями та описами.",
             "projectType": "Веб-додаток (SPA)",
             "imagePreviewAlt": "Karpaty Journey Project Screenshot"
         },
