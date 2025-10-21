@@ -34,7 +34,8 @@
         }
     },
     "buttons": {
-        "more": "Більше"
+        "more": "Більше",
+        "toggleMenu": "Перемкнути меню"
     },
     "projects": {
         "umlaut": {

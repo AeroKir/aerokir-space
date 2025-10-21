@@ -34,7 +34,8 @@
         }
     },
     "buttons": {
-        "more": "More"
+        "more": "More",
+        "toggleMenu": "Toggle Menu"
     },
     "projects": {
         "umlaut": {
