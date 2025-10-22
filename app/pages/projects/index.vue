@@ -1,15 +1,15 @@
 <template>
   <Page>
     <AppHeader />
-    <main class="h-full mx-auto 2xl:ml-[283px] 2xl:mr-[265px] -top-10 text-primaryDark dark:text-primaryLight relative lg:z-50 px-2 md:px-0">
-      <div class="relative max-w-[1040px] h-auto left-1/2 -translate-x-1/2 pb-[70px]">
+    <main class="h-full mx-auto 2xl:ml-[283px] 2xl:mr-[265px] md:-top-10 text-primaryDark dark:text-primaryLight relative lg:z-50 px-2 md:px-0">
+      <div class="relative max-w-[1040px] h-auto left-1/2 -translate-x-1/2 md:pb-[70px]">
         <HeadingPage
           :title="$t('pages.projects.title')"
           :isDot="true"
-          customClass="ml-[0] mb-[100px]"
+          customClass="ml-[0] md:mb-[100px] pt-6 md:pt-0"
         />
         <IconPyramidVertical
-          class="w-[343px] h-[343px] absolute top-[23px] right-24 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"
+          class="w-[100px] h-[100px] md:w-[343px] md:h-[343px] absolute top-8 md:top-[23px] right-8 md:right-24 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"
         />
       </div>
 
@@ -26,7 +26,7 @@
           :image="project.image"
           :imageAlt="project.name"
           :previewVideo="project.previewVideo"
-          class="project-card transition-all duration-500 opacity-40 blur-[2px] scale-95 last:mb-0"
+          class="project-card transition-all duration-500 opacity-40 blur-[2px] scale-95 first:mt-24 last:mb-0"
         />
       </section>
     </main>
