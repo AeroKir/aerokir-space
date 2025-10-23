@@ -11,21 +11,25 @@
     </p>
     <div class="relative w-[88vw] 2xl:w-[1120px] 2xl:h-[550px] bg-sepiaDarken dark:bg-primaryDarken md:ml-[145px] py-9 px-6 mb-10 last:mb-0 flex justify-center items-center">
       <div class="relative group w-full 2xl:w-[836px] h-auto">
-        <video
-          :src="props.previewVideo"
-          class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"
-          autoplay
-          loop
-          muted
-          playsinline
-          preload="auto"
-        />
-
-        <img
-          :src="props.image"
-          :alt="props.imageAlt"
-          class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0 relative z-20"
+        <NuxtLink
+          :to="localePath(`/projects/${slug}`)"
         >
+          <video
+            :src="props.previewVideo"
+            class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="auto"
+          />
+
+          <img
+            :src="props.image"
+            :alt="props.imageAlt"
+            class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0 relative z-20"
+          >
+        </NuxtLink>
 
         <div
           aria-hidden="true"
