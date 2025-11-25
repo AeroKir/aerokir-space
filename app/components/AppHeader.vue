@@ -43,7 +43,7 @@ const handleScroll = () => {
 };
 
 const handleResize = () => {
-  isMobile.value = window.innerWidth < 768;
+  isMobile.value = window.innerWidth < 1024;
   if (!isMobile.value) isScrolled.value = false; // reset blur when back to desktop
 };
 
