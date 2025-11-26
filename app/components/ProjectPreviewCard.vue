@@ -1,15 +1,15 @@
 <template>
-  <article class="w-[95vw] 2xl:w-[1355px] h-auto relative mb-16 md:mb-24 px-4 md:px-0">
-    <h2 class="absolute -top-8 2xl:-top-[110px] left-2 md:left-0 text-4xl 2xl:text-[128px]/[128px] font-heading font-bold text-primaryDark dark:text-primaryLight z-40">
+  <article class="w-[95vw] 2xl:w-[1355px] h-auto relative mb-16 md:mb-24 px-4 lg:px-0">
+    <h2 class="absolute -top-8 2xl:-top-[110px] left-2 lg:left-0 text-4xl md:text-6xl 2xl:text-[128px]/[128px] font-heading font-bold text-primaryDark dark:text-primaryLight z-40">
       <NuxtLink :to="localePath(`/projects/${slug}`)">
         {{ t(props.title) }}
       </NuxtLink>
     </h2>
 
-    <p class="flex items-center absolute top-3 md:top-[7%] right-2 md:right-0 uppercase text-sm 2xl:text-2xl font-body z-40 [text-shadow:0_1px_2px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">
+    <p class="flex items-center absolute top-3 md:top-[7%] right-2 lg:right-0 uppercase text-sm 2xl:text-2xl font-body z-40 [text-shadow:0_1px_2px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">
       {{ props.yearsOfDevelopment }} <span class="w-3 h-3 inline-block bg-primaryDark dark:bg-primaryLight rounded-full ml-[15px] mr-[10px] shadow-[0_1px_2px_#9DA3A4] dark:shadow-[0_2px_3px_#000000]" /> {{ t(props.projectType) }}
     </p>
-    <div class="relative w-[88vw] 2xl:w-[1120px] 2xl:h-[550px] bg-sepiaDarken dark:bg-primaryDarken md:ml-[145px] py-9 px-6 mb-10 last:mb-0 flex justify-center items-center">
+    <div class="relative w-[88vw] 2xl:w-[1120px] 2xl:h-[550px] bg-sepiaDarken dark:bg-primaryDarken lg:ml-[145px] py-9 px-6 mb-10 last:mb-0 flex justify-center items-center">
       <div class="relative group w-full 2xl:w-[836px] h-auto">
         <NuxtLink
           :to="localePath(`/projects/${slug}`)"
@@ -44,7 +44,7 @@
 
     <NuxtLink
       :to="localePath(`/projects/${slug}`)"
-      class="group absolute w-20 h-20 md:w-[180px] md:h-[180px] rounded-full bg-primaryDark dark:bg-primaryLight
+      class="group absolute w-20 h-20 md:w-[150px] md:h-[150px] lg:w-[180px] lg:h-[180px] rounded-full bg-primaryDark dark:bg-primaryLight
          bottom-[30px] right-[1%] text-xl z-40
          transition-colors duration-300 ease-in-out"
     >

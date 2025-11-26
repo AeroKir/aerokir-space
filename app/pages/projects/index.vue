@@ -1,16 +1,17 @@
 <template>
   <Page>
     <AppHeader />
-    <main class="h-full mx-auto 2xl:ml-[283px] 2xl:mr-[265px] md:-top-10 text-primaryDark dark:text-primaryLight relative lg:z-50 px-2 md:px-0">
-      <div class="relative max-w-[1040px] h-auto left-1/2 -translate-x-1/2 md:pb-[70px]">
+    <main class="h-full mx-auto 2xl:ml-[283px] 2xl:mr-[265px] md:-top-10 text-primaryDark dark:text-primaryLight relative lg:z-50 px-2 lg:px-0">
+      <div class="relative max-w-[1040px] h-auto left-1/2 -translate-x-1/2 lg:pb-[70px]">
         <HeadingPage
           :title="$t('pages.projects.title')"
           :isDot="true"
-          customClass="ml-[0] md:mb-[100px] pt-6 md:pt-0"
-        />
-        <IconPyramidVertical
-          class="w-[100px] h-[100px] md:w-[343px] md:h-[343px] absolute top-8 md:top-[23px] right-8 md:right-24 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"
-        />
+          customClass="ml-[0] md:-ml-[10px] lg:ml-0 mb-4 md:mb-[100px] pt-6 md:mt-12 lg:mt-0 lg:pt-0"
+        >
+          <IconPyramidVertical
+            class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[343px] lg:h-[343px] absolute top-1 md:top-6 lg:top-[23px] -right-[80px] md:-right-[105px] lg:-right-[185px] text-primaryDarkAlpha25 dark:text-primaryLightAlpha50 z-0"
+          />
+        </HeadingPage>
       </div>
 
       <section class="relative flex flex-col md:gap-12">
