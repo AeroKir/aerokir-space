@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed top-0 left-0 right-0 z-50 flex justify-end items-center lg:items-start gap-4 px-4 lg:px-20 pt-6 lg:pt-20 pb-1 lg:pb-12
+    class="fixed top-0 left-0 right-0 z-50 flex justify-end items-center xl:items-start gap-4 px-4 md:px-8 xl:px-20 pt-6 xl:pt-20 pb-1 xl:pb-12
            transition-all duration-500"
     :class="[
       headerClass,
@@ -14,7 +14,7 @@
       aria-label="Home"
     >
       <IconLogo
-        class="w-6 h-6 absolute left-4 lg:left-[93px] top-6 text-primaryDark dark:text-accentColor hover:text-primaryDark/80 dark:hover:text-accentColor/80 transition-colors"
+        class="w-6 h-6 absolute left-4 md:left-7 xl:left-[93px] top-6 text-primaryDark dark:text-accentColor hover:text-primaryDark/80 dark:hover:text-accentColor/80 transition-colors"
       />
     </NuxtLink>
 
@@ -43,7 +43,7 @@ const handleScroll = () => {
 };
 
 const handleResize = () => {
-  isMobile.value = window.innerWidth < 1024;
+  isMobile.value = window.innerWidth < 1280; // Tailwind's 'xl' breakpoint
   if (!isMobile.value) isScrolled.value = false; // reset blur when back to desktop
 };
 
