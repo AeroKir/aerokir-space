@@ -1,16 +1,16 @@
 <template>
-  <article class="w-[95vw] 2xl:w-[1355px] h-auto relative mb-16 md:mb-24 px-4 md:px-0">
-    <h2 class="absolute -top-8 2xl:-top-[110px] left-2 md:left-0 text-4xl 2xl:text-[128px]/[128px] font-heading font-bold text-primaryDark dark:text-primaryLight z-40">
+  <article class="w-[95vw] xl:w-[55vw] 2xl:w-[1355px] h-auto relative mb-16 md:mb-24 px-4 lg:px-0">
+    <h2 class="absolute -top-8 md:-top-12 xl:-top-16 2xl:-top-[110px] left-2 lg:-left-6 xl:left-10 2xl:left-0 text-4xl md:text-6xl xl:text-[76px]/[76px] 2xl:text-[128px]/[128px] font-heading font-bold text-primaryDark dark:text-primaryLight z-40">
       <NuxtLink :to="localePath(`/projects/${slug}`)">
         {{ t(props.title) }}
       </NuxtLink>
     </h2>
 
-    <p class="flex items-center absolute top-3 md:top-[7%] right-2 md:right-0 uppercase text-sm 2xl:text-2xl font-body z-40 [text-shadow:0_1px_2px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">
+    <p class="flex items-center absolute top-3 md:top-1 lg:top-[2%] xl:top-[7%] right-2 md:right-6 lg:right-20 xl:-right-[20%] 2xl:right-0 uppercase text-sm md:text-base 2xl:text-2xl font-body z-40 [text-shadow:0_1px_2px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">
       {{ props.yearsOfDevelopment }} <span class="w-3 h-3 inline-block bg-primaryDark dark:bg-primaryLight rounded-full ml-[15px] mr-[10px] shadow-[0_1px_2px_#9DA3A4] dark:shadow-[0_2px_3px_#000000]" /> {{ t(props.projectType) }}
     </p>
-    <div class="relative w-[88vw] 2xl:w-[1120px] 2xl:h-[550px] bg-sepiaDarken dark:bg-primaryDarken md:ml-[145px] py-9 px-6 mb-10 last:mb-0 flex justify-center items-center">
-      <div class="relative group w-full 2xl:w-[836px] h-auto">
+    <div class="relative w-[88vw] lg:w-[85vw] xl:w-[55vw] 2xl:w-[1120px] 2xl:h-[550px] bg-sepiaDarken dark:bg-primaryDarken xl:ml-20 2xl:ml-[145px] py-9 px-6 mb-10 last:mb-0 flex justify-center items-center">
+      <div class="relative group w-full md:w-[70vw] xl:w-[600px] 2xl:w-[836px] h-auto">
         <NuxtLink
           :to="localePath(`/projects/${slug}`)"
         >
@@ -37,15 +37,15 @@
         />
       </div>
 
-      <p class="absolute left-1 md:left-[60px] bottom-10 md:bottom-[60px] max-w-[70%] md:max-w-[569px] text-xs md:text-sm 2xl:text-2xl font-body text-primaryDark dark:text-primaryLight z-40 [text-shadow:0_1px_2px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">
+      <p class="absolute left-1 lg:left-[60px] bottom-10 md:bottom-[60px] max-w-[70%] lg:max-w-[569px] text-xs md:text-lg 2xl:text-2xl font-body text-primaryDark dark:text-primaryLight z-40 [text-shadow:0_1px_2px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">
         {{ t(props.excerpt) }}
       </p>
     </div>
 
     <NuxtLink
       :to="localePath(`/projects/${slug}`)"
-      class="group absolute w-20 h-20 md:w-[180px] md:h-[180px] rounded-full bg-primaryDark dark:bg-primaryLight
-         bottom-[30px] right-[1%] text-xl z-40
+      class="group absolute w-20 h-20 md:w-[150px] md:h-[150px] lg:w-[180px] lg:h-[180px] rounded-full bg-primaryDark dark:bg-primaryLight
+         bottom-[30px] right-[1%] md:right-[3%] lg:right-[7%] xl:-right-[20%] 2xl:right-[1%] text-xl z-40
          transition-colors duration-300 ease-in-out"
     >
       <!-- Arrow -->

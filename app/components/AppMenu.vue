@@ -1,5 +1,5 @@
 <template>
-  <nav class="hidden lg:flex flex-col gap-4 mr-auto">
+  <nav class="hidden xl:flex flex-col gap-4 mr-auto">
     <ul>
       <li
         v-for="(link, i) in menuLinks"
@@ -24,7 +24,7 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <nav class="flex lg:hidden items-center">
+  <nav class="flex xl:hidden items-center">
     <button
       class="p-2 text-primaryDark dark:text-primaryLight focus:outline-none transition-transform duration-500"
       :aria-expanded="isOpen"
