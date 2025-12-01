@@ -1,6 +1,6 @@
 <template>
   <button
-    class="w-8 h-8 mr-1"
+    class="w-8 h-8 mr-1 relative"
     @click="toggleTheme"
   >
     <IconSun

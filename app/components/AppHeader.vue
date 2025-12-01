@@ -20,7 +20,7 @@
 
     <AppMenu />
 
-    <div class="flex items-center">
+    <div class="flex items-center relative">
       <ThemeSwitcher />
       <LangSwitcher />
     </div>
