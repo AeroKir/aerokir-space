@@ -15,6 +15,9 @@ export default {
         heading: ['Play', 'sans-serif'], // H1, H2, etc.
         body: ['Inter', 'sans-serif'], // Paragraphs, default text
       },
+      screens: {
+        '3xl': '120rem', // 1920px
+      },
     },
   },
   plugins: [],
