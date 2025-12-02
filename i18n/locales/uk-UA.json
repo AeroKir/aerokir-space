@@ -20,6 +20,7 @@
         },
         "projects": {
             "title": "Проєкти",
+            "titleSingular": "Проєкт",
             "projectSlug": {
                 "github": "Джерело на GitHub",
                 "website": "Відвідати сайт",
@@ -38,6 +39,8 @@
         "toggleMenu": "Перемкнути меню"
     },
     "projects": {
+        "titleAbout": "Про проєкт:",
+        "titlePerformedTasks": "Виконані завдання та результати:",
         "umlaut": {
             "name": "Umlaut.Digital",
             "excerpt": "Динамічно. Мінімалістично. Онлайн. Umlaut.Digital® у вебі.",

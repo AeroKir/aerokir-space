@@ -20,6 +20,7 @@
         },
         "projects": {
             "title": "Projects",
+            "titleSingular": "Project",
             "projectSlug": {
                 "github": "Source on GitHub",
                 "website": "Visit site",
@@ -38,6 +39,8 @@
         "toggleMenu": "Toggle Menu"
     },
     "projects": {
+        "titleAbout": "About Project:",
+        "titlePerformedTasks": "Performed tasks and results:",
         "umlaut": {
             "name": "Umlaut.Digital",
             "excerpt": "Dynamic. Minimal. Live. Umlaut.Digital® on the web.",
