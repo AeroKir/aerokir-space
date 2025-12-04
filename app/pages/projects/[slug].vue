@@ -62,7 +62,7 @@
               <div class="w-6 h-6 2xl:w-8 2xl:h-8 rounded-full bg-accentColor transition-transform duration-500 group-hover:scale-110" />
             </a>
           </div>
-          <h3 class="font-heading text-lg md:text-2xl text-primaryDarkAlpha50 dark:text-accentColor mb-1">
+          <h3 class="font-heading text-lg md:text-2xl text-primaryDarkAlpha50 dark:text-accentColor mb-2">
             {{ t('projects.titleAbout') }}
           </h3>
           <p class="font-body text-base md:text-xl text-primaryDark dark:text-primaryLight mb-10 xl:max-w-[55vw] 2xl:max-w-[42vw] mx-auto">
@@ -98,13 +98,13 @@
           >
             <h3
               v-if="project.solvedTasks.length"
-              class="font-heading text-lg md:text-2xl text-primaryDarkAlpha50 dark:text-accentColor mb-4"
+              class="font-heading text-lg md:text-2xl text-primaryDarkAlpha50 dark:text-accentColor mb-2"
             >
               {{ t('projects.titlePerformedTasks') }}
             </h3>
             <ul
               v-if="project.solvedTasks.length"
-              class="font-body text-base md:text-xl text-primaryDark dark:text-primaryLight 2xl:max-w-[42vw] mx-auto"
+              class="font-body text-base md:text-xl text-primaryDark dark:text-primaryLight xl:max-w-[55vw] 2xl:max-w-[42vw] mx-auto"
             >
               <li
                 v-for="task in project.solvedTasks"
