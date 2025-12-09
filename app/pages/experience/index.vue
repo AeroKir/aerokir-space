@@ -1,7 +1,7 @@
 <template>
   <Page>
     <AppHeader />
-    <main class="h-full mx-auto xl:ml-[230px] xl:mr-[230px] 2xl:ml-[283px] 2xl:mr-[265px] md:-top-10 text-primaryDark dark:text-primaryLight relative xl:z-50 px-2 md:px-8 lg:px-20 xl:px-0">
+    <main class="h-full mx-auto xl:ml-[230px] xl:mr-[230px] 2xl:ml-[283px] 2xl:mr-[265px] md:-top-10 text-primaryDark dark:text-primaryLight relative xl:z-0 px-2 md:px-8 lg:px-20 xl:px-0">
       <div class="relative max-w-[1040px] h-auto left-1/2 -translate-x-1/2 lg:pb-[70px]">
         <HeadingPage
           :title="$t('pages.experience.title')"
