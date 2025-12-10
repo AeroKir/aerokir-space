@@ -79,7 +79,7 @@
                 v-if="index < project.technologies.length - 1"
                 class="font-heading text-primaryDark dark:text-primaryLight"
               >
-                |
+                &VerticalLine;
               </span>
             </template>
           </p>
