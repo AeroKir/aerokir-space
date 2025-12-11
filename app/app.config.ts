@@ -59,6 +59,23 @@ export default defineAppConfig({
       toolsUsed: ['Vue 3', 'Nuxt 3', 'TypeScript', 'TailwindCSS', 'i18n', 'Strapi', 'Git', 'VPS', 'Nginx'],
       technologies: ['Vue 3', 'Nuxt 3', 'TypeScript', 'TailwindCSS', 'i18n', 'Strapi', 'Git', 'VPS', 'Nginx'],
     },
+    {
+      id: 4,
+      company: 'Getta software',
+      position: 'Frontend Developer',
+      period: '2024',
+      workplaceType: 'Remote',
+      projectDescription: '',
+      solvedTasks: [
+        'Developing and maintaining web applications using modern frontend technologies such as Vue.js and Nuxt.js.',
+        'Collaborating with cross-functional teams including designers, backend developers, and product managers to deliver high-quality products.',
+        'Implementing responsive design principles to ensure optimal user experience across various devices and screen sizes.',
+        'Optimizing application performance and ensuring scalability for future growth.',
+        'Participating in code reviews and providing constructive feedback to team members.',
+      ],
+      toolsUsed: ['Vue 3', 'Nuxt 3', 'TypeScript', 'TailwindCSS', 'i18n', 'Strapi', 'Git', 'VPS', 'Nginx'],
+      technologies: ['Vue 3', 'Nuxt 3', 'TypeScript', 'TailwindCSS', 'i18n', 'Strapi', 'Git', 'VPS', 'Nginx'],
+    },
   ],
   projects: [
     {
