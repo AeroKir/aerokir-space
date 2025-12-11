@@ -4,6 +4,7 @@ enum Colors {
   primaryDarkAlpha70 = 'rgba(34, 38, 75, 0.7)',
   primaryDarkAlpha50 = 'rgba(34, 38, 75, 0.5)',
   primaryDarkAlpha46 = 'rgba(34, 38, 75, 0.46)',
+  primaryDarkAlpha30 = 'rgba(34, 38, 75, 0.30)',
   primaryDarkAlpha25 = 'rgba(34, 38, 75, 0.25)',
   primaryDarkAlpha10 = 'rgba(34, 38, 75, 0.10)',
   primaryDarkAlpha05 = 'rgba(34, 38, 75, 0.05)',

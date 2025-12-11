@@ -20,7 +20,7 @@
 
     <AppMenu />
 
-    <div class="flex items-center relative">
+    <div class="flex items-center relative xl:bg-sepia/90 xl:dark:bg-primaryDark/90 xl:backdrop-blur-md xl:rounded-full xl:px-2 xl:py-1">
       <ThemeSwitcher />
       <LangSwitcher />
     </div>

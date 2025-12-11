@@ -72,7 +72,7 @@
 </template>
 
 <script setup lang="ts">
-import IconArrowTopRight from '../assets/icons/arrow-top-right.svg';
+import IconArrowTopRight from '~/assets/icons/arrow-top-right.svg';
 
 const props = defineProps<{
   slug: string;

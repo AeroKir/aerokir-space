@@ -35,7 +35,7 @@
             </h2>
           </div>
 
-          <div class="flex flex-col md:flex-row items-start md:items-center gap-4 justify-between mt-6 mb-8 2xl:mb-14 py-2">
+          <div class="relative flex flex-col md:flex-row items-start md:items-center gap-4 justify-between mt-6 mb-8 2xl:mb-14 py-2 z-0 2xl:z-20">
             <p class="flex items-center text-sm lg:text-base 2xl:text-xl font-body text-primaryDarkAlpha50 dark:text-primaryLightAlpha50">
               {{ project.yearsOfDevelopment }} <span class="w-3 h-3 inline-block bg-primaryDarkAlpha50 dark:bg-primaryLightAlpha50 rounded-full ml-[15px] mr-[10px]" /> {{ t(project.projectType) }}
             </p>
@@ -45,7 +45,7 @@
               target="_blank"
               class="group flex items-center font-body underline text-base 2xl:text-xl text-primaryDark dark:text-primaryLight transition-colors duration-300 hover:text-primaryDarkAlpha70 dark:hover:text-primaryLightAlpha70 cursor-pointer"
             >
-              <GithubIcon class="relative w-6 h-6 2xl:w-9 2xl:h-9 text-primaryDark dark:text-primaryLight mr-1 2xl:mr-[10px] transition-transform duration-500 group-hover:scale-110 group-hover:text-primaryDarkAlpha70 dark:group-hover:text-primaryLightAlpha70" />
+              <GithubIcon class="relative w-6 h-6 2xl:w-9 2xl:h-9 text-primaryDark dark:text-primaryLight mr-1 2xl:mr-[10px] transition-transform duration-500 group-hover:text-primaryDarkAlpha70 dark:group-hover:text-primaryLightAlpha70" />
               {{ t('pages.projects.projectSlug.github') }}
               <ArrowRight class="relative z-10 -right-4 w-10 h-auto text-primaryDark dark:text-primaryLight transition-all duration-500 ease-out group-hover:translate-x-2" />
               <div class="w-6 h-6 2xl:w-8 2xl:h-8 rounded-full bg-accentColor transition-transform duration-500 group-hover:scale-110" />
@@ -56,7 +56,7 @@
               target="_blank"
               class="group flex items-center font-body underline text-base 2xl:text-xl text-primaryDark dark:text-primaryLight transition-colors duration-300 hover:text-primaryDarkAlpha70 dark:hover:text-primaryLightAlpha70 cursor-pointer"
             >
-              <ExternalLinkIcon class="relative w-6 h-6 2xl:w-9 2xl:h-9 text-primaryDark dark:text-primaryLight mr-1 2xl:mr-[10px] transition-transform duration-500 group-hover:scale-110 group-hover:text-primaryDarkAlpha70 dark:group-hover:text-primaryLightAlpha70" />
+              <ExternalLinkIcon class="relative w-6 h-6 2xl:w-9 2xl:h-9 text-primaryDark dark:text-primaryLight mr-1 2xl:mr-[10px] transition-transform duration-500 group-hover:text-primaryDarkAlpha70 dark:group-hover:text-primaryLightAlpha70" />
               {{ t('pages.projects.projectSlug.website') }}
               <ArrowRight class="relative z-10 -right-4 w-10 h-auto text-primaryDark dark:text-primaryLight transition-all duration-500 ease-out group-hover:translate-x-2" />
               <div class="w-6 h-6 2xl:w-8 2xl:h-8 rounded-full bg-accentColor transition-transform duration-500 group-hover:scale-110" />
@@ -79,7 +79,7 @@
                 v-if="index < project.technologies.length - 1"
                 class="font-heading text-primaryDark dark:text-primaryLight"
               >
-                |
+                &VerticalLine;
               </span>
             </template>
           </p>
