@@ -1,5 +1,5 @@
 <template>
-  <nav class="hidden xl:flex flex-col gap-4 mr-auto">
+  <nav class="hidden xl:flex flex-col gap-4 mr-auto xl:bg-transparent xl:dark:transparent xl:backdrop-blur-md xl:pt-1">
     <ul>
       <li
         v-for="(link, i) in menuLinks"
