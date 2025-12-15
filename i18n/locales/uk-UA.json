@@ -121,5 +121,27 @@
             "projectType": "Вебсайт",
             "imagePreviewAlt": "First Website Project Screenshot"
         }
+    },
+    "experience": {
+        "commonSubHeadings": {
+            "project": "Проєкт",
+            "performedTasks": "Виконані завдання",
+            "tools": "Інструменти",
+            "techstack": "Технології"
+        },
+        "umlaut": {
+            "company": "Umlaut.Digital®",
+            "position": "Розробник повного стеку",
+            "period": "04.2025 - дотепер",
+            "workplaceType": "Віддалено",
+            "projectDescription": {
+                "term1": "Корпоративний сайт",
+                "term2": "Демо-версії для клієнтів"
+            },
+            "solvedTasks": {
+                "term1": "",
+                "term2": ""
+            }
+        }
     }
 }
