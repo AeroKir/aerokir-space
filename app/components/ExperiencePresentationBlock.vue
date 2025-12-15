@@ -1,22 +1,25 @@
 <template>
   <div class="relative w-full mx-auto">
-    <!-- <div class="hidden xl:block w-[25%] h-[2px] bg-primaryDarkAlpha30 absolute -left-[25%] z-20"></div> -->
-    <div class="left-panel xl:block hidden fixed top-0 left-0 w-[240px] h-screen z-10 xl:bg-sepia/30 xl:dark:bg-primaryDark/30 xl:backdrop-blur-md"></div>
+    <div class="left-panel xl:block hidden fixed top-0 left-0 w-[240px] h-screen z-10 xl:bg-sepia/30 xl:dark:bg-primaryDark/30 xl:backdrop-blur-md" />
 
     <!-- Swiper -->
-    <div class="swiper-shift-wrapper">
+    <div class="swiper-shift-wrapper relative">
+      <MouseIcon class="hidden xl:block absolute top-40 left-1/2 translate-x-1/2 w-[120px] h-[120px] fill-none stroke-primaryDark dark:stroke-primaryLight" />
       <Swiper
         :modules="[FreeMode, Mousewheel]"
         :slidesPerView="'auto'"
         :spaceBetween="0"
-        :mousewheel="true"
+        :mousewheel="{
+          forceToAxis: true,
+          releaseOnEdges: true,
+          sensitivity: 0.6,
+        }"
         :freeMode="{
           enabled: true,
           sticky: false,
           momentum: true,
           momentumBounce: false,
         }"
-        centeredSlides="true"
         direction="horizontal"
         class="horizontal-swiper"
         @swiper="onSwiperInit"
@@ -25,7 +28,7 @@
         <SwiperSlide
           v-for="(exp, index) in experience"
           :key="exp.id"
-          class="slide-item"
+          class=""
         >
           <ExperienceItemCard
             :workplaceType="exp.workplaceType"
@@ -36,7 +39,6 @@
             :solvedTasks="exp.solvedTasks"
             :toolsUsed="exp.toolsUsed"
             :technologies="exp.technologies"
-
             :isActive="activeIndex === index"
           />
         </SwiperSlide>
@@ -51,6 +53,8 @@ import { Mousewheel, FreeMode } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
+
+import MouseIcon from '~/assets/icons/mouse.svg';
 
 const { experience } = useAppConfig() as {
   experience: {
@@ -71,6 +75,10 @@ const swiperRef = ref<any>(null);
 
 const onSwiperInit = (swiper: any) => {
   swiperRef.value = swiper;
+
+  requestAnimationFrame(() => {
+    swiper.update();
+  });
 };
 
 const onSlideChange = (swiper: any) => {
@@ -79,56 +87,13 @@ const onSlideChange = (swiper: any) => {
 </script>
 
 <style scoped>
-/* ---------------- Timeline ---------------- */
-
-.timeline-container {
-  position: relative;
-  width: 100%;
-  padding: 20px 0;
-  margin-bottom: 20px;
-}
-
-.timeline-line {
-  height: 2px;
-  width: 100%;
-  background: #ddd;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 1;
-}
-
-.timeline-dots {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  z-index: 2;
-}
-
-.dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #bbb;
-  cursor: pointer;
-  transition: 0.25s ease;
-}
-
-.dot.active {
-  background: orange;
-  transform: scale(1.25);
-}
-
-/* ---------------- Swiper Fixes ---------------- */
-
 .horizontal-swiper {
   width: 100vw;
   overflow: visible;
-  /* найважливіше — щоб останній слайд був повністю видимим */
   padding-right: calc(100vw - 698px);
+  touch-action: pan-y;
 }
 
-/* адаптація під брейкпоінти */
 @media (max-width: 1440px) {
   .horizontal-swiper { padding-right: calc(100vw - 560px); }
 }
@@ -144,46 +109,33 @@ const onSlideChange = (swiper: any) => {
 
 .swiper-shift-wrapper {
   width: 100%;
-   position: relative;
+  position: relative;
   z-index: 1;
 }
 @media (min-width: 1280px) {
   .swiper-shift-wrapper {
-    margin-left: 70px; /* ← змістити на ширину твого меню */
+    margin-left: 70px;
   }
 }
 
-/* важливо для правильного горизонтального скролу */
-.horizontal-swiper .swiper-wrapper {
-  width: auto !important;
-  display: inline-flex !important;
-  transform: translate3d(0, 0, 0) !important;
-}
-
+/* Slide card */
 .swiper-slide {
-  flex-shrink: 0 !important;
-}
-
-/* сайд-картка */
-.slide-item {
-  width: 280px;
+  width: 300px;
 }
 
 @media (min-width: 480px) {
-  .slide-item { width: 320px; }
+  .swiper-slide { width: 320px; }
 }
 @media (min-width: 768px) {
-  .slide-item { width: 420px; }
+  .swiper-slide { width: 550px; }
 }
 @media (min-width: 1024px) {
-  .slide-item { width: 560px; }
+  .swiper-slide { width: 700px; }
 }
 @media (min-width: 1280px) {
-  .slide-item { width: 698px; }
+  .swiper-slide { width: 800px; }
 }
-
-/* щоб вертикальний скрол працював */
-.horizontal-swiper {
-  touch-action: pan-y;
+@media (min-width: 1536px) {
+  .swiper-slide { width: 900px; }
 }
 </style>

@@ -10,11 +10,11 @@ export default defineAppConfig({
   experience: [
     {
       id: 1,
-      company: 'Umlaut Digital',
-      position: 'Frontend Developer',
-      period: '2024 - Present',
-      workplaceType: 'Remote',
-      projectDescription: '',
+      company: 'experience.umlaut.company',
+      position: 'experience.umlaut.position',
+      period: '04.2025 - Present',
+      workplaceType: 'experience.umlaut.workplaceType',
+      projectDescription: ['experience.umlaut.projectDescription.term1', 'experience.umlaut.projectDescription.term2'],
       solvedTasks: [
         'Developing and maintaining web applications using modern frontend technologies such as Vue.js and Nuxt.js.',
         'Collaborating with cross-functional teams including designers, backend developers, and product managers to deliver high-quality products.',
@@ -28,10 +28,10 @@ export default defineAppConfig({
     {
       id: 2,
       company: 'iNear LLC',
-      position: 'Frontend Developer',
-      period: '2024 - Present',
+      position: 'Frontend Developer (project work)',
+      period: '12.2024 - 04.2025',
       workplaceType: 'Remote',
-      projectDescription: '',
+      projectDescription: [''],
       solvedTasks: [
         'Developing and maintaining web applications using modern frontend technologies such as Vue.js and Nuxt.js.',
         'Collaborating with cross-functional teams including designers, backend developers, and product managers to deliver high-quality products.',
@@ -45,8 +45,8 @@ export default defineAppConfig({
     {
       id: 3,
       company: 'Vibo product',
-      position: 'Frontend Developer',
-      period: '2024',
+      position: 'Frontend Developer (project work)',
+      period: '03.2024 - 11.2024',
       workplaceType: 'Remote',
       projectDescription: '',
       solvedTasks: [
@@ -63,7 +63,24 @@ export default defineAppConfig({
       id: 4,
       company: 'Getta software',
       position: 'Frontend Developer',
-      period: '2024',
+      period: '10.2020 - 12.2023',
+      workplaceType: 'Remote',
+      projectDescription: '',
+      solvedTasks: [
+        'Developing and maintaining web applications using modern frontend technologies such as Vue.js and Nuxt.js.',
+        'Collaborating with cross-functional teams including designers, backend developers, and product managers to deliver high-quality products.',
+        'Implementing responsive design principles to ensure optimal user experience across various devices and screen sizes.',
+        'Optimizing application performance and ensuring scalability for future growth.',
+        'Participating in code reviews and providing constructive feedback to team members.',
+      ],
+      toolsUsed: ['Vue 3', 'Nuxt 3', 'TypeScript', 'TailwindCSS', 'i18n', 'Strapi', 'Git', 'VPS', 'Nginx'],
+      technologies: ['Vue 3', 'Nuxt 3', 'TypeScript', 'TailwindCSS', 'i18n', 'Strapi', 'Git', 'VPS', 'Nginx'],
+    },
+    {
+      id: 5,
+      company: 'Freelance',
+      position: 'Frontend Developer',
+      period: '06.2018 - 10.2020',
       workplaceType: 'Remote',
       projectDescription: '',
       solvedTasks: [

@@ -11,15 +11,17 @@
     <span class="font-heading font-normal text-sm text-primaryDark dark:text-primaryLight mb-3">{{ t(props.workplaceType) }}</span>
     <span class="font-heading font-normal text-4xl xl:text-[64px] text-primaryDark dark:text-primaryLight mb-10">{{ props.period }}</span>
     <h2 class="font-heading font-bold text-xl xl:text-3xl mb-2">
-      {{ props.company }} &ndash; {{ props.position }}
+      {{ t(props.company) }} &ndash; {{ t(props.position) }}
     </h2>
-    <p class="flex flex-wrap items-center gap-2 mb-10 2xl:mb-20 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight">
-      <span class="font-heading font-normal text-sm md:text-xl text-primaryDarkAlpha50 dark:text-accentColor">Project:</span>
+    <div class="flex flex-wrap items-center gap-2 mb-10 2xl:mb-20 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight">
+      <h3 class="font-heading font-normal text-sm md:text-xl text-primaryDarkAlpha50 dark:text-accentColor">
+        {{ t('experience.commonSubHeadings.project') }}:
+      </h3>
       <template
         v-for="(description, index) in projectDescription"
         :key="description"
       >
-        <span class="text-xs">{{ description }}</span>
+        <span class="text-xs md:text-xl">{{ t(description) }}</span>
         <span
           v-if="index < projectDescription.length - 1"
           class="font-heading font-normal text-xs md:text-xl text-primaryDark dark:text-primaryLight"
@@ -27,20 +29,20 @@
           &VerticalLine;
         </span>
       </template>
-    </p>
+    </div>
 
     <div
-      class="mb-4"
+      class="mb-4 pr-6 lg:pr-16 xl:pr-24 2xl:pr-48"
     >
       <h3
         v-if="solvedTasks.length"
         class="font-heading font-normal text-sm md:text-xl text-primaryDarkAlpha50 dark:text-accentColor mb-2"
       >
-        {{ t('projects.titlePerformedTasks') }}
+        {{ t('experience.commonSubHeadings.performedTasks') }}
       </h3>
       <ul
         v-if="solvedTasks.length"
-        class="font-body font-normal text-xs md:text-xl text-primaryDark dark:text-primaryLight xl:max-w-[55vw] 2xl:max-w-[42vw] mx-auto"
+        class="font-body font-normal text-xs md:text-base text-primaryDark dark:text-primaryLight mb-4"
       >
         <li
           v-for="task in solvedTasks"
@@ -52,13 +54,13 @@
       </ul>
     </div>
 
-    <p class="flex flex-wrap items-center gap-2 mb-10 2xl:mb-20 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight">
-      <span class="font-heading font-normal text-sm md:text-xl text-primaryDarkAlpha50 dark:text-accentColor">tools Used:</span>
+    <p class="flex flex-wrap items-center gap-2 mb-6 2xl:mb-6 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight pr-6 lg:pr-16 xl:pr-20 2xl:pr-48">
+      <span class="font-heading font-normal text-sm md:text-base text-primaryDarkAlpha50 dark:text-accentColor">{{ t('experience.commonSubHeadings.tools') }}:</span>
       <template
         v-for="(tool, index) in toolsUsed"
         :key="tool"
       >
-        <span class="text-xs">{{ tool }}</span>
+        <span class="text-xs md:text-base">{{ tool }}</span>
         <span
           v-if="index < toolsUsed.length - 1"
           class="font-heading font-normal text-xs md:text-xl text-primaryDark dark:text-primaryLight"
@@ -68,13 +70,13 @@
       </template>
     </p>
 
-    <p class="flex flex-wrap items-center gap-2 mb-10 2xl:mb-20 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight">
-      <span class="font-heading font-normal text-sm md:text-xl text-primaryDarkAlpha50 dark:text-accentColor">{{ t('pages.projects.projectSlug.techstack') }}:</span>
+    <p class="flex flex-wrap items-center gap-2 mb-10 2xl:mb-10 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight pr-6 lg:pr-16 xl:pr-20 2xl:pr-48">
+      <span class="font-heading font-normal text-sm md:text-base text-primaryDarkAlpha50 dark:text-accentColor">{{ t('experience.commonSubHeadings.techstack') }}:</span>
       <template
         v-for="(tech, index) in technologies"
         :key="tech"
       >
-        <span class="text-xs">{{ tech }}</span>
+        <span class="text-xs md:text-base">{{ tech }}</span>
         <span
           v-if="index < technologies.length - 1"
           class="font-heading font-normal text-xs md:text-xl text-primaryDark dark:text-primaryLight"
@@ -92,7 +94,7 @@ const props = defineProps<{
   company: string;
   position: string;
   period: number | string;
-  projectDescription: string;
+  projectDescription: string[];
   solvedTasks: string[];
   toolsUsed: string[];
   technologies: string[];

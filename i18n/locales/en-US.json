@@ -121,5 +121,27 @@
             "projectType": "Website",
             "imagePreviewAlt": "First Website Project Screenshot"
         }
+    },
+    "experience": {
+        "commonSubHeadings": {
+            "project": "Project",
+            "performedTasks": "Performed Tasks",
+            "tools": "Tools",
+            "techstack": "Techstack"
+        },
+        "umlaut": {
+            "company": "Umlaut.Digital®",
+            "position": "Fullstack Developer",
+            "period": "04.2025 - Present",
+            "workplaceType": "Remote",
+            "projectDescription": {
+                "term1": "Corporate website",
+                "term2": "Client demos"
+            },
+            "solvedTasks": {
+                "term1": "",
+                "term2": ""
+            }
+        }
     }
 }
