@@ -139,8 +139,75 @@
                 "term2": "Client demos"
             },
             "solvedTasks": {
-                "term1": "",
-                "term2": ""
+                "term1": "Developed a corporate website based on the existing design in Figma with multi-language support using i18n, deployed to a VPS hosting environment, and configured NGINX for performance and routing.",
+                "term2": "Built a Strapi-based backend with multi-language content management.",
+                "term3": "Delivered client-specific demo versions of proposed products under tight deadlines to support sales and presentations."
+            }
+        },
+        "iNearLLC": {
+            "company": "iNear LLC",
+            "position": "Frontend Developer (project work)",
+            "period": "12.2024 - 04.2025",
+            "workplaceType": "Remote",
+            "projectDescription": {
+                "term1": "Healthcare Startup",
+                "term2": "CRM System"
+            },
+            "solvedTasks": {
+                "term1": "Participated in the development of a CRM system for managing doctor-collected data with secure authorization, data validation, and editing capabilities integrated via RESTful API.",
+                "term2": "Designed and implemented a media gallery with metadata editing, file downloading, and deletion.",
+                "term3": "Proposed and implemented a media file sharing solution, working with a backend engineer to define API endpoints for seamless access across web and native mobile apps (iOS & Android).",
+                "term4": "Built an interactive cost comparison calculator for product benchmarking."
+            }
+        },
+        "viboProduct": {
+            "company": "Vibo Product",
+            "position": "Frontend Developer (project work)",
+            "period": "03.2024 - 11.2024",
+            "workplaceType": "Remote",
+            "projectDescription": {
+                "term1": "E-commerce Online Shop"
+            },
+            "solvedTasks": {
+                "term1": "Restored the operation and functionality of an online store developed by another studio using a custom WordPress theme.",
+                "term2": "Configured and optimized admin panel settings.",
+                "term3": "Managed domain registration and hosting connection.",
+                "term4": "Consulting the client on the ability to use and integrate different payment gateway systems specified for a certain region on the website."
+            }
+        },
+        "gettaSoftware": {
+            "company": "Getta Software",
+            "position": "Frontend Developer (partially backend)",
+            "period": "10.2020 - 12.2023",
+            "workplaceType": "Hybrid (Office / Remote)",
+            "projectDescription": {
+                "term1": "Web Portal",
+                "term2": "Custom CMS & CRM",
+                "term3": "Internal products"
+            },
+            "solvedTasks": {
+                "term1": "Built reusable UI components to streamline development.",
+                "term2": "Integrated with microservices (RESTful API) + third-party API integration.",
+                "term3": "Integrated i18n localization across the platform.",
+                "term4": "Designed and developed a multilingual user registration flow.",
+                "term5": "Integrated Redis for CMS-to-CMS communication.",
+                "term6": "And many, many more tasks... :)",
+            }
+        },
+        "freelance": {
+            "company": "Freelance",
+            "position": "Web Developer",
+            "period": "06.2018 - 10.2020",
+            "workplaceType": "Remote",
+            "projectDescription": {
+                "term1": "Web Sites",
+                "term2": "Custom solutions"
+            },
+            "solvedTasks": {
+                "term1": "Implemented the functionality of auto-posting in groups of one of the social networks using the Nightmare.js library and the Node.js environment",
+                "term2": "Reworked the existing project with the addition of semantic markup, vector graphics, and taking into account accessibility, which improved the site's loading speed and raised it in the search results.",
+                "term3": "Integrated interactive maps with the addition of GEOdata using the Leaflet.js library",
+                "term4": "And many, many more tasks... :)",
             }
         }
     }

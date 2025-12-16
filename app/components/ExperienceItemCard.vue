@@ -8,27 +8,28 @@
         />
       </div>
     </div>
-    <span class="font-heading font-normal text-sm text-primaryDark dark:text-primaryLight mb-3">{{ t(props.workplaceType) }}</span>
-    <span class="font-heading font-normal text-4xl xl:text-[64px] text-primaryDark dark:text-primaryLight mb-10">{{ props.period }}</span>
-    <h2 class="font-heading font-bold text-xl xl:text-3xl mb-2">
+    <span class="font-heading font-normal text-sm text-primaryDark dark:text-primaryLight mb-4">{{ t(props.workplaceType) }}</span>
+    <span class="font-heading font-normal text-4xl xl:text-[64px] text-primaryDark dark:text-primaryLight mb-5 lg:mb-10">{{ props.period }}</span>
+    <h2 class="font-heading font-bold text-xl xl:text-3xl mb-5">
       {{ t(props.company) }} &ndash; {{ t(props.position) }}
     </h2>
-    <div class="flex flex-wrap items-center gap-2 mb-10 2xl:mb-20 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight">
+    <div class="mb-5 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight">
       <h3 class="font-heading font-normal text-sm md:text-xl text-primaryDarkAlpha50 dark:text-accentColor">
         {{ t('experience.commonSubHeadings.project') }}:
       </h3>
-      <template
+      <div
         v-for="(description, index) in projectDescription"
         :key="description"
+        class="inline-flex items-center"
       >
-        <span class="text-xs md:text-xl">{{ t(description) }}</span>
+        <span class="font-body text-xs md:text-xl">{{ t(description) }}</span>
         <span
           v-if="index < projectDescription.length - 1"
-          class="font-heading font-normal text-xs md:text-xl text-primaryDark dark:text-primaryLight"
+          class="font-body font-normal text-xs md:text-xl text-primaryDark dark:text-primaryLight mx-2"
         >
           &VerticalLine;
         </span>
-      </template>
+      </div>
     </div>
 
     <div
@@ -49,10 +50,26 @@
           :key="task"
           class="mb-2 last:mb-0"
         >
-          • {{ task }}
+          • {{ t(task) }}
         </li>
       </ul>
     </div>
+
+    <p class="flex flex-wrap items-center gap-2 mb-6 2xl:mb-6 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight pr-6 lg:pr-16 xl:pr-20 2xl:pr-48">
+      <span class="font-heading font-normal text-sm md:text-base text-primaryDarkAlpha50 dark:text-accentColor">{{ t('experience.commonSubHeadings.techstack') }}:</span>
+      <template
+        v-for="(tech, index) in technologies"
+        :key="tech"
+      >
+        <span class="text-xs md:text-base">{{ tech }}</span>
+        <span
+          v-if="index < technologies.length - 1"
+          class="font-heading font-normal text-xs md:text-xl text-primaryDark dark:text-primaryLight"
+        >
+          &VerticalLine;
+        </span>
+      </template>
+    </p>
 
     <p class="flex flex-wrap items-center gap-2 mb-6 2xl:mb-6 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight pr-6 lg:pr-16 xl:pr-20 2xl:pr-48">
       <span class="font-heading font-normal text-sm md:text-base text-primaryDarkAlpha50 dark:text-accentColor">{{ t('experience.commonSubHeadings.tools') }}:</span>
@@ -63,22 +80,6 @@
         <span class="text-xs md:text-base">{{ tool }}</span>
         <span
           v-if="index < toolsUsed.length - 1"
-          class="font-heading font-normal text-xs md:text-xl text-primaryDark dark:text-primaryLight"
-        >
-          &VerticalLine;
-        </span>
-      </template>
-    </p>
-
-    <p class="flex flex-wrap items-center gap-2 mb-10 2xl:mb-10 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight pr-6 lg:pr-16 xl:pr-20 2xl:pr-48">
-      <span class="font-heading font-normal text-sm md:text-base text-primaryDarkAlpha50 dark:text-accentColor">{{ t('experience.commonSubHeadings.techstack') }}:</span>
-      <template
-        v-for="(tech, index) in technologies"
-        :key="tech"
-      >
-        <span class="text-xs md:text-base">{{ tech }}</span>
-        <span
-          v-if="index < technologies.length - 1"
           class="font-heading font-normal text-xs md:text-xl text-primaryDark dark:text-primaryLight"
         >
           &VerticalLine;
