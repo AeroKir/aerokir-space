@@ -3,6 +3,9 @@
     class="relative"
     :class="footerClass"
   >
+    <div class="absolute left-1/2 transform -translate-x-1/2 top-28 z-10">
+      <slot></slot>
+    </div>
     <p class="absolute left-1/2 transform -translate-x-1/2 bottom-12 z-10 font-heading text-base text-center text-primaryDark dark:text-primaryLight">
       &copy; {{ currentYear }} Aerokir Space. All rights reserved.
     </p>

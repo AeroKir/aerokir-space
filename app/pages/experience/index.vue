@@ -15,7 +15,12 @@
       </div>
       <ExperiencePresentationBlock />
     </main>
-    <AppFooter />
+    <AppFooter>
+      <AppFooterInternalLink
+        :to="'/projects'"
+        :label="$t('footerLinks.toProjects')"
+      />
+    </AppFooter>
   </Page>
 </template>
 

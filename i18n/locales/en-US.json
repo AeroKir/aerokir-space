@@ -38,6 +38,12 @@
         "more": "More",
         "toggleMenu": "Toggle Menu"
     },
+    "footerLinks": {
+        "toExperience": "To Experience",
+        "toProjects": "To Projects",
+        "toEducation": "To Education",
+        "toContact": "Contact"
+    },
     "projects": {
         "titleAbout": "About Project:",
         "titlePerformedTasks": "Performed tasks and results:",
