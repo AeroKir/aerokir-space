@@ -28,7 +28,6 @@
         <SwiperSlide
           v-for="(exp, index) in experience"
           :key="exp.id"
-          class=""
         >
           <ExperienceItemCard
             :workplaceType="exp.workplaceType"
@@ -63,7 +62,7 @@ const { experience } = useAppConfig() as {
     company: string;
     position: string;
     period: number | string;
-    projectDescription: string;
+    projectDescription: string[];
     solvedTasks: string[];
     toolsUsed: string[];
     technologies: string[];
@@ -121,6 +120,8 @@ const onSlideChange = (swiper: any) => {
 /* Slide card */
 .swiper-slide {
   width: 300px;
+  display: flex;
+  height: auto;
 }
 
 @media (min-width: 480px) {
