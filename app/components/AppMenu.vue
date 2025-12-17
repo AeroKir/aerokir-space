@@ -109,7 +109,7 @@ const menuLinks = [
   { path: '/', label: 'navMenu.about' },
   { path: '/experience', label: 'navMenu.experience' },
   { path: '/projects', label: 'navMenu.projects' },
-  { path: '/education', label: 'navMenu.education' },
+  // { path: '/education', label: 'navMenu.education' },
   { path: '/contact', label: 'navMenu.contact' },
 ];
 

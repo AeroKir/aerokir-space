@@ -31,7 +31,12 @@
         />
       </section>
     </main>
-    <AppFooter />
+    <AppFooter>
+      <AppFooterInternalLink
+        :to="'/contact'"
+        :label="$t('footerLinks.toContact')"
+      />
+    </AppFooter>
   </Page>
 </template>
 
