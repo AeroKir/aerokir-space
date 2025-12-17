@@ -38,6 +38,12 @@
         "more": "Більше",
         "toggleMenu": "Перемкнути меню"
     },
+    "footerLinks": {
+        "toExperience": "До досвіду",
+        "toProjects": "До проєктів",
+        "toEducation": "До освіти",
+        "toContact": "Контакт"
+    },
     "projects": {
         "titleAbout": "Про проєкт:",
         "titlePerformedTasks": "Виконані завдання та результати:",

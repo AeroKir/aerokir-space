@@ -17,7 +17,6 @@
 <script setup lang="ts">
 import IconCrescent from '~/assets/icons/crescent-moon.svg';
 import IconSun from '~/assets/icons/sun.svg';
-// import IconSun from '../assets/icons/coffee-cup.svg';
 
 const colorMode = useColorMode();
 
