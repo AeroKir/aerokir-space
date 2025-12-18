@@ -42,7 +42,9 @@
         "toExperience": "To Experience",
         "toProjects": "To Projects",
         "toEducation": "To Education",
-        "toContact": "Contact"
+        "toContact": "Contact",
+        "prevProject": "Prev",
+        "nextProject": "Next"
     },
     "projects": {
         "titleAbout": "About Project:",
