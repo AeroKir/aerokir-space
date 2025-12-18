@@ -111,7 +111,7 @@
                 :key="task"
                 class="mb-2 last:mb-0"
               >
-                • {{ task }}
+                • {{ t(task) }}
               </li>
             </ul>
           </div>

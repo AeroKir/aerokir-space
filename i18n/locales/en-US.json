@@ -66,9 +66,14 @@
         "dopomoga": {
             "name": "Dopomoga",
             "excerpt": "An information portal for internally displaced persons in Ukraine, providing quick access to vital resources and support.",
-            "description": "This project was built to support internally displaced persons in Ukraine. The portal brings together key information, contacts, and resources in one accessible place. Its goal is to simplify the adaptation process and ensure quick, clear access to assistance. With a structured approach and user-friendly interface, the website serves as an effective support tool for people facing challenging circumstances.",
+            "description": "The project was created to help internally displaced persons in Ukraine. It was developed in a short time and with limited resources. The portal combines key information, contacts, and resources in one convenient space. The goal is to make the adaptation process easier and to provide access to help quickly and clearly. Thanks to a structured approach and a user-friendly interface, the site has become an effective support tool for people in difficult life circumstances. The site is currently out of active use due to changing needs of the target audience, but, with the consent of the owners, it remains available as an example of my work (link to the GitHub page above).",
             "projectType": "Web Portal",
-            "imagePreviewAlt": "Dopomoga Project Screenshot"
+            "imagePreviewAlt": "Dopomoga Project Screenshot",
+            "solvedTasks": {
+                "term1": "Developed a simple but user-friendly interface for easy access to important information with localization in three languages.",
+                "term2": "Implemented responsive design to ensure accessibility on various devices, including smartphones and tablets.",
+                "term3": "Configured VPS hosting and website publishing, optimized performance."
+            }
         },
         "gifApp": {
             "name": "GIF App",
