@@ -118,7 +118,38 @@
         </article>
       </transition>
     </main>
-    <AppFooter />
+    <AppFooter>
+      <div
+        class="mt-2 mb-20 flex items-center justify-between gap-4 2xl:gap-20"
+      >
+        <!-- PREV -->
+        <div>
+          <AppFooterInternalLink
+            v-if="prevProject"
+            :to="`/projects/${prevProject.slug}`"
+            :label="$t('footerLinks.prevProject')"
+            direction="prev"
+          />
+        </div>
+
+        <!-- NEXT -->
+        <div class="ml-auto">
+          <AppFooterInternalLink
+            v-if="!isLastProject && nextProject"
+            :to="`/projects/${nextProject.slug}`"
+            :label="$t('footerLinks.nextProject')"
+            direction="next"
+          />
+
+          <!-- LAST → CONTACT -->
+          <AppFooterInternalLink
+            v-else
+            :to="'/contact'"
+            :label="$t('footerLinks.toContact')"
+          />
+        </div>
+      </div>
+    </AppFooter>
   </Page>
 </template>
 
@@ -151,6 +182,26 @@ const formattedScreenshots = computed(() =>
             : 'mobile',
   })),
 );
+
+const projectIndex = computed(() => {
+  return (projects ?? []).findIndex(
+    (p) => p.slug === route.params.slug,
+  );
+});
+
+const prevProject = computed(() => {
+  if (projectIndex.value <= 0) return null;
+  return projects[projectIndex.value - 1];
+});
+
+const nextProject = computed(() => {
+  if (projectIndex.value === -1) return null;
+  return projects[projectIndex.value + 1] ?? null;
+});
+
+const isLastProject = computed(() => {
+  return projectIndex.value === projects.length - 1;
+});
 </script>
 
 <style scoped>

@@ -42,7 +42,9 @@
         "toExperience": "До досвіду",
         "toProjects": "До проєктів",
         "toEducation": "До освіти",
-        "toContact": "Контакт"
+        "toContact": "Контакт",
+        "prevProject": "Попередній",
+        "nextProject": "Наступний"
     },
     "projects": {
         "titleAbout": "Про проєкт:",
