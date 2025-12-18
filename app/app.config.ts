@@ -224,7 +224,7 @@ export default defineAppConfig({
       projectType: 'projects.prevPortfolio.projectType',
       tags: ['HTML', 'CSS', 'SVG', 'GitHub pages'],
       screenshots: [
-        '/projects/first-portfolio/first-portfolio-desktop.jpg',
+        '/projects/first-portfolio/first-portfolio.jpg',
         '/projects/first-portfolio/first-portfolio-main-tablet.jpg',
         '/projects/first-portfolio/first-portfolio-works-tablet.jpg',
         '/projects/first-portfolio/first-portfolio-mobile.jpg',
