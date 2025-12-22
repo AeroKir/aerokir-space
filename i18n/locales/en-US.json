@@ -80,59 +80,108 @@
             "excerpt": "A PWA app for searching and sharing GIF animations.",
             "description": "A progressive web app (PWA) designed for fast search and easy sharing of GIF animations. Developed as a test assignment for a company, with a focus on performance, user-friendly interface, and modern frontend technologies.",
             "projectType": "Web App (PWA)",
-            "imagePreviewAlt": "GIF App Project Screenshot"
+            "imagePreviewAlt": "GIF App Project Screenshot",
+            "solvedTasks": {
+                "term1": "Implemented a web app using the Progressive Web App (PWA) technology with the ability to install on the user's device.",
+                "term2": "Implemented dynamic search functionality using the Debounce technique to optimize API requests.",
+                "term3": "Implemented infinite scrolling functionality using Throttle to improve the user experience when browsing search results.",
+                "term4": "Implemented GIF sharing functionality using the native Web Share API."
+            }
         },
         "dashboardNextJs": {
             "name": "CRM Dashboard",
             "excerpt": "A modern CRM dashboard application built with Next.js, featuring a clean interface, smooth interactions, and scalable architecture.",
-            "description": "A modern dashboard application built with Next.js.",
+            "description": "A modern toolbar app. Developed as part of my study of the Next.js framework. Login details: Email: {email}; Password: {password}",
             "projectType": "Web Application",
-            "imagePreviewAlt": "Dashboard Next.js Project Screenshot"
+            "imagePreviewAlt": "Dashboard Next.js Project Screenshot",
+            "solvedTasks": {
+                "term1": "Exploring Next.js and its capabilities for creating server-rendered React applications.",
+                "term2": "Comparing with Nuxt.js to understand the differences between React and Vue ecosystems."
+            }
         },
         "prevPortfolio": {
             "name": "First Portfolio",
             "excerpt": "Previous portfolio website — My very first portfolio, where I experimented with structure, style, and technology. Simple, but meaningful as the starting point of my professional journey.",
             "description": "This was my very first portfolio website, built entirely from scratch. While it looks modest compared to my current work, it represents the foundation of my growth as a developer. Here I learned how to structure layouts, experiment with styling, and bring ideas to life on the web. It’s a project I look back on with warmth, as it marks the true beginning of my professional journey.",
             "projectType": "Website",
-            "imagePreviewAlt": "Previous Portfolio Project Screenshot"
+            "imagePreviewAlt": "Previous Portfolio Project Screenshot",
+            "solvedTasks": {
+                "term1": "Developed the design and concept of the site independently.",
+                "term2": "Implemented an original menu using SVG.",
+                "term3": "Implemented responsive design."
+            }
         },
         "dashboardRandomUser": {
             "name": "Users' CRM",
             "excerpt": "A dashboard application for displaying user data.",
-            "description": "A dashboard application for displaying user data.",
+            "description": "This dashboard application for displaying data was implemented as a test task. With its help, I gained basic experience in creating dashboard applications, which I have used repeatedly on commercial projects in my subsequent work. Login details: Email: {email}; Password: {password}",
             "projectType": "Web Application",
-            "imagePreviewAlt": "Dashboard Random User Project Screenshot"
+            "imagePreviewAlt": "Dashboard Random User Project Screenshot",
+            "solvedTasks": {
+                "term1": "Implemented basic authentication using React Router and Redux with validation.",
+                "term2": "Used Redux for managing application state.",
+                "term3": "Integrated a third-party API to fetch data.",
+                "term4": "Used React and Ant Design for rapid UI development.",
+                "term5": "Implemented pagination and filters.",
+                "term6": "Implemented responsive design.",
+                "term7": "Worked with Local Storage."
+            }
         },
         "emailSendForm": {
             "name": "Email Send Form",
             "excerpt": "Email form with attachments. Fast, simple, user-friendly.",
-            "description": "A form for sending emails.",
+            "description": "Email form. A simple SPA application that allows users to send emails and attach various types of files. It implements custom validation and integration with the browser File API and external API.",
             "projectType": "Web App (SPA)",
-            "imagePreviewAlt": "Email Send Form Project Screenshot"
+            "imagePreviewAlt": "Email Send Form Project Screenshot",
+            "solvedTasks": {
+                "term1": "Implemented a form for sending emails using React.",
+                "term2": "Used Redux for managing application state.",
+                "term3": "Implemented custom validation for form fields (valid email, max characters, etc.) and attached files (types, size). Without using third-party libraries.",
+                "term4": "Implemented a custom drag-and-drop for adding files with the ability to delete any added file, without using third-party libraries.",
+                "term5": "Implemented displaying the status of sent emails (* currently may not work correctly).",
+                "term6": "Implemented responsive design."
+            }
         },
         "aviaTicketsApp": {
             "name": "Flight Filter App",
-            "excerpt": "An application for searching for airline tickets with a filter by the number of stops.",
-            "description": "A web application for searching and booking airline tickets.",
+            "excerpt": "An application for searching flights with a filter by the number of transfers.",
+            "description": "A flight search app with a transfers filter. One of my first projects was created to practice working with React and Redux. Although it is a simple project, it helped me understand the basics of state management in React applications.",
             "projectType": "Web App (SPA)",
-            "imagePreviewAlt": "Avia Tickets App Project Screenshot"
+            "imagePreviewAlt": "Avia Tickets App Project Screenshot",
+            "solvedTasks": {
+                "term1": "Implemented components for the interface using React.",
+                "term2": "Used Redux for managing application state.",
+                "term3": "Implemented filters by the number of transfers with appropriate rendering of cards without using third-party libraries.",
+                "term4": "Implemented conversion of ticket prices into different currencies using a third-party API (* currently may not work correctly)."
+            }
         },
         "karpatyJourney": {
             "name": "Karpaty Journey",
             "excerpt": "Several mountain routes through the Ukrainian Carpathians on a map with photos and descriptions.",
-            "description": "Several mountain routes through the Ukrainian Carpathians on a map with photos and descriptions.",
+            "description": "Interactive maps are my passion. In this project, I visualized several mountain routes through the Ukrainian Carpathians on a map, accompanied by photos and descriptions. This project combines my love of nature and technology, creating a useful resource for travelers and mountain hikers.",
             "projectType": "Web App (SPA)",
-            "imagePreviewAlt": "Karpaty Journey Project Screenshot"
+            "imagePreviewAlt": "Karpaty Journey Project Screenshot",
+            "solvedTasks": {
+                "term1": "Implemented binding and visualization of geodata on the map using OpenStreetMap and Leaflet.js.",
+                "term2": "Implemented two map layers: topographic and vector.",
+                "term3": "Added visualization of route points on the map with short descriptions and photos.",
+                "term4": "Used the Geolocation API to determine the user's current location and display it on the map."
+            }
         },
         "firstWebSite": {
             "name": "First Website",
             "excerpt": "My first website, created as a personal project. It may look naive now, but I still love this work.",
-            "excerpt1": "My very first website — a small personal project. It feels a bit naive today, but it carries the spark that started my journey into web development.",
+            "excerpt1": "My first website was a small personal project, made by myself. Naive in style, but full of passion that pushed me forward.",
             "excerpt2": "This was my very first website. Simple and a little rough around the edges, but it marks the beginning of everything I’ve built since.",
             "excerpt3": "My first-ever website. Naive in style, but full of the passion that pushed me forward.",
-            "description": "My very first website created as a personal project.",
+            "description": "My first website was a small personal project that I created myself. At that time, I was studying at FreeCodeCamp, and one of the first practical tasks for beginners was to create a tribute page. It was a site dedicated to Niki Lauda, one of my favorite Formula 1 drivers. Naive in style, but full of passion that pushed me forward.",
             "projectType": "Website",
-            "imagePreviewAlt": "First Website Project Screenshot"
+            "imagePreviewAlt": "First Website Project Screenshot",
+            "solvedTasks": {
+                "term1": "Implemented a design and concept for the website.",
+                "term2": "Implemented the idea using HTML and CSS.",
+                "term3": "First publication of the website on GitHub Pages."
+            }
         }
     },
     "experience": {

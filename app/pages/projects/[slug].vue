@@ -66,7 +66,7 @@
             {{ t('projects.titleAbout') }}
           </h3>
           <p class="font-body text-base md:text-xl text-primaryDark dark:text-primaryLight mb-10 xl:max-w-[55vw] 2xl:max-w-[42vw] mx-auto">
-            {{ t(project.description) }}
+            {{ t(project.description, project.notes) }}
           </p>
           <p class="flex flex-wrap items-center gap-2 mb-10 2xl:mb-20 font-heading text-lg md:text-2xl text-primaryDark dark:text-primaryLight">
             <span class="text-primaryDarkAlpha50 dark:text-accentColor">{{ t('pages.projects.projectSlug.techstack') }}:</span>
