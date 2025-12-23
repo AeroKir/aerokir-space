@@ -41,6 +41,7 @@ const { t } = useI18n();
       :height="200"
       customClass="bg-sepia dark:bg-primaryDark"
     /> -->
+    <SkillsSection />
     <AppFooter />
   </div>
 </template>
