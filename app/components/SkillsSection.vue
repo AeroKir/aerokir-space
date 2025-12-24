@@ -2,8 +2,12 @@
   <section class="relative overflow-hidden py-16 bg-sepia dark:bg-primaryDark">
     <div class="space-y-6">
       <!-- ROW 1 -->
-      <div class="marquee marquee-left">
+      <div class="relative overflow-hidden w-full marquee-left">
         <div class="marquee__inner">
+          <SkillRow
+            :items="row1"
+            :divider="SkillRowDividerInk"
+          />
           <SkillRow
             :items="row1"
             :divider="SkillRowDividerInk"
@@ -16,8 +20,12 @@
       </div>
 
       <!-- ROW 2 -->
-      <div class="marquee marquee-right">
+      <div class="relative overflow-hidden w-full marquee-right">
         <div class="marquee__inner">
+          <SkillRow
+            :items="row2"
+            :divider="SkillRowDividerSkewedCylinder"
+          />
           <SkillRow
             :items="row2"
             :divider="SkillRowDividerSkewedCylinder"
@@ -30,23 +38,31 @@
       </div>
 
       <!-- ROW 3 -->
-      <div class="marquee marquee-left slow">
+      <div class="relative overflow-hidden w-full marquee-left slow">
         <div class="marquee__inner">
+          <SkillRow :items="row3" />
           <SkillRow :items="row3" />
           <SkillRow :items="row3" />
         </div>
       </div>
 
       <!-- ROW 4 -->
-      <div class="marquee marquee-right slow">
+      <div class="relative overflow-hidden w-full marquee-right slow">
         <div class="marquee__inner">
           <SkillRow
             :items="row4"
             :divider="SkillRowDividerStar"
+            :dividerClass="'text-primaryDark dark:!text-accentColor'"
           />
           <SkillRow
             :items="row4"
             :divider="SkillRowDividerStar"
+            :dividerClass="'text-primaryDark dark:!text-accentColor'"
+          />
+          <SkillRow
+            :items="row4"
+            :divider="SkillRowDividerStar"
+            :dividerClass="'text-primaryDark dark:!text-accentColor'"
           />
         </div>
       </div>
@@ -60,181 +76,205 @@ import SkillRowDividerInk from './SkillRowDividerInk.vue';
 import SkillRowDividerSkewedCylinder from './SkillRowDividerSkewedCylinder.vue';
 import SkillRowDividerStar from './SkillRowDividerStar.vue';
 
-const baseLight = 'text-primaryDark';
-const baseDark = 'dark:text-primaryLight';
-
 const row1 = [
   {
     label: 'HTML5',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
-    // divider: true,
+    size: 'text-4xl',
+    weight: 'font-normal',
+    class: 'text-primaryDarkAlpha46 dark:text-sepiaAlpha46',
   },
   {
     label: 'CSS3',
-    size: 'text-lg',
-    weight: 'font-medium',
-    class: 'text-primaryDark/60 dark:text-primaryLight/60',
+    size: 'text-5xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'SCSS',
-    size: 'text-lg',
-    weight: 'font-medium',
-    class: 'text-primaryDark/60 dark:text-primaryLight/60',
+    size: 'text-[32px]',
+    weight: 'font-normal',
+    class: 'text-primaryDarkAlpha46 dark:text-primaryLightAlpha46',
   },
   {
     label: 'JavaScript',
-    size: 'text-2xl',
-    weight: 'font-bold',
-    class: 'text-primaryDark/90 dark:text-primaryLight/90',
-    // divider: true,
+    size: 'text-[64px]',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Vue.js',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
+    size: 'text-5xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
     divider: true,
   },
   {
     label: 'Nuxt.js',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
+    size: 'text-4xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Vuex',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
+    size: 'text-5xl',
+    weight: 'font-normal',
+    class: 'text-primaryDarkAlpha50 dark:text-primaryLightAlpha50',
   },
 ];
 
 const row2 = [
   {
     label: 'Pinia',
-    size: 'text-xl',
-    weight: 'font-semibold',
+    size: 'text-[40px]',
+    weight: 'font-normal',
     class: 'text-primaryDark/80 dark:text-primaryLight/80',
-    divider: true,
+    // divider: true,
   },
   {
     label: 'React',
-    size: 'text-lg',
-    weight: 'font-medium',
-    class: 'text-primaryDark/60 dark:text-primaryLight/60',
+    size: 'text-[64px]',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Redux',
-    size: 'text-lg',
-    weight: 'font-medium',
-    class: 'text-primaryDark/60 dark:text-primaryLight/60',
+    size: 'text-5xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Vuetify',
-    size: 'text-2xl',
-    weight: 'font-bold',
-    class: 'text-primaryDark/90 dark:text-primaryLight/90',
-    // divider: true,
+    size: 'text-[64px]',
+    weight: 'font-normal',
+    class: 'text-primaryDarkAlpha50 dark:text-sepiaAlpha50',
   },
   {
     label: 'Tailwind CSS',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
-    // divider: true,
+    size: 'text-4xl',
+    weight: 'font-normal',
+    class: 'text-primaryDarkAlpha46 dark:text-primaryLightAlpha46',
   },
   {
     label: 'i18n',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
+    size: 'text-[32px]',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Webpack',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
+    size: 'text-5xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Vite',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
+    size: 'text-[32px]',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'NPM',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
+    size: 'text-[64px]',
+    weight: 'font-normal',
+    class: 'text-primaryDarkAlpha46 dark:text-primaryLightAlpha46',
+    divider: true,
   },
 ];
 
-// const row2 = [
-//   { label: 'Nuxt.js', size: 'text-2xl', weight: 'font-bold', color: `${baseLight}/90 ${baseDark}/90` },
-//   { label: 'Pinia', size: 'text-lg', weight: 'font-medium', color: `${baseLight}/60 ${baseDark}/60` },
-//   { label: 'Vuex', size: 'text-base', weight: 'font-normal', color: `${baseLight}/50 ${baseDark}/50` },
-//   { label: 'React', size: 'text-xl', weight: 'font-semibold', color: `${baseLight}/80 ${baseDark}/80` },
-// ];
-
 const row3 = [
-  { label: 'Tailwind CSS', size: 'text-2xl', weight: 'font-bold', color: `${baseLight}/90 ${baseDark}/90` },
-  { label: 'Vuetify', size: 'text-lg', weight: 'font-medium', color: `${baseLight}/60 ${baseDark}/60` },
-  { label: 'i18n', size: 'text-base', weight: 'font-normal', color: `${baseLight}/50 ${baseDark}/50` },
+  {
+    label: 'Node.js',
+    size: 'text-[64px]',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
+  },
+  {
+    label: 'Express.js',
+    size: 'text-5xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
+  },
+  {
+    label: 'RESTful API',
+    size: 'text-[32px]',
+    weight: 'font-normal',
+    class: 'text-primaryDarkAlpha46 dark:text-sepiaAlpha46',
+  },
+  {
+    label: 'Redis',
+    size: 'text-4xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
+  },
+  {
+    label: 'Jest',
+    size: 'text-[64px]',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
+  },
+  {
+    label: 'Testing Library',
+    size: 'text-4xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
+  },
+  {
+    label: 'Git',
+    size: 'text-5xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
+  },
+  {
+    label: 'Linux CLI',
+    size: 'text-4xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
+  },
 ];
-
-// const row4 = [
-//   { label: 'Node.js', size: 'text-xl', weight: 'font-semibold', color: `${baseLight}/80 ${baseDark}/80` },
-//   { label: 'Express.js', size: 'text-lg', weight: 'font-medium', color: `${baseLight}/60 ${baseDark}/60` },
-//   { label: 'Jest', size: 'text-base', weight: 'font-normal', color: `${baseLight}/50 ${baseDark}/50` },
-//   { label: 'Accessibility (WCAG)', size: 'text-xl', weight: 'font-semibold', color: `${baseLight}/80 ${baseDark}/80` },
-// ];
 
 const row4 = [
   {
     label: 'VS Code',
     size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Figma',
-    size: 'text-lg',
-    weight: 'font-medium',
-    class: 'text-primaryDark/60 dark:text-primaryLight/60',
+    size: 'text-4xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Postman',
-    size: 'text-lg',
-    weight: 'font-medium',
-    class: 'text-primaryDark/60 dark:text-primaryLight/60',
+    size: 'text-[32px]',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Jira',
-    size: 'text-2xl',
-    weight: 'font-bold',
-    class: 'text-primaryDark/90 dark:text-primaryLight/90',
-    divider: true,
+    size: 'text-5xl',
+    weight: 'font-normal',
+    class: 'text-primaryDarkAlpha50 dark:text-primaryLightAlpha50',
   },
   {
     label: 'Bitbucket',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
-    // divider: true,
+    size: 'text-[32px]',
+    weight: 'font-normal',
+    class: 'text-primaryDarkAlpha46 dark:text-primaryLightAlpha46',
+    divider: true,
   },
   {
     label: 'Cross-browser Compatibility',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
+    size: 'text-2xl',
+    weight: 'font-normal',
+    class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Accessibility (WCAG)',
-    size: 'text-xl',
-    weight: 'font-semibold',
-    class: 'text-primaryDark/80 dark:text-primaryLight/80',
+    size: 'text-5xl',
+    weight: 'font-normal',
+    class: 'text-primaryDarkAlpha46 dark:text-primaryLightAlpha46',
   },
 ];
 </script>

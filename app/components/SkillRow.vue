@@ -5,8 +5,9 @@
       :key="index"
     >
       <span
+        class="leading-[100%]"
         :class="[
-          'whitespace-nowrap font-heading transition-colors duration-300',
+          'whitespace-nowrap font-body transition-colors duration-300',
           item.size,
           item.weight,
           item.class,
@@ -18,7 +19,8 @@
       <component
         :is="divider"
         v-if="divider && item.divider"
-        class="text-primaryDark/40 dark:text-primaryLight/40"
+        class="text-primaryDark dark:text-primaryLight"
+        :class="dividerClass"
       />
     </template>
   </div>
@@ -34,5 +36,6 @@ defineProps<{
     divider?: boolean;
   }[];
   divider?: any;
+  dividerClass?: string;
 }>();
 </script>
