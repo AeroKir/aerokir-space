@@ -12,10 +12,10 @@
     <NuxtLink
       :to="localePath('/')"
       aria-label="Home"
-      class="pointer-events-auto"
+      class="absolute left-4 md:left-7 xl:left-[70px] top-7 pointer-events-auto xl:bg-sepia/30 xl:dark:bg-primaryDark/30 xl:backdrop-blur-md xl:rounded-xl xl:p-2"
     >
       <IconLogo
-        class="w-6 h-6 absolute left-4 md:left-7 xl:left-[93px] top-6 text-primaryDark dark:text-accentColor hover:text-primaryDark/80 dark:hover:text-accentColor/80 transition-colors"
+        class="w-6 h-6 text-primaryDark dark:text-accentColor hover:text-primaryDark/80 dark:hover:text-accentColor/80 transition-colors"
       />
     </NuxtLink>
 

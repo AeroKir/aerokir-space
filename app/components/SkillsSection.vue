@@ -289,7 +289,7 @@ const row4 = [
 .marquee__inner {
   display: flex;
   width: max-content;
-  animation: marquee-left 30s linear infinite;
+  animation: marquee-left 90s linear infinite;
 }
 
 .marquee-right .marquee__inner {
