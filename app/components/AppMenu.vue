@@ -1,6 +1,6 @@
 <template>
-  <nav class="relative hidden xl:flex flex-col gap-4 mr-auto xl:pt-1 pointer-events-auto">
-    <ul class="xl:bg-sepia/30 xl:dark:bg-primaryDark/30 xl:backdrop-blur-md xl:rounded-xl flex flex-col">
+  <nav class="relative hidden xl:flex flex-col gap-4 mr-auto w-[137px] pointer-events-auto">
+    <ul class="xl:bg-sepia/30 xl:dark:bg-primaryDark/30 xl:backdrop-blur-md xl:rounded-xl py-2 pl-2 -ml-2">
       <li
         v-for="(link, i) in menuLinks"
         :key="link.path"
