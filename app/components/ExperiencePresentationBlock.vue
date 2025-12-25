@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full mx-auto">
-    <div class="left-panel xl:block hidden fixed top-0 left-0 w-[240px] h-screen z-10 xl:bg-sepia/30 xl:dark:bg-primaryDark/30 xl:backdrop-blur-md" />
+    <!-- <div class="left-panel xl:block hidden fixed top-0 left-0 w-[240px] h-screen z-10 xl:bg-sepia/30 xl:dark:bg-primaryDark/30 xl:backdrop-blur-md" /> -->
 
     <!-- Swiper -->
     <div class="swiper-shift-wrapper relative">
