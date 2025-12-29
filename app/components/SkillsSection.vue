@@ -1,6 +1,6 @@
 <template>
-  <section class="relative overflow-hidden py-16 bg-sepia dark:bg-primaryDark">
-    <div class="space-y-6">
+  <section class="relative overflow-hidden py-12 md:py-16 bg-sepia dark:bg-primaryDark">
+    <div class="space-y-4 md:space-y-6">
       <!-- ROW 1 -->
       <div class="relative overflow-hidden w-full marquee-left">
         <div class="marquee__inner">
@@ -79,44 +79,44 @@ import SkillRowDividerStar from './SkillRowDividerStar.vue';
 const row1 = [
   {
     label: 'HTML5',
-    size: 'text-4xl',
+    size: 'text-2xl md:text-4xl',
     weight: 'font-normal',
     class: 'text-primaryDarkAlpha46 dark:text-sepiaAlpha46',
   },
   {
     label: 'CSS3',
-    size: 'text-5xl',
+    size: 'text-3xl md:text-5xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'SCSS',
-    size: 'text-[32px]',
+    size: 'text-[26px] md:text-[32px]',
     weight: 'font-normal',
     class: 'text-primaryDarkAlpha46 dark:text-primaryLightAlpha46',
   },
   {
     label: 'JavaScript',
-    size: 'text-[64px]',
+    size: 'text-[38px] md:text-[64px]',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Vue.js',
-    size: 'text-5xl',
+    size: 'text-3xl md:text-5xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
     divider: true,
   },
   {
     label: 'Nuxt.js',
-    size: 'text-4xl',
+    size: 'text-2xl md:text-4xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Vuex',
-    size: 'text-5xl',
+    size: 'text-3xl md:text-5xl',
     weight: 'font-normal',
     class: 'text-primaryDarkAlpha50 dark:text-primaryLightAlpha50',
   },
@@ -125,56 +125,56 @@ const row1 = [
 const row2 = [
   {
     label: 'Pinia',
-    size: 'text-[40px]',
+    size: 'text-[32px] md:text-[40px]',
     weight: 'font-normal',
     class: 'text-primaryDark/80 dark:text-primaryLight/80',
     // divider: true,
   },
   {
     label: 'React',
-    size: 'text-[64px]',
+    size: 'text-[38px] md:text-[64px]',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Redux',
-    size: 'text-5xl',
+    size: 'text-3xl md:text-5xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Vuetify',
-    size: 'text-[64px]',
+    size: 'text-[38px] md:text-[64px]',
     weight: 'font-normal',
     class: 'text-primaryDarkAlpha50 dark:text-sepiaAlpha50',
   },
   {
     label: 'Tailwind CSS',
-    size: 'text-4xl',
+    size: 'text-2xl md:text-4xl',
     weight: 'font-normal',
     class: 'text-primaryDarkAlpha46 dark:text-primaryLightAlpha46',
   },
   {
     label: 'i18n',
-    size: 'text-[32px]',
+    size: 'text-[26px] md:text-[32px]',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Webpack',
-    size: 'text-5xl',
+    size: 'text-3xl md:text-5xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Vite',
-    size: 'text-[32px]',
+    size: 'text-[26px] md:text-[32px]',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'NPM',
-    size: 'text-[64px]',
+    size: 'text-[38px] md:text-[64px]',
     weight: 'font-normal',
     class: 'text-primaryDarkAlpha46 dark:text-primaryLightAlpha46',
     divider: true,
@@ -184,49 +184,49 @@ const row2 = [
 const row3 = [
   {
     label: 'Node.js',
-    size: 'text-[64px]',
+    size: 'text-[38px] md:text-[64px]',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Express.js',
-    size: 'text-5xl',
+    size: 'text-3xl md:text-5xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'RESTful API',
-    size: 'text-[32px]',
+    size: 'text-[26px] md:text-[32px]',
     weight: 'font-normal',
     class: 'text-primaryDarkAlpha46 dark:text-sepiaAlpha46',
   },
   {
     label: 'Redis',
-    size: 'text-4xl',
+    size: 'text-2xl md:text-4xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Jest',
-    size: 'text-[64px]',
+    size: 'text-[38px] md:text-[64px]',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Testing Library',
-    size: 'text-4xl',
+    size: 'text-2xl md:text-4xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Git',
-    size: 'text-5xl',
+    size: 'text-3xl md:text-5xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Linux CLI',
-    size: 'text-4xl',
+    size: 'text-2xl md:text-4xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
@@ -235,44 +235,44 @@ const row3 = [
 const row4 = [
   {
     label: 'VS Code',
-    size: 'text-xl',
+    size: 'text-lg md:text-xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Figma',
-    size: 'text-4xl',
+    size: 'text-2xl md:text-4xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Postman',
-    size: 'text-[32px]',
+    size: 'text-[26px] md:text-[32px]',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Jira',
-    size: 'text-5xl',
+    size: 'text-3xl md:text-5xl',
     weight: 'font-normal',
     class: 'text-primaryDarkAlpha50 dark:text-primaryLightAlpha50',
   },
   {
     label: 'Bitbucket',
-    size: 'text-[32px]',
+    size: 'text-[26px] md:text-[32px]',
     weight: 'font-normal',
     class: 'text-primaryDarkAlpha46 dark:text-primaryLightAlpha46',
     divider: true,
   },
   {
     label: 'Cross-browser Compatibility',
-    size: 'text-2xl',
+    size: 'text-xl md:text-2xl',
     weight: 'font-normal',
     class: 'text-primaryDark dark:text-sepia',
   },
   {
     label: 'Accessibility (WCAG)',
-    size: 'text-5xl',
+    size: 'text-3xl md:text-5xl',
     weight: 'font-normal',
     class: 'text-primaryDarkAlpha46 dark:text-primaryLightAlpha46',
   },
