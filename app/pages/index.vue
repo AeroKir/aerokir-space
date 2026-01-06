@@ -22,12 +22,21 @@
           <IconPyramid class="absolute z-10 -bottom-70 right-1/2 translate-x-1/2 w-[250px] h-[250px] text-primaryDark dark:text-primaryLight" />
         </div>
 
-        <p
+        <div class="signature-wrap absolute z-10 top-10 -right-10 -rotate-[5deg]">
+          <Signature />
+        </div>
+
+        <div class="relative z-20 max-w-[780px] ml-auto -mt-96 font-body text-lg md:text-xl lg:text-2xl font-normal">
+          <p class="[text-shadow:0_1px_1px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000] mb-4">{{ t('pages.about.heroText.term1') }}</p>
+          <p class="[text-shadow:0_1px_1px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000] mb-4">{{ t('pages.about.heroText.term2') }}</p>
+          <p class="[text-shadow:0_1px_1px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">{{ t('pages.about.heroText.term3') }}</p>
+        </div>
+        <!-- <p
           class="relative max-w-[780px] ml-auto -mt-40 font-body text-lg md:text-xl lg:text-2xl font-normal leading-relaxed [text-shadow:0_1px_1px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]"
         >
           {{ t('introduce.para1') }}
           {{ t('introduce.para2') }}
-        </p>
+        </p> -->
       </div>
     </main>
 
@@ -49,3 +58,20 @@ const runtimeConfig = useRuntimeConfig();
 
 const { t } = useI18n();
 </script>
+
+<style scoped>
+.signature-wrap {
+  /* width: 160px;
+  display: inline-block;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fade-in 0.6s ease forwards;
+  animation-delay: 0.1s; */
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+</style>

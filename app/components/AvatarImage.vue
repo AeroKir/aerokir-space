@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[600px] h-[700px] flex justify-center items-center bg-primaryLight -rotate-[5deg]">
+  <div class="w-[600px] h-[700px] flex justify-center items-center bg-primaryLight dark:bg-primaryLightAlpha25 -rotate-[5deg]">
     <img
       src="/avatar-image.png"
       alt=""
