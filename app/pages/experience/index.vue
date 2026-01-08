@@ -6,7 +6,7 @@
         <HeadingPage
           :title="$t('pages.experience.title')"
           :isDot="true"
-          customClass="ml-[0] md:-ml-[10px] xl:ml-0 3xl:ml-0 mb-12 md:mb-[80px] pt-6 md:mt-12 lg:mt-0 lg:pt-0"
+          customClass="ml-[0] md:-ml-[10px] xl:ml-[60px] 3xl:ml-0 mb-12 md:mb-[80px] pt-6 md:mt-12 lg:mt-0 lg:pt-0"
         >
           <IconSunrise
             class="w-[150px] h-[150px] md:w-[250px] md:h-[250px] lg:w-[343px] lg:h-[343px] xl:w-[343px] xl:h-[343px] 2xl:w-[417px] 2xl:h-[417px] absolute -top-8 md:-top-14 lg:-top-32 xl:-top-32 2xl:-top-[118px] -right-6 md:-right-14 lg:-right-20 xl:-right-20 2xl:-right-24 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"

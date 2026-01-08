@@ -11,6 +11,7 @@ enum Colors {
   primaryLight = '#ffffff',
   primaryLightAlpha70 = 'rgba(255, 255, 255, 0.7)',
   primaryLightAlpha50 = 'rgba(255, 255, 255, 0.5)',
+  primaryLightAlpha46 = 'rgba(255, 255, 255, 0.46)',
   primaryLightAlpha25 = 'rgba(255, 255, 255, 0.25)',
   primaryLightAlpha10 = 'rgba(255, 255, 255, 0.10)',
   primaryLightAlpha05 = 'rgba(255, 255, 255, 0.05)',
