@@ -1,5 +1,5 @@
 <template>
-  <section class="relative overflow-hidden py-12 md:py-16 bg-sepia dark:bg-primaryDark">
+  <section class="relative overflow-hidden py-4 md:py-16 bg-sepia dark:bg-primaryDark">
     <div class="space-y-4 md:space-y-6">
       <!-- ROW 1 -->
       <div class="relative overflow-hidden w-full marquee-left">
