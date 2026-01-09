@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="signature w-[60px] 2xl:w-[200px] h-auto text-primaryDark dark:text-accentColor"
+    class="signature w-[60px] xl:w-[170px] 3xl:w-[200px] h-auto text-primaryDark dark:text-accentColor"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 25"
     aria-label="Kyrylo signature logo"
