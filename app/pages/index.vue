@@ -39,7 +39,6 @@
       <SkillsSection />
     </main>
 
-    <!-- <SkillsSection /> -->
     <AppFooter>
       <AppFooterInternalLink
         :to="'/experience'"
@@ -53,25 +52,6 @@
 import IconTriangles from '~/assets/icons/triangles.svg';
 import IconPyramid from '~/assets/icons/pyramid-3d.svg';
 
-const runtimeConfig = useRuntimeConfig();
-
 const { t } = useI18n();
 const { isMobile } = useIsMobile();
 </script>
-
-<style scoped>
-.signature-wrap {
-  /* width: 160px;
-  display: inline-block;
-  margin-bottom: 24px;
-  opacity: 0;
-  animation: fade-in 0.6s ease forwards;
-  animation-delay: 0.1s; */
-}
-
-@keyframes fade-in {
-  /* to {
-    opacity: 1;
-  } */
-}
-</style>
