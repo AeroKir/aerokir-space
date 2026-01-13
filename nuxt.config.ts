@@ -28,6 +28,28 @@ export default defineNuxtConfig({
   // https://devtools.nuxt.com
   devtools: { enabled: true },
 
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
+      titleTemplate: '%s · Kirill Shevtsov — Frontend Developer',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          name: 'description',
+          content:
+            'Frontend & Web Developer with 7+ years of experience. Building fast, accessible, and scalable web applications.',
+        },
+        { name: 'robots', content: 'index, follow' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    },
+  },
+
   // Env variables - https://nuxt.com/docs/getting-started/configuration#environment-variables-and-private-tokens
   runtimeConfig: {
     public: {
