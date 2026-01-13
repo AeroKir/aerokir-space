@@ -426,10 +426,10 @@ export default defineAppConfig({
       display: 'Telegram',
     },
     {
-      label: 'Phone',
-      href: 'tel:+380684479024',
-      icon: 'phone',
-      display: '+380684479024',
+      label: 'WhatsApp',
+      href: 'https://wa.me/380684479024',
+      icon: 'whatsapp',
+      display: 'WhatsApp',
     },
     {
       label: 'GitHub',
@@ -442,6 +442,12 @@ export default defineAppConfig({
       href: 'https://www.linkedin.com/in/aerokir-space/',
       icon: 'linkedin',
       display: 'LinkedIn',
+    },
+    {
+      label: 'Phone',
+      href: 'tel:+380684479024',
+      icon: 'phone',
+      display: '+380684479024',
     },
   ],
 });
