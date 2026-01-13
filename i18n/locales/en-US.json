@@ -36,7 +36,12 @@
             "title": "Education"
         },
         "contact": {
-            "title": "Hello"
+            "title": "Hello",
+            "contactText": {
+                "term1": "Have an idea, a project, or just want to connect?",
+                "term2": "I’m open to collaborations, new connections, and meaningful challenges. If you want to build something that truly matters — let’s talk.",
+                "term3": "Feel free to reach out in any way that works for you — sometimes the best projects start with a simple connection."
+            }
         }
     },
     "buttons": {

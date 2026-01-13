@@ -1,7 +1,7 @@
 <template>
-  <Page>
+  <Page contentClass="lg:!pt-24 xl:!pt-50 2xl:!pt-16 3xl:!pt-0">
     <AppHeader />
-    <main class="h-auto mx-auto max-w-[652px] xl:ml-[230px] xl:mr-[230px] 2xl:ml-[283px] 3xl:ml-[407px] 2xl:mr-[265px] text-primaryDark dark:text-primaryLight relative xl:z-0 px-2 md:px-8 lg:px-20 xl:px-0 pt-5 md:pt-20">
+    <main class="h-full mx-auto max-w-[652px] xl:ml-[230px] xl:mr-[230px] 2xl:ml-[283px] 3xl:ml-[407px] 2xl:mr-[265px] text-primaryDark dark:text-primaryLight relative xl:z-0 px-2 md:px-8 lg:px-20 xl:px-0 pt-5 md:pt-20">
       <div class="relative max-w-[1040px] h-auto left-1/2 -translate-x-1/2 lg:pb-[20px]">
         <HeadingPage
           :title="$t('pages.contact.title')"
@@ -13,22 +13,28 @@
           />
         </HeadingPage>
       </div>
-      <!-- <IconSmile
-        class="w-[243px] h-[243px] absolute -top-[75px] right-32 text-primaryDarkAlpha25 dark:text-primaryLightAlpha50"
-      />
-      <HeadingPage
-        :title="$t('pages.contact.title')"
-        :isDot="true"
-      /> -->
-      <p class="font-body font-bold text-xl text-primaryDark dark:text-primaryLight mb-10">
+
+      <!-- <p class="font-body font-bold text-xl text-primaryDark dark:text-primaryLight mb-10">
         Are you interested in me as a person, or do you want to do a project? Let's stay in touch.
-      </p>
+      </p> -->
+
+      <div class="font-bold font-body text-lg md:text-xl mb-10">
+        <p class="[text-shadow:0_1px_1px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000] mb-4">
+          {{ t('pages.contact.contactText.term1') }}
+        </p>
+        <p class="[text-shadow:0_1px_1px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000] mb-4">
+          {{ t('pages.contact.contactText.term2') }}
+        </p>
+        <p class="[text-shadow:0_1px_1px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000]">
+          {{ t('pages.contact.contactText.term3') }}
+        </p>
+      </div>
 
       <ul>
         <li
           v-for="social in socials"
           :key="social.label"
-          class="font-heading text-xl mb-2 flex items-center gap-2"
+          class="font-heading text-2xl mb-2 flex items-center gap-2"
         >
           <component
             :is="icons[social.icon]"
@@ -50,10 +56,11 @@
 </template>
 
 <script setup lang="ts">
-import IconSmile from '../../assets/icons/smile.svg';
+import IconSmile from '~/assets/icons/smile.svg';
 
 import EmailIcon from '~/assets/icons/email.svg';
 import TelegramIcon from '~/assets/icons/telegram.svg';
+import WhatsAppIcon from '~/assets/icons/whatsapp.svg';
 import PhoneIcon from '~/assets/icons/phone.svg';
 import GithubIcon from '~/assets/icons/github.svg';
 import LinkedinIcon from '~/assets/icons/linkedin.svg';
@@ -71,8 +78,11 @@ const { socials } = useAppConfig() as {
 const icons: Record<string, any> = {
   email: EmailIcon,
   telegram: TelegramIcon,
+  whatsapp: WhatsAppIcon,
   phone: PhoneIcon,
   github: GithubIcon,
   linkedin: LinkedinIcon,
 };
+
+const { t } = useI18n();
 </script>
