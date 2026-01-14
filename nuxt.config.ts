@@ -33,15 +33,15 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      titleTemplate: '%s · Kirill Shevtsov — Frontend Developer',
+      // titleTemplate: '%s · Kirill Shevtsov — Frontend Developer',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        {
-          name: 'description',
-          content:
-            'Frontend & Web Developer with 7+ years of experience. Building fast, accessible, and scalable web applications.',
-        },
+        // {
+        //   name: 'description',
+        //   content:
+        //     'Frontend & Web Developer with 7+ years of experience. Building fast, accessible, and scalable web applications.',
+        // },
         { name: 'robots', content: 'index, follow' },
       ],
       link: [

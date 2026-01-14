@@ -54,4 +54,18 @@ import IconPyramid from '~/assets/icons/pyramid-3d.svg';
 
 const { t } = useI18n();
 const { isMobile } = useIsMobile();
+
+// useSeoMeta({
+//   title: t('pages.about.metadata.title'),
+//   description: t('pages.about.metadata.description'),
+//   ogTitle: t('pages.about.metadata.title'),
+//   ogDescription: t('pages.about.metadata.description'),
+//   ogImage: '/og-images/about-page.png',
+//   ogUrl: 'https://www.antoinegoulet.dev/about',
+// });
+
+useOgMeta({
+  titleKey: 'pages.about.metadata.title',
+  descriptionKey: 'pages.about.metadata.description',
+});
 </script>
