@@ -14,10 +14,6 @@
         </HeadingPage>
       </div>
 
-      <!-- <p class="font-body font-bold text-xl text-primaryDark dark:text-primaryLight mb-10">
-        Are you interested in me as a person, or do you want to do a project? Let's stay in touch.
-      </p> -->
-
       <div class="font-bold font-body text-lg md:text-xl mb-10">
         <p class="[text-shadow:0_1px_1px_#9DA3A4] dark:[text-shadow:0_2px_3px_#000000] mb-4">
           {{ t('pages.contact.contactText.term1') }}

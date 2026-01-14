@@ -13,6 +13,10 @@
     },
     "pages": {
         "about": {
+            "metadata": {
+                "title": "Kirill Shevtsov — Frontend and Web Developer",
+                "description": "Frontend & Web Developer with 7+ years of experience. Building fast, accessible, and scalable web applications."
+            },
             "title": "Kirill Shevtsov",
             "heroText": {
                 "term1": "Hi! I’m Kirill — a frontend and web developer who turns ideas into living, fast, and thoughtfully crafted web products.",
