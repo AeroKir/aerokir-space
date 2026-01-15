@@ -57,7 +57,7 @@ onMounted(() => {
 
     // horizontal lines
     for (let i = 1; i < 20; i++) {
-      const depth = i + (frame * 0.015) % 1;
+      const depth = i + (frame * 0.005) % 1;
       const scale = 1 / depth;
       let y;
 
