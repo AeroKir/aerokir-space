@@ -43,6 +43,8 @@
 <script setup lang="ts">
 import IconPyramidVertical from '../../assets/icons/pyramid-vertical.svg';
 
+const { locale } = useI18n();
+
 const { projects } = useAppConfig() as {
   projects: {
     id: number | string;
@@ -89,6 +91,7 @@ onBeforeUnmount(() => {
 useOgMeta({
   titleKey: 'pages.projects.metadata.title',
   descriptionKey: 'pages.projects.metadata.description',
+  image: `/og/og-img-projects-${locale.value}.png`,
 });
 </script>
 
