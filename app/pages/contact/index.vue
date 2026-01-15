@@ -80,10 +80,11 @@ const icons: Record<string, any> = {
   linkedin: LinkedinIcon,
 };
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
 useOgMeta({
   titleKey: 'pages.contact.metadata.title',
   descriptionKey: 'pages.contact.metadata.description',
+  image: `/og/og-img-contact-${locale.value}.png`,
 });
 </script>
