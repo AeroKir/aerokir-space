@@ -25,9 +25,17 @@
             }
         },
         "experience": {
+            "metadata": {
+                "title": "Kirill Shevtsov — Experience",
+                "description": "Over 7 years of frontend and web development experience, focused on performance, UX and scalable interfaces."
+            },
             "title": "Experience"
         },
         "projects": {
+            "metadata": {
+                "title": "Kirill Shevtsov — Projects",
+                "description": "Selection of frontend and web projects — from interactive UIs to production products."
+            },
             "title": "Projects",
             "titleSingular": "Project",
             "projectSlug": {
@@ -40,6 +48,10 @@
             "title": "Education"
         },
         "contact": {
+            "metadata": {
+                "title": "Kirill Shevtsov — Contact",
+                "description": "Get in touch to discuss collaboration, projects or long-term remote opportunities."
+            },
             "title": "Hello",
             "contactText": {
                 "term1": "Have an idea, a project, or just want to connect?",
