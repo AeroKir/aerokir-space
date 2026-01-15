@@ -26,4 +26,9 @@
 
 <script setup lang="ts">
 import IconSunrise from '~/assets/icons/sunrise.svg';
+
+useOgMeta({
+  titleKey: 'pages.experience.metadata.title',
+  descriptionKey: 'pages.experience.metadata.description',
+});
 </script>

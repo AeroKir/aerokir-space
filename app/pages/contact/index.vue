@@ -81,4 +81,9 @@ const icons: Record<string, any> = {
 };
 
 const { t } = useI18n();
+
+useOgMeta({
+  titleKey: 'pages.contact.metadata.title',
+  descriptionKey: 'pages.contact.metadata.description',
+});
 </script>

@@ -85,6 +85,11 @@ onMounted(() => {
 onBeforeUnmount(() => {
   if (observer) observer.disconnect();
 });
+
+useOgMeta({
+  titleKey: 'pages.projects.metadata.title',
+  descriptionKey: 'pages.projects.metadata.description',
+});
 </script>
 
 <style scoped>
