@@ -1,5 +1,14 @@
 <template>
-  <article class="flex flex-col experience-item-card p-1 border-t-2 border-primaryDark dark:border-primaryLight">
+  <article
+    class="flex flex-col experience-item-card p-1 border-t-2 border-primaryDark dark:border-primaryLight"
+    :class="[
+      isPointerDown && isMouse ? 'cursor-grabbing' : 'cursor-grab',
+    ]"
+    @pointerdown="onPointerDown"
+    @pointerup="onPointerUp"
+    @pointercancel="onPointerUp"
+    @pointerleave="onPointerUp"
+  >
     <div class="flex items-center justify-center w-10 h-10 rounded-full bg-sepia dark:bg-primaryDark relative -top-6 -left-2">
       <div class="flex items-center justify-center w-6 h-6 rounded-full bg-primaryDark dark:bg-primaryLight">
         <div
@@ -105,4 +114,16 @@ const props = defineProps<{
 }>();
 
 const { t } = useI18n();
+
+const isPointerDown = ref(false);
+const isMouse = ref(false);
+
+const onPointerDown = (e: PointerEvent) => {
+  isPointerDown.value = true;
+  isMouse.value = e.pointerType === 'mouse';
+};
+
+const onPointerUp = () => {
+  isPointerDown.value = false;
+};
 </script>
