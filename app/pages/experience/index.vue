@@ -27,11 +27,11 @@
 <script setup lang="ts">
 import IconSunrise from '~/assets/icons/sunrise.svg';
 
-const { locale } = useI18n();
+const { t, locale } = useI18n();
 
 useOgMeta({
-  titleKey: 'pages.experience.metadata.title',
-  descriptionKey: 'pages.experience.metadata.description',
+  title: t('pages.experience.metadata.title'),
+  description: t('pages.experience.metadata.description'),
   image: `/og/og-img-experience-${locale.value}.png`,
 });
 </script>

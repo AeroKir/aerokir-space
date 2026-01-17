@@ -83,8 +83,8 @@ const icons: Record<string, any> = {
 const { t, locale } = useI18n();
 
 useOgMeta({
-  titleKey: 'pages.contact.metadata.title',
-  descriptionKey: 'pages.contact.metadata.description',
+  title: t('pages.contact.metadata.title'),
+  description: t('pages.contact.metadata.description'),
   image: `/og/og-img-contact-${locale.value}.png`,
 });
 </script>

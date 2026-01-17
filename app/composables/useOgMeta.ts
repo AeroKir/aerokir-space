@@ -1,21 +1,20 @@
-export function useOgMeta({
-  titleKey,
-  descriptionKey,
-  image,
-  url,
-}: {
-  titleKey: string;
-  descriptionKey: string;
+type OgMetaOptions = {
+  title: string;
+  description: string;
   image?: string;
   url?: string;
-}) {
-  const { locale, t } = useI18n();
+};
+
+export function useOgMeta({
+  title,
+  description,
+  image,
+  url,
+}: OgMetaOptions) {
   const route = useRoute();
+  const { locale } = useI18n();
 
   const baseUrl = 'https://aerokir.space';
-
-  const title = t(titleKey);
-  const description = t(descriptionKey);
 
   useSeoMeta({
     title,
@@ -24,14 +23,21 @@ export function useOgMeta({
     ogTitle: title,
     ogDescription: description,
 
-    ogImage:
-      image
-      ?? (locale.value === 'ua'
-        ? `${baseUrl}/og/og-img-home-ua.png`
-        : `${baseUrl}/og/og-img-home-en.png`),
+    ogImage: image
+      ? image.startsWith('http')
+        ? image
+        : `${baseUrl}${image}`
+      : `${baseUrl}/og/og-home-${locale.value}.png`,
 
     ogUrl: url ?? `${baseUrl}${route.fullPath}`,
 
     twitterCard: 'summary_large_image',
+    twitterTitle: title,
+    twitterDescription: description,
+    twitterImage: image
+      ? image.startsWith('http')
+        ? image
+        : `${baseUrl}${image}`
+      : undefined,
   });
 }

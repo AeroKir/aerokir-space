@@ -52,11 +52,12 @@
 import IconTriangles from '~/assets/icons/triangles.svg';
 import IconPyramid from '~/assets/icons/pyramid-3d.svg';
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const { isMobile } = useIsMobile();
 
 useOgMeta({
-  titleKey: 'pages.about.metadata.title',
-  descriptionKey: 'pages.about.metadata.description',
+  title: t('pages.about.metadata.title'),
+  description: t('pages.about.metadata.description'),
+  image: `/og/og-img-home-${locale.value}.png`,
 });
 </script>
