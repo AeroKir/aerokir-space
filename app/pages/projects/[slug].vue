@@ -1,10 +1,6 @@
 <template>
   <Page contentClass="lg:-pt-[240px] -mb-[240px]">
     <AppHeader />
-    <!-- <PerspectiveGrid
-      position="top"
-      :height="490"
-    /> -->
     <main class="max-w-4xl xl:max-w-[800px] 2xl:max-w-4xl mx-auto px-2 md:px-8 lg:px-20 xl:px-0 relative xl:z-50">
       <transition
         name="fade"
@@ -160,12 +156,27 @@ import ExternalLinkIcon from '~/assets/icons/external-link.svg';
 import ArrowRight from '~/assets/icons/arrow-right.svg';
 
 const route = useRoute();
-const localePath = useLocalePath();
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const { projects } = useAppConfig();
 
 const project = computed(() => {
   return (projects ?? []).find((p) => p.slug === route.params.slug);
+});
+
+watchEffect(() => {
+  if (!project.value) return;
+
+  const title = `${t(project.value.name)} — ${t('introduce.title')}`;
+  const description = t(project.value.excerpt);
+  const ogImage = project.value.ogImage
+    ? `/og/projects/${project.value.slug}/og-${locale.value}.png`
+    : `/og/projects/og-project-default-${locale.value}.png`;
+
+  useOgMeta({
+    title,
+    description,
+    image: ogImage,
+  });
 });
 
 const formattedScreenshots = computed(() =>
@@ -203,14 +214,3 @@ const isLastProject = computed(() => {
   return projectIndex.value === projects.length - 1;
 });
 </script>
-
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>
