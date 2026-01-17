@@ -1,4 +1,4 @@
-export default defineEventHandler(() => {
+export default defineEventHandler((event) => {
   const baseUrl = 'https://aerokir.space';
   const locales = ['en', 'ua'];
 
