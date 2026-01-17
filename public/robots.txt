@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aerokir.space/sitemap.xml
