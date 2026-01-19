@@ -31,5 +31,7 @@ jobs:
 
       - name: Build & Deploy to NuxtHub
         uses: nuxt-hub/action@v2
+        env:
+          NUXT_PUBLIC_GA_ID: ${{ secrets.NUXT_PUBLIC_GA_ID }}
         with:
           project-key: aerokir-space-67v4
