@@ -30,22 +30,6 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      script: [
-        {
-          src: `https://www.googletagmanager.com/gtag/js?id=${process.env.NUXT_PUBLIC_GA_ID}`,
-          async: true,
-        },
-        {
-          innerHTML: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NUXT_PUBLIC_GA_ID}', {
-              anonymize_ip: true,
-            });
-          `,
-        },
-      ],
       htmlAttrs: {
         lang: 'en',
       },
@@ -71,6 +55,7 @@ export default defineNuxtConfig({
     public: {
       // Can be overridden by NUXT_PUBLIC_HELLO_TEXT environment variable
       helloText: 'AeroKir space',
+      gaId: process.env.NUXT_PUBLIC_GA_ID,
     },
   },
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
