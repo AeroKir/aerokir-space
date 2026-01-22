@@ -1,4 +1,4 @@
-export default defineNuxtPlugin(() => {
+export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig();
   const gaId = config.public.gaId;
 
@@ -7,23 +7,37 @@ export default defineNuxtPlugin(() => {
     return;
   }
 
-  // Load gtag script
+  // 1️⃣ Load gtag
   const script = document.createElement('script');
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
   document.head.appendChild(script);
 
-  // Init dataLayer
-  (window as any).dataLayer = (window as any).dataLayer || [];
+  // 2️⃣ Init dataLayer
+  window.dataLayer = window.dataLayer || [];
 
   function gtag(...args: any[]) {
-    (window as any).dataLayer.push(args);
+    window.dataLayer.push(args);
   }
 
-  (window as any).gtag = gtag;
+  window.gtag = gtag;
 
+  // 3️⃣ Init GA
   gtag('js', new Date());
   gtag('config', gaId, {
     anonymize_ip: true,
+    send_page_view: false,
   });
+
+  // 4️⃣ SPA page_view tracking
+  nuxtApp.hook('page:finish', () => {
+    gtag('event', 'page_view', {
+      page_path: window.location.pathname,
+    });
+  });
+
+  // 5️⃣ Debug
+  if (import.meta.dev) {
+    console.info('[GA] Initialized', gaId);
+  }
 });
