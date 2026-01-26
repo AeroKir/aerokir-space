@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
+    'nuxt-gtag',
     [
       '@nuxtjs/color-mode',
       {
@@ -84,6 +85,15 @@ export default defineNuxtConfig({
       { name: 'Play', provider: 'google', preload: true },
       { name: 'Inter', provider: 'google', preload: true },
     ],
+  },
+
+  gtag: {
+    id: process.env.NUXT_PUBLIC_GA_ID,
+    initMode: 'auto',
+    config: {
+      anonymize_ip: true,
+      send_page_view: true,
+    },
   },
 
   i18n: {
