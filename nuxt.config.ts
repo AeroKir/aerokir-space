@@ -56,7 +56,7 @@ export default defineNuxtConfig({
     public: {
       // Can be overridden by NUXT_PUBLIC_HELLO_TEXT environment variable
       helloText: 'AeroKir space',
-      gaId: process.env.NUXT_PUBLIC_GA_ID,
+      // gaId: process.env.NUXT_PUBLIC_GA_ID,
     },
   },
   // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
@@ -90,10 +90,10 @@ export default defineNuxtConfig({
   gtag: {
     id: process.env.NUXT_PUBLIC_GA_ID,
     initMode: 'auto',
-    config: {
-      anonymize_ip: true,
-      send_page_view: true,
-    },
+    // config: {
+    //   anonymize_ip: true,
+    //   send_page_view: true,
+    // },
   },
 
   i18n: {
