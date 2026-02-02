@@ -62,7 +62,8 @@
     },
     "buttons": {
         "more": "More",
-        "toggleMenu": "Toggle Menu"
+        "toggleMenu": "Toggle Menu",
+        "downloadCV": "Download CV"
     },
     "footerLinks": {
         "toExperience": "To Experience",
@@ -70,7 +71,8 @@
         "toEducation": "To Education",
         "toContact": "Contact",
         "prevProject": "Prev",
-        "nextProject": "Next"
+        "nextProject": "Next",
+        "allRightsReserved": "All rights reserved."
     },
     "projects": {
         "titleAbout": "About Project:",
