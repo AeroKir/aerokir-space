@@ -62,7 +62,8 @@
     },
     "buttons": {
         "more": "Більше",
-        "toggleMenu": "Перемкнути меню"
+        "toggleMenu": "Перемкнути меню",
+        "downloadCV": "Завантажити резюме"
     },
     "footerLinks": {
         "toExperience": "До досвіду",
@@ -70,7 +71,8 @@
         "toEducation": "До освіти",
         "toContact": "Контакт",
         "prevProject": "Попередній",
-        "nextProject": "Наступний"
+        "nextProject": "Наступний",
+        "allRightsReserved": "Всі права захищені."
     },
     "projects": {
         "titleAbout": "Про проєкт:",

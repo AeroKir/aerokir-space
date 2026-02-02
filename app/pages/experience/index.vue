@@ -14,6 +14,11 @@
         </HeadingPage>
       </div>
       <ExperiencePresentationBlock />
+      <a
+        href="/cv/Kirill_Shevtsov_Frontend_Developer_EN.pdf"
+        download
+        class="relative left-1/2 transform -translate-x-1/2 w-fit flex items-center border-2 border-primaryDark dark:border-accentColor px-4 py-2 mt-12 bg-transparent rounded-xl font-heading hover:border-primaryDark/70 dark:hover:border-accentColor/70 transition-colors"
+      >{{ $t('buttons.downloadCV') }}<IconDownload class="w-4 h-4 inline ml-2 text-primaryDark dark:text-primaryLight" /></a>
     </main>
     <AppFooter>
       <AppFooterInternalLink
@@ -26,6 +31,7 @@
 
 <script setup lang="ts">
 import IconSunrise from '~/assets/icons/sunrise.svg';
+import IconDownload from '~/assets/icons/file-download.svg';
 
 const { t, locale } = useI18n();
 

@@ -7,7 +7,7 @@
       <slot />
     </div>
     <p class="absolute left-1/2 transform -translate-x-1/2 bottom-12 z-10 font-heading text-base text-center text-primaryDark dark:text-primaryLight">
-      &copy; {{ currentYear }} Aerokir Space. All rights reserved.
+      &copy; {{ currentYear }} Aerokir Space. {{ $t('footerLinks.allRightsReserved') }}
     </p>
     <PerspectiveGrid
       position="bottom"
