@@ -426,9 +426,9 @@ export default defineAppConfig({
   socials: [
     {
       label: 'Email',
-      href: 'mailto:shev.kv.1982@gmail.com',
+      href: 'mailto:contact@aerokir.space',
       icon: 'email',
-      display: 'shev.kv.1982@gmail.com',
+      display: 'contact@aerokir.space',
     },
     {
       label: 'Telegram',
