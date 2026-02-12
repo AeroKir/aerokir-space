@@ -1,60 +1,33 @@
-# Hello Edge
+# Portfolio Website — aerokir.space
 
-A minimal [Nuxt](https://nuxt.com) starter deployed on the Edge using [NuxtHub](https://hub.nuxt.com).
+🔗 Live: https://aerokir.space
 
-https://hello.nuxt.dev
+Цей репозиторій містить код мого особистого портфоліо сайту.
 
-<a href="https://hello.nuxt.dev">
-<img src="https://github.com/nuxt-hub/hello-edge/assets/904724/99d1bd54-ef7e-4ac9-83ad-0a290f85edcf" alt="Hello World template for NuxtHub" />
-</a>
+Він створений з метою демонстрації моїх навичок у веб-розробці, UI/UX та сучасних технологіях.
 
-## Features
+## Що тут показано
 
-- Server-Side rendering on Cloudflare Workers
-- ESLint setup
-- Ready to add a database, blob and KV storage
-- One click deploy on 275+ locations for free
+🔹 Приклади моїх проектів
+🔹 Технічні стек та інструменти, які я використовував
+🔹 Інтерактивні елементи та адаптивна верстка
+🔹 Підтримка як desktop, так і mobile
 
-## Setup
+## Стек технологій
 
-Make sure to install the dependencies with [pnpm](https://pnpm.io/installation#using-corepack):
+Цей сайт побудований з використанням:
+
+- **Nuxt 3** (SSR / Static rendering)
+- **Tailwind CSS**
+- **TypeScript**
+- Сучасний JavaScript / компонентна архітектура
+- Оптимізація для продуктивності та SEO
+
+## Як запустити локально
 
 ```bash
+# Встановити залежності
 pnpm install
-```
 
-You can update the main text displayed by creating a `.env`:
-
-```bash
-NUXT_PUBLIC_HELLO_TEXT="Hello my world!"
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
+# Запустити dev сервер
 pnpm dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-pnpm build
-```
-
-## Deploy
-
-
-Deploy the application on the Edge with [NuxtHub](https://hub.nuxt.com) on your Cloudflare account:
-
-```bash
-npx nuxthub deploy
-```
-
-Then checkout your server logs, analaytics and more in the [NuxtHub Admin](https://admin.hub.nuxt.com).
-
-You can also deploy using [Cloudflare Pages CI](https://hub.nuxt.com/docs/getting-started/deploy#cloudflare-pages-ci).
-
